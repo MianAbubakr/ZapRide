@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="onBoardingDesc">#A0A0A0</color>
+    <color name="onBoardingTitle">#414141</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ZapRide</string>
+    <string name="onBoardingDesc">Sell houses easily with the help of\nListenoryx and to make this line\nbig I am writing more.</string>
+    <string name="zapride">ZapRide</string>
+    <style name="Base.Theme.ZapRide" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ZapRide" parent="Base.Theme.ZapRide"/>
+</resources>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-3:\\layout\\item_onboarding.xml",
+        "source": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-6:\\layout\\item_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.smlab.zapride.app-mergeDebugResources-3:/layout/activity_on_boarding.xml",
+        "source": "com.smlab.zapride.app-main-6:/layout/activity_on_boarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-3:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-6:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-3:\\layout\\activity_on_boarding.xml",
+        "source": "C:\\Users\\Eminent Technologies\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-6:\\layout\\activity_on_boarding.xml"
+    }
+]
