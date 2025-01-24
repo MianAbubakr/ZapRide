@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.smlab.zapride"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.smlab.zapride"
@@ -37,6 +37,7 @@ android {
 
 dependencies {
 
+    implementation("androidx.activity:activity:1.9.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

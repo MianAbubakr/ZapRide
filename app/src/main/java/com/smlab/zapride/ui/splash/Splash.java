@@ -1,6 +1,8 @@
-package com.smlab.zapride;
+package com.smlab.zapride.ui.splash;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +10,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.smlab.zapride.MainActivity;
+import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivitySplashBinding;
+import com.smlab.zapride.ui.onBoarding.OnBoarding;
 
 public class Splash extends AppCompatActivity {
     ActivitySplashBinding binding;
@@ -24,5 +29,15 @@ public class Splash extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        splashDelayUpdate();
+    }
+
+    private void userAuthentication() {
+            startActivity(new Intent(Splash.this, OnBoarding.class));
+            finish();
+    }
+
+    private void splashDelayUpdate() {
+        new Handler().postDelayed(this::userAuthentication, 3000);
     }
 }
