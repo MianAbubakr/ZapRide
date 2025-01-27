@@ -46,5 +46,9 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // SDP Android
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    // Country Code Picker
+    implementation ("com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3")
+
 }
