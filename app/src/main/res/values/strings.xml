@@ -15,9 +15,12 @@
     <string name="phone_verification">Phone verification</string>
     <string name="code_has_been_send_to_70">Code has been send to ***** ***70</string>
     <string name="didn_t_receive_code">Didn’t receive code?</string>
-    <string name="resend_again">Resend again</string>
+    <string name="resend">Resend</string>
     <string name="_09_00">9:00</string>
     <string name="verify">Verify</string>
     <string name="congratulations">Congratulations</string>
     <string name="your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds">Your account is ready to use. You will be\nredirected to the Home Page in a few\nseconds.</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="title">Title</string>
+    <string name="skip">Skip</string>
 </resources>

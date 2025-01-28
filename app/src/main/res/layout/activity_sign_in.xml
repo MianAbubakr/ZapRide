@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.signIn.SignIn">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,7 +70,7 @@
         app:cp_autoDetectCountry="true"
         app:cp_fastScrollerHandleColor="@color/black"
         app:cp_listItemTextColor="@color/black"
-        app:cp_setCountryCodeBorder="true"
+        app:cp_setCountryCodeBorder="false"
         app:cp_showCountryCodeInView="false"
         app:cp_showCountryDialCodeInView="true"
         app:cp_showFastScroll="true"
@@ -80,16 +81,17 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/signInButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@drawable/button_background"
         android:backgroundTint="@color/btnColor"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/sign_up"
+        android:text="@string/sign_in"
         android:textColor="@color/white"
         android:textSize="@dimen/mediumTextSize"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
         app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
         app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber" />
@@ -104,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/appCompatButton"
+        app:layout_constraintStart_toStartOf="@+id/signInButton"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <TextView
@@ -119,7 +121,7 @@
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+        app:layout_constraintTop_toBottomOf="@+id/signInButton" />
 
     <View
         android:id="@+id/view2"
@@ -129,7 +131,7 @@
         android:layout_marginEnd="10dp"
         android:background="@color/onBoardingDesc"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="@+id/signInButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
@@ -182,18 +184,18 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Don’t have an account"
+        android:text="@string/don_t_have_an_account"
         android:textColor="@color/signUpColor"
         android:textSize="@dimen/mediumTextSize"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSignUp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
