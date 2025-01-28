@@ -34,6 +34,6 @@ public class AccountCreatedSplash extends AppCompatActivity {
     }
 
     private void splashDelayUpdate() {
-        new Handler().postDelayed(this::userAuthentication, 3000);
+        new Handler().postDelayed(this::userAuthentication, 2000);
     }
 }

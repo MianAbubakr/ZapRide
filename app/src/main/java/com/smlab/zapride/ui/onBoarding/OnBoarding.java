@@ -17,6 +17,7 @@ import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivityOnBoardingBinding;
 import com.smlab.zapride.ui.onBoarding.adapter.OnboardingAdapter;
 import com.smlab.zapride.ui.onBoarding.model.OnboardingItem;
+import com.smlab.zapride.ui.welcome.WelcomeScreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,13 +49,13 @@ public class OnBoarding extends AppCompatActivity {
                 binding.viewPager.setCurrentItem(currentItem + 1);
             } else {
                 // Last screen, go to next activity
-                startActivity(new Intent(OnBoarding.this, MainActivity.class));
+                startActivity(new Intent(OnBoarding.this, WelcomeScreen.class));
                 finish();
             }
         });
 
         binding.skipTextView.setOnClickListener(view -> {
-            startActivity(new Intent(OnBoarding.this, MainActivity.class));
+            startActivity(new Intent(OnBoarding.this, WelcomeScreen.class));
             finish();
         });
     }

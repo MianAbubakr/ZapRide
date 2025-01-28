@@ -16,7 +16,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 
@@ -37,7 +37,7 @@ android {
 
 dependencies {
 
-    implementation("androidx.activity:activity:1.9.0")
+    implementation("androidx.activity:activity:1.10.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -50,5 +50,10 @@ dependencies {
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
     // Country Code Picker
     implementation ("com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3")
+    // Google Map
+    implementation ("com.google.android.gms:play-services-maps:18.1.0")
+    implementation ("com.google.android.gms:play-services-location:21.0.1")
+
+
 
 }
