@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="onBoardingTitle">#414141</color>
+    <color name="onBoardingDesc">#A0A0A0</color>
+    <color name="welcomeTextColor">#2a2a2a</color>
+    <color name="mainColor">#FEC400</color>
+    <color name="backColor">#414141</color>
+    <color name="btnColor">#EDAE10</color>
+    <color name="signUpColor">#5a5a5a</color>
+</resources>
