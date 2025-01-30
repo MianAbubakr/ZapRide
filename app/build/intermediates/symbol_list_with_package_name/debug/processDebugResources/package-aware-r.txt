@@ -128,6 +128,7 @@ attr allowStacking
 attr alpha
 attr alphabeticModifiers
 attr altSrc
+attr ambientEnabled
 attr animateCircleAngleTo
 attr animateMenuItems
 attr animateNavigationIcon
@@ -229,10 +230,18 @@ attr buttonIconDimen
 attr buttonIconTint
 attr buttonIconTintMode
 attr buttonPanelSideLayout
+attr buttonSize
 attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr cameraBearing
+attr cameraMaxZoomPreference
+attr cameraMinZoomPreference
+attr cameraTargetLat
+attr cameraTargetLng
+attr cameraTilt
+attr cameraZoom
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -289,6 +298,7 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr circleCrop
 attr circleRadius
 attr circularProgressIndicatorStyle
 attr circularflow_angles
@@ -362,6 +372,7 @@ attr colorPrimaryFixedDim
 attr colorPrimaryInverse
 attr colorPrimarySurface
 attr colorPrimaryVariant
+attr colorScheme
 attr colorSecondary
 attr colorSecondaryContainer
 attr colorSecondaryFixed
@@ -676,6 +687,8 @@ attr iconTintMode
 attr iconifiedByDefault
 attr ifTagNotSet
 attr ifTagSet
+attr imageAspectRatio
+attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr imagePanX
 attr imagePanY
@@ -735,6 +748,10 @@ attr labelVisibilityMode
 attr largeFontVerticalOffsetAdjustment
 attr lastBaselineToBottomHeight
 attr lastItemDecorated
+attr latLngBoundsNorthEastLatitude
+attr latLngBoundsNorthEastLongitude
+attr latLngBoundsSouthWestLatitude
+attr latLngBoundsSouthWestLongitude
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -830,10 +847,14 @@ attr listPreferredItemPaddingEnd
 attr listPreferredItemPaddingLeft
 attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
+attr liteMode
 attr logo
 attr logoAdjustViewBounds
 attr logoDescription
 attr logoScaleType
+attr mapColorScheme
+attr mapId
+attr mapType
 attr marginHorizontal
 attr marginLeftSystemWindowInsets
 attr marginRightSystemWindowInsets
@@ -1048,6 +1069,7 @@ attr round
 attr roundPercent
 attr saturation
 attr scaleFromTextSize
+attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -1331,10 +1353,19 @@ attr triggerId
 attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
+attr uiCompass
+attr uiMapToolbar
+attr uiRotateGestures
+attr uiScrollGestures
+attr uiScrollGesturesDuringRotateOrZoom
+attr uiTiltGestures
+attr uiZoomControls
+attr uiZoomGestures
 attr upDuration
 attr useCompatPadding
 attr useDrawerArrowDrawable
 attr useMaterialThemeColors
+attr useViewLifecycle
 attr values
 attr verticalOffset
 attr verticalOffsetWithText
@@ -1365,6 +1396,7 @@ attr windowNoTitle
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
+attr zOrderOnTop
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
@@ -1419,6 +1451,17 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorPrimary
+color common_google_signin_btn_text_dark
+color common_google_signin_btn_text_dark_default
+color common_google_signin_btn_text_dark_disabled
+color common_google_signin_btn_text_dark_focused
+color common_google_signin_btn_text_dark_pressed
+color common_google_signin_btn_text_light
+color common_google_signin_btn_text_light_default
+color common_google_signin_btn_text_light_disabled
+color common_google_signin_btn_text_light_focused
+color common_google_signin_btn_text_light_pressed
+color common_google_signin_btn_tint
 color cp_item_text_color
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
@@ -3719,7 +3762,9 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable about_us_icon
 drawable ad
+drawable address_icon
 drawable ae
 drawable af
 drawable ag
@@ -3786,6 +3831,26 @@ drawable clock_icon
 drawable cm
 drawable cn
 drawable co
+drawable common_full_open_on_phone
+drawable common_google_signin_btn_icon_dark
+drawable common_google_signin_btn_icon_dark_focused
+drawable common_google_signin_btn_icon_dark_normal
+drawable common_google_signin_btn_icon_dark_normal_background
+drawable common_google_signin_btn_icon_disabled
+drawable common_google_signin_btn_icon_light
+drawable common_google_signin_btn_icon_light_focused
+drawable common_google_signin_btn_icon_light_normal
+drawable common_google_signin_btn_icon_light_normal_background
+drawable common_google_signin_btn_text_dark
+drawable common_google_signin_btn_text_dark_focused
+drawable common_google_signin_btn_text_dark_normal
+drawable common_google_signin_btn_text_dark_normal_background
+drawable common_google_signin_btn_text_disabled
+drawable common_google_signin_btn_text_light
+drawable common_google_signin_btn_text_light_focused
+drawable common_google_signin_btn_text_light_normal
+drawable common_google_signin_btn_text_light_normal_background
+drawable complain_icon
 drawable congrats_icon
 drawable cr
 drawable cu
@@ -3802,6 +3867,7 @@ drawable design_snackbar_background
 drawable dj
 drawable dk
 drawable dm
+drawable drawer_icon
 drawable dz
 drawable ec
 drawable ee
@@ -3833,11 +3899,15 @@ drawable gm
 drawable gmail_icon
 drawable gn
 drawable go
+drawable googleg_disabled_color_18
+drawable googleg_standard_color_18
 drawable gq
 drawable gr
 drawable gt
 drawable gw
 drawable gy
+drawable help_and_support_icon
+drawable history_icon
 drawable hk
 drawable hn
 drawable hr
@@ -3897,6 +3967,8 @@ drawable lb
 drawable lc
 drawable li
 drawable lk
+drawable location_pointer
+drawable logout_icon
 drawable lr
 drawable ls
 drawable lt
@@ -3998,6 +4070,7 @@ drawable notification_bg_low_normal
 drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
+drawable notification_icon
 drawable notification_icon_background
 drawable notification_oversize_large_icon_bg
 drawable notification_template_icon_bg
@@ -4029,6 +4102,7 @@ drawable pw
 drawable py
 drawable qa
 drawable re
+drawable referral_icon
 drawable ro
 drawable rs
 drawable ru
@@ -4038,6 +4112,8 @@ drawable sb
 drawable sc
 drawable sd
 drawable se
+drawable search_icon
+drawable setting_icon
 drawable sg
 drawable si
 drawable sk
@@ -4073,6 +4149,7 @@ drawable tz
 drawable ua
 drawable ug
 drawable us
+drawable user_icon
 drawable uy
 drawable uz
 drawable va
@@ -4183,6 +4260,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adjust_height
+id adjust_width
 id alertTitle
 id aligned
 id all
@@ -4192,7 +4271,6 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id appCompatButton
 id arc
 id asConfigured
 id async
@@ -4257,6 +4335,7 @@ id custom
 id customCheckBox
 id customPanel
 id cut
+id dark
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4286,6 +4365,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawerLayout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -4310,6 +4390,7 @@ id escape
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabMyLocation
 id fade
 id fastScroll
 id fill
@@ -4325,6 +4406,7 @@ id fixed
 id flagWrapper
 id flip
 id floating
+id follow_system
 id forever
 id fragment_container_view_tag
 id frost
@@ -4349,8 +4431,10 @@ id homeAsUp
 id honorRequest
 id horizontal
 id horizontal_only
+id hybrid
 id icon
 id icon_group
+id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
@@ -4379,6 +4463,7 @@ id layout
 id left
 id leftToRight
 id legacy
+id light
 id line1
 id line3
 id linear
@@ -4387,6 +4472,7 @@ id list_item
 id logIn
 id m3_side_sheet
 id main
+id mapFragment
 id marquee
 id masked
 id match_constraint
@@ -4447,6 +4533,16 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_toolbar
+id nav_aboutUs
+id nav_address
+id nav_complain
+id nav_editProfile
+id nav_helpAndSupport
+id nav_history
+id nav_logout
+id nav_referral
+id nav_settings
+id navigationView
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -4462,6 +4558,7 @@ id noState
 id none
 id normal
 id north
+id notificationIcon
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -4501,6 +4598,9 @@ id position
 id postLayout
 id preferenceDivider
 id pressed
+id profile_email
+id profile_image
+id profile_name
 id progress_circular
 id progress_horizontal
 id radio
@@ -4518,6 +4618,7 @@ id rl_query_holder
 id rl_title
 id rounded
 id row_index_key
+id satellite
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -4529,6 +4630,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id search
+id searchIcon
 id searchView
 id search_badge
 id search_bar
@@ -4549,6 +4651,8 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signInButton
+id signUpButton
 id sin
 id skipCollapsed
 id skipTextView
@@ -4597,6 +4701,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id termsTextView
+id terrain
 id text
 id text2
 id textEnd
@@ -4611,11 +4716,12 @@ id textView12
 id textView2
 id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8
 id textView9
+id textViewSignIn
+id textViewSignUp
 id textView_title
 id text_input_end_icon
 id text_input_error_icon
@@ -4631,6 +4737,7 @@ id timerTextView
 id title
 id titleDividerNoCustom
 id title_template
+id today
 id toggle
 id top
 id topPanel
@@ -4656,6 +4763,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id verifyButton
 id vertical
 id vertical_only
 id view
@@ -4670,6 +4778,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id west
+id wide
 id withText
 id with_icon
 id withinBounds
@@ -4686,6 +4795,7 @@ integer cancel_button_image_alpha
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
+integer google_play_services_version
 integer hide_password_duration
 integer m3_badge_max_number
 integer m3_btn_anim_delay_ms
@@ -4795,9 +4905,12 @@ layout abc_tooltip
 layout activity_account_created_splash
 layout activity_country_picker
 layout activity_main
+layout activity_notification
 layout activity_on_boarding
+layout activity_sign_in
+layout activity_sign_in_otp
 layout activity_sign_up
-layout activity_sign_up_otp
+layout activity_sign_up_otpverification
 layout activity_splash
 layout activity_welcome_screen
 layout custom_dialog
@@ -4875,6 +4988,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -4888,6 +5002,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu drawer_menu
 menu picker_dialog
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -4921,6 +5036,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string about_us
+string address
 string already_have_an_account
 string androidx_startup
 string app_name
@@ -4943,10 +5060,32 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string closeDrawer
 string code_has_been_send_to_70
+string common_google_play_services_enable_button
+string common_google_play_services_enable_text
+string common_google_play_services_enable_title
+string common_google_play_services_install_button
+string common_google_play_services_install_text
+string common_google_play_services_install_title
+string common_google_play_services_notification_channel_name
+string common_google_play_services_notification_ticker
+string common_google_play_services_unknown_issue
+string common_google_play_services_unsupported_text
+string common_google_play_services_update_button
+string common_google_play_services_update_text
+string common_google_play_services_update_title
+string common_google_play_services_updating_text
+string common_google_play_services_wear_update_text
+string common_open_on_phone
+string common_signin_button_text
+string common_signin_button_text_long
+string complain
 string congratulations
 string create_an_account
 string didn_t_receive_code
+string don_t_have_an_account
+string edit_profile
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4959,10 +5098,13 @@ string fmt_dial_code
 string format_country
 string format_country_with_code
 string have_a_better_sharing_experience
+string help_and_support
 string hide_bottom_view_on_scroll_behavior
+string history
 string icon_content_description
 string item_view_role_description
 string log_in
+string logout
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -5065,7 +5207,9 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string ng_234_sample_text
 string no_result_found
+string notification
 string onBoardingDesc
+string openDrawer
 string or
 string password_toggle_content_description
 string path_password_eye
@@ -5074,7 +5218,8 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string phone_verification
 string plus_prefix
-string resend_again
+string referral
+string resend
 string sample_code
 string search_hint
 string search_menu_title
@@ -5083,11 +5228,15 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string select_country
+string settings
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sign_in
 string sign_up
+string skip
 string status_bar_notification_info_overflow
+string title
+string today
 string verify
 string welcome
 string your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds
@@ -6302,6 +6451,8 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear trackStopIndicatorSize
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable MapAttrs ambientEnabled backgroundColor cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapColorScheme mapId mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop backgroundTint
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogButtonSpacerVisibility materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType android_popupElevation dropDownBackgroundTint simpleItemLayout simpleItemSelectedColor simpleItemSelectedRippleColor simpleItems
@@ -6352,6 +6503,7 @@ styleable SearchView android_textAppearance android_focusable android_maxWidth a
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
 styleable ShapeableImageView contentPadding contentPaddingBottom contentPaddingEnd contentPaddingLeft contentPaddingRight contentPaddingStart contentPaddingTop shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
 styleable SideSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable coplanarSiblingViewId shapeAppearance shapeAppearanceOverlay
+styleable SignInButton buttonSize colorScheme scopeUris
 styleable Slider android_enabled android_value android_stepSize android_valueFrom android_valueTo haloColor haloRadius labelBehavior labelStyle minTouchTargetSize thumbColor thumbElevation thumbHeight thumbRadius thumbStrokeColor thumbStrokeWidth thumbTrackGapSize thumbWidth tickColor tickColorActive tickColorInactive tickRadiusActive tickRadiusInactive tickVisible trackColor trackColorActive trackColorInactive trackHeight trackInsideCornerSize trackStopIndicatorSize
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth shapeAppearance shapeAppearanceOverlay

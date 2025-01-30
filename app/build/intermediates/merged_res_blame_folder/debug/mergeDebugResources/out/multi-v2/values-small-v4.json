@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.smlab.zapride.app-mergeDebugResources-2:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.smlab.zapride.app-mergeDebugResources-35:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Eminent Technologies\\.gradle\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

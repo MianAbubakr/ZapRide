@@ -2,12 +2,11 @@ package com.smlab.zapride;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Looper;
-import android.provider.Settings;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -19,21 +18,29 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResponse;
+import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.Task;
 import com.smlab.zapride.databinding.ActivityMainBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.smlab.zapride.ui.notification.Notification;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1001;
+    private static final int LOCATION_SETTINGS_REQUEST_CODE = 1002;
     ActivityMainBinding binding;
     private SupportMapFragment mapFragment;
     private GoogleMap googleMap;
@@ -53,37 +60,53 @@ public class MainActivity extends AppCompatActivity {
         });
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         checkLocationPermissionAndInitializeMap();
+        setListener();
     }
 
     private void checkLocationPermissionAndInitializeMap() {
-        // Get the LocationManager system service
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        // Check if location services are enabled (GPS or Network)
-        boolean isLocationEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
-                locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-
-        if (!isLocationEnabled) {
-            // If location is off, show a Toast and request permissions directly
-            Toast.makeText(this, "Location services are turned off. Enabling permissions.", Toast.LENGTH_SHORT).show();
-
-            // Request location permissions if they're not already granted
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
                     LOCATION_PERMISSION_REQUEST_CODE);
         } else {
-            // Location services are enabled, now check for permissions
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
-                    ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // If permissions are not granted, request them
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
-                        LOCATION_PERMISSION_REQUEST_CODE);
-            } else {
-                // Permissions are granted, initialize the map
-                initializeMap();
-            }
+            checkLocationSettings();
         }
+    }
+
+    private void checkLocationSettings() {
+        LocationRequest locationRequest = LocationRequest.create()
+                .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+                .setInterval(10000)
+                .setFastestInterval(5000);
+
+        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
+                .addLocationRequest(locationRequest)
+                .setAlwaysShow(true); // Ensure the dialog always shows when necessary
+
+        Task<LocationSettingsResponse> task = LocationServices.getSettingsClient(this)
+                .checkLocationSettings(builder.build());
+
+        task.addOnCompleteListener(task1 -> {
+            try {
+                task1.getResult(ApiException.class);
+                initializeMap(); // Location settings are satisfied
+            } catch (ApiException exception) {
+                switch (exception.getStatusCode()) {
+                    case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+                        try {
+                            ResolvableApiException resolvable = (ResolvableApiException) exception;
+                            resolvable.startResolutionForResult(this, LOCATION_SETTINGS_REQUEST_CODE);
+                        } catch (IntentSender.SendIntentException e) {
+                            e.printStackTrace();
+                        }
+                        break;
+                    case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                        Toast.makeText(this, "Location settings cannot be fixed. Please enable location manually.", Toast.LENGTH_LONG).show();
+                        break;
+                }
+            }
+        });
     }
 
     private void initializeMap() {
@@ -97,10 +120,50 @@ public class MainActivity extends AppCompatActivity {
 
     private void onMapReady(GoogleMap googleMap) {
         this.googleMap = googleMap;
+        // Disable default location button
+        googleMap.getUiSettings().setMyLocationButtonEnabled(false);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             googleMap.setMyLocationEnabled(true);
             getUserLocation();
         }
+
+        // Custom location button click listener
+        binding.fabMyLocation.setOnClickListener(view -> {
+            if (googleMap != null) {
+                getUserLocation();
+            }
+        });
+    }
+
+    private void setListener() {
+        binding.notificationIcon.setOnClickListener(view -> {
+            startActivity(new Intent(this, Notification.class));
+        });
+
+        binding.navigationView.setNavigationItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.nav_editProfile) {
+                Toast.makeText(MainActivity.this, "Edit Profile Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_address) {
+                Toast.makeText(MainActivity.this, "Address Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_history) {
+                Toast.makeText(MainActivity.this, "History Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_complain) {
+                Toast.makeText(MainActivity.this, "Complain Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_referral) {
+                Toast.makeText(MainActivity.this, "Referral Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_aboutUs) {
+                Toast.makeText(MainActivity.this, "About Us Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_settings) {
+                Toast.makeText(MainActivity.this, "Settings Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_helpAndSupport) {
+                Toast.makeText(MainActivity.this, "Help and Support Selected", Toast.LENGTH_SHORT).show();
+            } else if (itemId == R.id.nav_logout) {
+                Toast.makeText(MainActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
+            }
+            binding.drawerLayout.closeDrawer(binding.navigationView);
+            return true;
+        });
     }
 
     private void getUserLocation() {
@@ -115,13 +178,10 @@ public class MainActivity extends AppCompatActivity {
                 if (locationResult == null) return;
                 for (Location location : locationResult.getLocations()) {
                     if (location != null) {
-                        double latitude = location.getLatitude();
-                        double longitude = location.getLongitude();
-                        LatLng userLocation = new LatLng(latitude, longitude);
-                        googleMap.clear(); // Clear existing markers
+                        LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                        googleMap.clear();
                         googleMap.addMarker(new MarkerOptions().position(userLocation).title("You are here"));
-                        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15f));
-                        // Remove location updates to save battery
+                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15f));
                         fusedLocationClient.removeLocationUpdates(locationCallback);
                         break;
                     }
@@ -129,14 +189,8 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-//             here to request the missing permissions, and then overriding
-//               public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//                                                      int[] grantResults)
-//             to handle the case where the user grants the permission. See the documentation
-//             for ActivityCompat#requestPermissions for more details.
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
         fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
@@ -147,9 +201,21 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                initializeMap();
+                checkLocationSettings();
             } else {
                 Toast.makeText(this, "Location permission is required to use this feature", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == LOCATION_SETTINGS_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                initializeMap();
+            } else {
+                Toast.makeText(this, "Location services need to be enabled for this feature.", Toast.LENGTH_SHORT).show();
             }
         }
     }

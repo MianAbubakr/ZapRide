@@ -11,6 +11,7 @@
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="24dp"
         android:padding="@dimen/xSmallTextSize"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,13 +26,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="46dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/poppins_regular"
             android:text="@string/back"
             android:textColor="@color/backColor"
-            android:textSize="18sp"
+            android:textSize="@dimen/normalTextSize"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
             app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
@@ -44,10 +46,10 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/notification"
         android:textColor="@color/welcomeTextColor"
-        android:textSize="@dimen/xLargeTextSize"
+        android:textSize="@dimen/largeTextSize"
         app:layout_constraintBottom_toBottomOf="@+id/backBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/backBtn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backBtn" />
 
     <TextView
@@ -65,7 +67,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_250sdp"
+        android:layout_height="@dimen/_200sdp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
