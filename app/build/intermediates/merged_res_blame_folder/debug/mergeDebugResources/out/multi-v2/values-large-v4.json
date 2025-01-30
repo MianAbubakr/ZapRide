@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.smlab.zapride.app-mergeDebugResources-2:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.smlab.zapride.app-mergeDebugResources-35:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Eminent Technologies\\.gradle\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Eminent Technologies\\.gradle\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

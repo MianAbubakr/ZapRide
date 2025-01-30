@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="splash_logo" />
-                            <entry key="sourceFile" value="C:\Users\Eminent Technologies\OneDrive\Desktop\splash_logo.svg" />
+                            <entry key="outputName" value="user_icon" />
+                            <entry key="sourceFile" value="C:\Users\Eminent Technologies\OneDrive\Desktop\user_icon.svg" />
                           </map>
                         </option>
                       </PersistentState>

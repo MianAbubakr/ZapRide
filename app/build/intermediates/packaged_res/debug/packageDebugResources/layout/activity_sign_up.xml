@@ -69,7 +69,7 @@
         app:cp_autoDetectCountry="true"
         app:cp_fastScrollerHandleColor="@color/black"
         app:cp_listItemTextColor="@color/black"
-        app:cp_setCountryCodeBorder="true"
+        app:cp_setCountryCodeBorder="false"
         app:cp_showCountryCodeInView="false"
         app:cp_showCountryDialCodeInView="true"
         app:cp_showFastScroll="true"
@@ -104,7 +104,7 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/signUpButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -114,6 +114,7 @@
         android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="@dimen/mediumTextSize"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/termsTextView"
         app:layout_constraintStart_toStartOf="@+id/customCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/termsTextView" />
@@ -128,7 +129,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/appCompatButton"
+        app:layout_constraintStart_toStartOf="@+id/signUpButton"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <TextView
@@ -143,7 +144,7 @@
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
 
     <View
         android:id="@+id/view2"
@@ -153,7 +154,7 @@
         android:layout_marginEnd="10dp"
         android:background="@color/onBoardingDesc"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="@+id/signUpButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
@@ -210,14 +211,14 @@
         android:textColor="@color/signUpColor"
         android:textSize="@dimen/mediumTextSize"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSignIn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
