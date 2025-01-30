@@ -30,6 +30,7 @@ drawable checkbox_background
 drawable checkbox_checked
 drawable checkbox_tick_selector
 drawable checkbox_unchecked
+drawable circle_image_background
 drawable circular_button_background
 drawable clock_icon
 drawable complain_icon
@@ -44,6 +45,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable location_pointer
 drawable logout_icon
+drawable man_vector
+drawable nav_header_background
 drawable next_arrow
 drawable notification_icon
 drawable onboading_2
@@ -52,6 +55,7 @@ drawable onboarding_3
 drawable referral_icon
 drawable search_icon
 drawable setting_icon
+drawable side_drawer_background
 drawable splash_logo
 drawable user_icon
 drawable welcome_screen
@@ -63,6 +67,7 @@ font poppins_regular
 font poppins_semibold
 id ETPhoneNumber
 id backBtn
+id btnDrawerToggle
 id btnNext
 id createAccount
 id customCheckBox
@@ -145,7 +150,6 @@ string address
 string already_have_an_account
 string app_name
 string back
-string closeDrawer
 string code_has_been_send_to_70
 string complain
 string congratulations
@@ -160,7 +164,6 @@ string log_in
 string logout
 string notification
 string onBoardingDesc
-string openDrawer
 string or
 string phone_verification
 string referral
@@ -177,6 +180,7 @@ string your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_
 string your_mobile_number
 string zapride
 style Base.Theme.ZapRide
+style MenuTextStyle
 style Theme.ZapRide
 xml backup_rules
 xml data_extraction_rules

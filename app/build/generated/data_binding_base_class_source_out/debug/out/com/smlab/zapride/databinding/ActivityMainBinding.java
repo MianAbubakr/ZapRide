@@ -23,6 +23,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final DrawerLayout rootView;
 
   @NonNull
+  public final ImageView btnDrawerToggle;
+
+  @NonNull
   public final DrawerLayout drawerLayout;
 
   @NonNull
@@ -43,11 +46,13 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final ImageView searchIcon;
 
-  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull DrawerLayout drawerLayout,
-      @NonNull ImageView fabMyLocation, @NonNull ConstraintLayout main,
-      @NonNull FrameLayout mapFragment, @NonNull NavigationView navigationView,
-      @NonNull ImageView notificationIcon, @NonNull ImageView searchIcon) {
+  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull ImageView btnDrawerToggle,
+      @NonNull DrawerLayout drawerLayout, @NonNull ImageView fabMyLocation,
+      @NonNull ConstraintLayout main, @NonNull FrameLayout mapFragment,
+      @NonNull NavigationView navigationView, @NonNull ImageView notificationIcon,
+      @NonNull ImageView searchIcon) {
     this.rootView = rootView;
+    this.btnDrawerToggle = btnDrawerToggle;
     this.drawerLayout = drawerLayout;
     this.fabMyLocation = fabMyLocation;
     this.main = main;
@@ -84,6 +89,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnDrawerToggle;
+      ImageView btnDrawerToggle = ViewBindings.findChildViewById(rootView, id);
+      if (btnDrawerToggle == null) {
+        break missingId;
+      }
+
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
       id = R.id.fabMyLocation;
@@ -122,8 +133,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((DrawerLayout) rootView, drawerLayout, fabMyLocation, main,
-          mapFragment, navigationView, notificationIcon, searchIcon);
+      return new ActivityMainBinding((DrawerLayout) rootView, btnDrawerToggle, drawerLayout,
+          fabMyLocation, main, mapFragment, navigationView, notificationIcon, searchIcon);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,11 +7,14 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
@@ -58,9 +61,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        initialized();
         checkLocationPermissionAndInitializeMap();
         setListener();
+    }
+
+    private void initialized() {
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
     }
 
     private void checkLocationPermissionAndInitializeMap() {
@@ -126,18 +133,36 @@ public class MainActivity extends AppCompatActivity {
             googleMap.setMyLocationEnabled(true);
             getUserLocation();
         }
+    }
 
+    private void setListener() {
         // Custom location button click listener
         binding.fabMyLocation.setOnClickListener(view -> {
             if (googleMap != null) {
                 getUserLocation();
             }
         });
-    }
 
-    private void setListener() {
         binding.notificationIcon.setOnClickListener(view -> {
             startActivity(new Intent(this, Notification.class));
+        });
+
+        binding.btnDrawerToggle.setOnClickListener(view -> {
+            if (binding.drawerLayout.isDrawerOpen(binding.navigationView)) {
+                binding.drawerLayout.closeDrawer(binding.navigationView);
+            } else {
+                binding.drawerLayout.openDrawer(binding.navigationView);
+            }
+        });
+
+        // Set listener for back button in navigation header
+        View navHeaderView = binding.navigationView.getHeaderView(0);
+        ConstraintLayout btnBack = navHeaderView.findViewById(R.id.backBtn);
+
+        btnBack.setOnClickListener(view -> {
+            if (binding.drawerLayout.isDrawerOpen(binding.navigationView)) {
+                binding.drawerLayout.closeDrawer(binding.navigationView);
+            }
         });
 
         binding.navigationView.setNavigationItemSelectedListener(item -> {

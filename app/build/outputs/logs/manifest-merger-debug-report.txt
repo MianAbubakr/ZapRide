@@ -19,6 +19,7 @@ MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Android Pr
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Android Projects\Notes Vortex\caches\transforms-4\1cf9683cdfde557bd5cf5e89f6e58b3e\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.10.0] C:\Android Projects\Notes Vortex\caches\transforms-4\1df016fd89e3cccc6c913346bd70be3f\transformed\activity-1.10.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.intuit.sdp:sdp-android:1.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\9de3d7aed0c10e6e9cf4d2450920696e\transformed\sdp-android-1.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\08057d45e713e54e7bbc922fb5bd6e26\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\d126ad3a6034b407b9ce495fc9342baa\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Android Projects\Notes Vortex\caches\transforms-4\e1962b7525f1abc9c4defe38b64e2774\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -98,6 +99,8 @@ MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Android Proje
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\ade8edb2bfce3c3181d419c97d689001\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\f1edbe3ebf24e29178323e796e7f1188\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\f1edbe3ebf24e29178323e796e7f1188\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\08057d45e713e54e7bbc922fb5bd6e26\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\08057d45e713e54e7bbc922fb5bd6e26\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:28:5-89
@@ -244,6 +247,8 @@ MERGED from [androidx.activity:activity:1.10.0] C:\Android Projects\Notes Vortex
 MERGED from [androidx.activity:activity:1.10.0] C:\Android Projects\Notes Vortex\caches\transforms-4\1df016fd89e3cccc6c913346bd70be3f\transformed\activity-1.10.0\AndroidManifest.xml:20:5-44
 MERGED from [com.intuit.sdp:sdp-android:1.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\9de3d7aed0c10e6e9cf4d2450920696e\transformed\sdp-android-1.1.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.intuit.sdp:sdp-android:1.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\9de3d7aed0c10e6e9cf4d2450920696e\transformed\sdp-android-1.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\08057d45e713e54e7bbc922fb5bd6e26\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Android Projects\Notes Vortex\caches\transforms-4\08057d45e713e54e7bbc922fb5bd6e26\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\d126ad3a6034b407b9ce495fc9342baa\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\d126ad3a6034b407b9ce495fc9342baa\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44

@@ -306,6 +306,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -3824,6 +3828,7 @@ drawable checkbox_checked
 drawable checkbox_tick_selector
 drawable checkbox_unchecked
 drawable ci
+drawable circle_image_background
 drawable circular_button_background
 drawable ck
 drawable cl
@@ -3987,6 +3992,7 @@ drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
 drawable ma
+drawable man_vector
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -4055,6 +4061,7 @@ drawable mx
 drawable my
 drawable mz
 drawable na
+drawable nav_header_background
 drawable navigation_empty_icon
 drawable nc
 drawable ne
@@ -4116,6 +4123,7 @@ drawable search_icon
 drawable setting_icon
 drawable sg
 drawable si
+drawable side_drawer_background
 drawable sk
 drawable sl
 drawable sm
@@ -4292,6 +4300,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnDrawerToggle
 id btnNext
 id btnPick
 id buttonPanel
@@ -5060,7 +5069,6 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
-string closeDrawer
 string code_has_been_send_to_70
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -5209,7 +5217,6 @@ string ng_234_sample_text
 string no_result_found
 string notification
 string onBoardingDesc
-string openDrawer
 string or
 string password_toggle_content_description
 string path_password_eye
@@ -5557,6 +5564,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style MenuTextStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -6405,6 +6413,7 @@ styleable Carousel carousel_alignment carousel_backwardTransition carousel_empty
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
