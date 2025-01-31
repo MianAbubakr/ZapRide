@@ -45,6 +45,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.ZapRide" >
         <activity
+            android:name="com.smlab.zapride.ui.helpandsupport.HelpandSupport"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.smlab.zapride.ui.notification.Notification"
             android:exported="false" />
         <activity

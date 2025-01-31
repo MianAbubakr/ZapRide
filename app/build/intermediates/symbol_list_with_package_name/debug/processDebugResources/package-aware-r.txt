@@ -4716,6 +4716,7 @@ id textView12
 id textView2
 id textView3
 id textView4
+id textView5
 id textView6
 id textView7
 id textView8
@@ -4904,6 +4905,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_created_splash
 layout activity_country_picker
+layout activity_helpand_support
 layout activity_main
 layout activity_notification
 layout activity_on_boarding
@@ -5060,7 +5062,6 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
-string closeDrawer
 string code_has_been_send_to_70
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -5098,6 +5099,7 @@ string fmt_dial_code
 string format_country
 string format_country_with_code
 string have_a_better_sharing_experience
+string help_And_support
 string help_and_support
 string hide_bottom_view_on_scroll_behavior
 string history
@@ -5105,6 +5107,7 @@ string icon_content_description
 string item_view_role_description
 string log_in
 string logout
+string lorem_ipsum_dolor_sit_amet_consectetur_sit_pulvinar_mauris_mauris_eu_nibh_semper_nisl_pretium_laoreet_sed_non_faucibus_ac_lectus_eu_arcu_nulla_sit_congue_facilisis_vestibulum_egestas_nisl_feugiat_pharetra_odio_sit_tortor_morbi_at_orci_ipsum_dapibus_interdum_lorem_felis_est_aliquet_arcu_nullam_pellentesque_et_habitasse_ac_arcu_et_nunc_euismod_rhoncus_facilisis_sollicitudin
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -5209,7 +5212,6 @@ string ng_234_sample_text
 string no_result_found
 string notification
 string onBoardingDesc
-string openDrawer
 string or
 string password_toggle_content_description
 string path_password_eye

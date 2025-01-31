@@ -111,6 +111,7 @@ id textView12
 id textView2
 id textView3
 id textView4
+id textView5
 id textView6
 id textView7
 id textView8
@@ -125,6 +126,7 @@ id view
 id view2
 id viewPager
 layout activity_account_created_splash
+layout activity_helpand_support
 layout activity_main
 layout activity_notification
 layout activity_on_boarding
@@ -145,7 +147,6 @@ string address
 string already_have_an_account
 string app_name
 string back
-string closeDrawer
 string code_has_been_send_to_70
 string complain
 string congratulations
@@ -154,13 +155,14 @@ string didn_t_receive_code
 string don_t_have_an_account
 string edit_profile
 string have_a_better_sharing_experience
+string help_And_support
 string help_and_support
 string history
 string log_in
 string logout
+string lorem_ipsum_dolor_sit_amet_consectetur_sit_pulvinar_mauris_mauris_eu_nibh_semper_nisl_pretium_laoreet_sed_non_faucibus_ac_lectus_eu_arcu_nulla_sit_congue_facilisis_vestibulum_egestas_nisl_feugiat_pharetra_odio_sit_tortor_morbi_at_orci_ipsum_dapibus_interdum_lorem_felis_est_aliquet_arcu_nullam_pellentesque_et_habitasse_ac_arcu_et_nunc_euismod_rhoncus_facilisis_sollicitudin
 string notification
 string onBoardingDesc
-string openDrawer
 string or
 string phone_verification
 string referral

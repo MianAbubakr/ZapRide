@@ -4,7 +4,7 @@
             "outputFile": "com.smlab.zapride.app-mergeDebugResources-35:/values-ky/values-ky.xml",
             "map": [
                 {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-ky\\values-ky.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-ky\\values-ky.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-ky\\values-ky.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-ky\\values-ky.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\3ad1cca2ba786098641b43464fda4430\\transformed\\core-1.13.0\\res\\values-ky\\values-ky.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,155,257,360,467,571,675,786",
-                        "endColumns": "99,101,102,106,103,103,110,100",
-                        "endOffsets": "150,252,355,462,566,670,781,882"
-                    },
-                    "to": {
-                        "startLines": "38,39,40,41,42,43,44,134",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3505,3605,3707,3810,3917,4021,4125,12176",
-                        "endColumns": "99,101,102,106,103,103,110,100",
-                        "endOffsets": "3600,3702,3805,3912,4016,4120,4231,12272"
-                    }
-                },
-                {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\cdaab92c3603a3fda60842bc47a39b46\\transformed\\play-services-base-18.5.0\\res\\values-ky\\values.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\cdaab92c3603a3fda60842bc47a39b46\\transformed\\play-services-base-18.5.0\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -74,7 +57,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\f1edbe3ebf24e29178323e796e7f1188\\transformed\\play-services-basement-18.4.0\\res\\values-ky\\values.xml",
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\3ad1cca2ba786098641b43464fda4430\\transformed\\core-1.13.0\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,155,257,360,467,571,675,786",
+                        "endColumns": "99,101,102,106,103,103,110,100",
+                        "endOffsets": "150,252,355,462,566,670,781,882"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,134",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3505,3605,3707,3810,3917,4021,4125,12176",
+                        "endColumns": "99,101,102,106,103,103,110,100",
+                        "endOffsets": "3600,3702,3805,3912,4016,4120,4231,12272"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\f1edbe3ebf24e29178323e796e7f1188\\transformed\\play-services-basement-18.4.0\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

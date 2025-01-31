@@ -15,7 +15,6 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="app_name">ZapRide</string>
     <string name="back">Back</string>
-    <string name="closeDrawer">Close Drawer</string>
     <string name="code_has_been_send_to_70">Code has been send to ***** ***70</string>
     <string name="complain">Complain</string>
     <string name="congratulations">Congratulations</string>
@@ -24,13 +23,14 @@
     <string name="don_t_have_an_account">Don’t have an account?</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="have_a_better_sharing_experience">Have a better sharing experience</string>
+    <string name="help_And_support">Help and Support</string>
     <string name="help_and_support">Help And Support</string>
     <string name="history">History</string>
     <string name="log_in">Log In</string>
     <string name="logout">Logout</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_sit_pulvinar_mauris_mauris_eu_nibh_semper_nisl_pretium_laoreet_sed_non_faucibus_ac_lectus_eu_arcu_nulla_sit_congue_facilisis_vestibulum_egestas_nisl_feugiat_pharetra_odio_sit_tortor_morbi_at_orci_ipsum_dapibus_interdum_lorem_felis_est_aliquet_arcu_nullam_pellentesque_et_habitasse_ac_arcu_et_nunc_euismod_rhoncus_facilisis_sollicitudin">Lorem ipsum dolor sit amet consectetur. Sit\npulvinar mauris mauris eu nibh semper nisl pretium laoreet. Sed non faucibus ac lectus eu arcu. Nulla sit congue facilisis vestibulum egestas nisl feugiat pharetra. Odio sit tortor morbi at orci ipsum dapibus interdum. Lorem felis est aliquet arcu nullam pellentesque. Et habitasse ac arcu et nunc euismod rhoncus facilisis sollicitudin.</string>
     <string name="notification">Notification</string>
     <string name="onBoardingDesc">Sell houses easily with the help of\nListenoryx and to make this line\nbig I am writing more.</string>
-    <string name="openDrawer">Open Drawer</string>
     <string name="or">or</string>
     <string name="phone_verification">Phone verification</string>
     <string name="referral">Referral</string>
