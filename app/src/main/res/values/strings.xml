@@ -34,4 +34,10 @@
     <string name="referral">Referral</string>
     <string name="about_us">About Us</string>
     <string name="help_and_support">Help And Support</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="confirm_location">Confirm Location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="googleMapsApiKey">AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M</string>
 </resources>

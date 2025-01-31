@@ -29,7 +29,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final DrawerLayout drawerLayout;
 
   @NonNull
-  public final ImageView fabMyLocation;
+  public final IncludeLocationScreenBinding includeLocationScreen;
 
   @NonNull
   public final ConstraintLayout main;
@@ -47,14 +47,14 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView searchIcon;
 
   private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull ImageView btnDrawerToggle,
-      @NonNull DrawerLayout drawerLayout, @NonNull ImageView fabMyLocation,
-      @NonNull ConstraintLayout main, @NonNull FrameLayout mapFragment,
-      @NonNull NavigationView navigationView, @NonNull ImageView notificationIcon,
-      @NonNull ImageView searchIcon) {
+      @NonNull DrawerLayout drawerLayout,
+      @NonNull IncludeLocationScreenBinding includeLocationScreen, @NonNull ConstraintLayout main,
+      @NonNull FrameLayout mapFragment, @NonNull NavigationView navigationView,
+      @NonNull ImageView notificationIcon, @NonNull ImageView searchIcon) {
     this.rootView = rootView;
     this.btnDrawerToggle = btnDrawerToggle;
     this.drawerLayout = drawerLayout;
-    this.fabMyLocation = fabMyLocation;
+    this.includeLocationScreen = includeLocationScreen;
     this.main = main;
     this.mapFragment = mapFragment;
     this.navigationView = navigationView;
@@ -97,11 +97,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
-      id = R.id.fabMyLocation;
-      ImageView fabMyLocation = ViewBindings.findChildViewById(rootView, id);
-      if (fabMyLocation == null) {
+      id = R.id.includeLocationScreen;
+      View includeLocationScreen = ViewBindings.findChildViewById(rootView, id);
+      if (includeLocationScreen == null) {
         break missingId;
       }
+      IncludeLocationScreenBinding binding_includeLocationScreen = IncludeLocationScreenBinding.bind(includeLocationScreen);
 
       id = R.id.main;
       ConstraintLayout main = ViewBindings.findChildViewById(rootView, id);
@@ -134,7 +135,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((DrawerLayout) rootView, btnDrawerToggle, drawerLayout,
-          fabMyLocation, main, mapFragment, navigationView, notificationIcon, searchIcon);
+          binding_includeLocationScreen, main, mapFragment, navigationView, notificationIcon,
+          searchIcon);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

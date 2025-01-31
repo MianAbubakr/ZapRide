@@ -32,10 +32,11 @@ com.smlab.zapride.app-appcompat-1.7.0-30 C:\Android Projects\Notes Vortex\caches
 com.smlab.zapride.app-drawerlayout-1.1.1-31 C:\Android Projects\Notes Vortex\caches\transforms-4\e1962b7525f1abc9c4defe38b64e2774\transformed\drawerlayout-1.1.1\res
 com.smlab.zapride.app-recyclerview-1.1.0-32 C:\Android Projects\Notes Vortex\caches\transforms-4\ebfd2ba8434d0da019992d3e41bfd9cc\transformed\recyclerview-1.1.0\res
 com.smlab.zapride.app-play-services-basement-18.4.0-33 C:\Android Projects\Notes Vortex\caches\transforms-4\f1edbe3ebf24e29178323e796e7f1188\transformed\play-services-basement-18.4.0\res
-com.smlab.zapride.app-pngs-34 C:\Android Projects\ZapRideApp\app\build\generated\res\pngs\debug
-com.smlab.zapride.app-resValues-35 C:\Android Projects\ZapRideApp\app\build\generated\res\resValues\debug
-com.smlab.zapride.app-packageDebugResources-36 C:\Android Projects\ZapRideApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.smlab.zapride.app-packageDebugResources-37 C:\Android Projects\ZapRideApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.smlab.zapride.app-debug-38 C:\Android Projects\ZapRideApp\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.smlab.zapride.app-debug-39 C:\Android Projects\ZapRideApp\app\src\debug\res
-com.smlab.zapride.app-main-40 C:\Android Projects\ZapRideApp\app\src\main\res
+com.smlab.zapride.app-places-2.7.0-34 C:\Android Projects\Notes Vortex\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\res
+com.smlab.zapride.app-pngs-35 C:\Android Projects\ZapRideApp\app\build\generated\res\pngs\debug
+com.smlab.zapride.app-resValues-36 C:\Android Projects\ZapRideApp\app\build\generated\res\resValues\debug
+com.smlab.zapride.app-packageDebugResources-37 C:\Android Projects\ZapRideApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.smlab.zapride.app-packageDebugResources-38 C:\Android Projects\ZapRideApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.smlab.zapride.app-debug-39 C:\Android Projects\ZapRideApp\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.smlab.zapride.app-debug-40 C:\Android Projects\ZapRideApp\app\src\debug\res
+com.smlab.zapride.app-main-41 C:\Android Projects\ZapRideApp\app\src\main\res

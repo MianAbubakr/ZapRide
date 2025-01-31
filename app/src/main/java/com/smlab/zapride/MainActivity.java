@@ -4,6 +4,9 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
@@ -32,13 +35,17 @@ import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.Task;
 import com.smlab.zapride.databinding.ActivityMainBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.smlab.zapride.ui.locationBottomSheet.LocationBottomSheetFragment;
 import com.smlab.zapride.ui.notification.Notification;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -137,11 +144,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void setListener() {
         // Custom location button click listener
-        binding.fabMyLocation.setOnClickListener(view -> {
+        binding.includeLocationScreen.fabMyLocation.setOnClickListener(view -> {
             if (googleMap != null) {
                 getUserLocation();
             }
         });
+
+        binding.includeLocationScreen.ETFromLocation.setOnClickListener(view -> showLocationBottomSheet());
+        binding.includeLocationScreen.ETToLocation.setOnClickListener(view -> showLocationBottomSheet());
 
         binding.notificationIcon.setOnClickListener(view -> {
             startActivity(new Intent(this, Notification.class));
@@ -191,6 +201,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void showLocationBottomSheet() {
+        LocationBottomSheetFragment bottomSheetFragment = new LocationBottomSheetFragment();
+        bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
+    }
+
     private void getUserLocation() {
         LocationRequest locationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
@@ -204,9 +219,13 @@ public class MainActivity extends AppCompatActivity {
                 for (Location location : locationResult.getLocations()) {
                     if (location != null) {
                         LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                        Toast.makeText(MainActivity.this, "location:" + userLocation, Toast.LENGTH_SHORT).show();
                         googleMap.clear();
-                        googleMap.addMarker(new MarkerOptions().position(userLocation).title("You are here"));
-                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15f));
+                        MarkerOptions markerOptions = new MarkerOptions()
+                                .position(userLocation)
+                                .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
+                        googleMap.addMarker(markerOptions);
+                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17f));
                         fusedLocationClient.removeLocationUpdates(locationCallback);
                         break;
                     }
@@ -243,6 +262,23 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Location services need to be enabled for this feature.", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    private Bitmap getBitmapFromVectorDrawable(int drawableId) {
+        Drawable drawable = ContextCompat.getDrawable(this, drawableId);
+        if (drawable == null) return null;
+
+        Bitmap bitmap = Bitmap.createBitmap(
+                drawable.getIntrinsicWidth(),
+                drawable.getIntrinsicHeight(),
+                Bitmap.Config.ARGB_8888
+        );
+
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+        drawable.draw(canvas);
+
+        return bitmap;
     }
 
     @Override

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smlab.zapride.app-mergeDebugResources-36:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.smlab.zapride.app-mergeDebugResources-37:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

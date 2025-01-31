@@ -25,17 +25,6 @@
             tools:ignore="MissingConstraints" />
 
         <ImageView
-            android:id="@+id/fabMyLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/location_pointer"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
             android:id="@+id/notificationIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:src="@drawable/search_icon"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/notificationIcon"
             app:layout_constraintEnd_toStartOf="@+id/notificationIcon"
             app:layout_constraintTop_toTopOf="@+id/notificationIcon" />
@@ -64,6 +54,15 @@
             app:layout_constraintBottom_toBottomOf="@+id/searchIcon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/searchIcon" />
+
+        <include
+            android:id="@+id/includeLocationScreen"
+            layout="@layout/include_location_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
