@@ -9,4 +9,5 @@
     <color name="backColor">#414141</color>
     <color name="btnColor">#EDAE10</color>
     <color name="signUpColor">#5a5a5a</color>
+    <color name="deleteColor">#F44336</color>
 </resources>

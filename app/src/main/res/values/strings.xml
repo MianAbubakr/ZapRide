@@ -34,10 +34,9 @@
     <string name="referral">Referral</string>
     <string name="about_us">About Us</string>
     <string name="help_and_support">Help And Support</string>
-    <string name="from">From</string>
-    <string name="to">To</string>
-    <string name="confirm_location">Confirm Location</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="googleMapsApiKey">AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M</string>
+    <string name="help_And_support">Help and Support</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_sit_pulvinar_mauris_mauris_eu_nibh_semper_nisl_pretium_laoreet_sed_non_faucibus_ac_lectus_eu_arcu_nulla_sit_congue_facilisis_vestibulum_egestas_nisl_feugiat_pharetra_odio_sit_tortor_morbi_at_orci_ipsum_dapibus_interdum_lorem_felis_est_aliquet_arcu_nullam_pellentesque_et_habitasse_ac_arcu_et_nunc_euismod_rhoncus_facilisis_sollicitudin">Lorem ipsum dolor sit amet consectetur. Sit\npulvinar mauris mauris eu nibh semper nisl pretium laoreet. Sed non faucibus ac lectus eu arcu. Nulla sit congue facilisis vestibulum egestas nisl feugiat pharetra. Odio sit tortor morbi at orci ipsum dapibus interdum. Lorem felis est aliquet arcu nullam pellentesque. Et habitasse ac arcu et nunc euismod rhoncus facilisis sollicitudin.</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account">Are you sure you want to delete your account? Please read how account deletion will affect. Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.</string>
+    <string name="delete">Delete</string>
 </resources>

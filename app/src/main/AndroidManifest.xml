@@ -17,9 +17,17 @@
         android:theme="@style/Theme.ZapRide"
         tools:targetApi="31">
         <activity
-            android:name=".ui.locationBottomSheet.LocationBottomSheetFragment"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
+            android:name=".ui.deleteAccount.DeleteAccount"
+            android:exported="false" />
+        <activity
+            android:name=".ui.helpandsupport.HelpandSupport"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.notification.Notification"
             android:exported="false" />
@@ -68,7 +76,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/googleMapsApiKey" />
+            android:value="AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M" />
     </application>
 
 </manifest>
