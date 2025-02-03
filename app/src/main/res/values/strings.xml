@@ -39,4 +39,8 @@
     <string name="delete_account">Delete Account</string>
     <string name="are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account">Are you sure you want to delete your account? Please read how account deletion will affect. Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.</string>
     <string name="delete">Delete</string>
+    <string name="Complain">Complain</string>
+    <string name="vehicle_not_clean">Vehicle not clean</string>
+    <string name="submit">Submit</string>
+    <string name="Submit">Submit</string>
 </resources>

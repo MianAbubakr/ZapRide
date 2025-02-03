@@ -17,6 +17,9 @@
         android:theme="@style/Theme.ZapRide"
         tools:targetApi="31">
         <activity
+            android:name=".ui.complain.Complain"
+            android:exported="false" />
+        <activity
             android:name=".ui.deleteAccount.DeleteAccount"
             android:exported="false" />
         <activity
