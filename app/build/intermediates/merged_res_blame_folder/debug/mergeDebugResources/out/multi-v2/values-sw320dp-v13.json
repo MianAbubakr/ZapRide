@@ -4,7 +4,7 @@
             "outputFile": "com.smlab.zapride.app-mergeDebugResources-37:/values-sw320dp-v13/values-sw320dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Android Projects\\ZapRide\\app\\src\\main\\res\\values-sw320dp\\dimens.xml",
+                    "source": "C:\\Android Projects\\ZapRideApp\\app\\src\\main\\res\\values-sw320dp\\dimens.xml",
                     "from": {
                         "startLines": "6,7,4,5,3,13,8,2,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
