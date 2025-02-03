@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smlab.zapride.app-mergeDebugResources-35:/values-sw960dp-v13/values-sw960dp-v13.xml",
+            "outputFile": "com.smlab.zapride.app-mergeDebugResources-37:/values-sw960dp-v13/values-sw960dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\9de3d7aed0c10e6e9cf4d2450920696e\\transformed\\sdp-android-1.1.0\\res\\values-sw960dp-v13\\values-sw960dp-v13.xml",

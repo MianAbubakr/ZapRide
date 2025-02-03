@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.smlab.zapride.app-mergeDebugResources-35:/values-v23/values-v23.xml",
+            "outputFile": "com.smlab.zapride.app-mergeDebugResources-37:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\3a762e9f2ce0f93d047d11ca0abedd7a\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

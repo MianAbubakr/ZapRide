@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Main Content -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -25,20 +24,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/onBoardingDesc"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/fabMyLocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/location_pointer"
             tools:ignore="MissingConstraints" />
 
         <ImageView
@@ -57,19 +46,39 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:src="@drawable/search_icon"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/notificationIcon"
             app:layout_constraintEnd_toStartOf="@+id/notificationIcon"
             app:layout_constraintTop_toTopOf="@+id/notificationIcon" />
 
+        <ImageView
+            android:id="@+id/btnDrawerToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/drawer_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/searchIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/searchIcon" />
+
+        <include
+            android:id="@+id/includeLocationScreen"
+            layout="@layout/include_location_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_210sdp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/white"
+        android:background="@drawable/side_drawer_background"
+        app:itemTextAppearance="@style/MenuTextStyle"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/nav_header" />
 
