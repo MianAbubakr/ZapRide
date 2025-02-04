@@ -4680,6 +4680,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
 id backBtn
+id backHomeButton
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -4781,7 +4782,6 @@ id easeOut
 id east
 id edge
 id editText
-id editText2
 id editText3
 id editTextUniqueCode1
 id editTextUniqueCode2
@@ -4858,6 +4858,7 @@ id imageView5
 id imageView6
 id imageView7
 id imageView8
+id imageView9
 id immediateStop
 id includeLocationScreen
 id included
@@ -4947,6 +4948,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id my_toolbar
 id nav_aboutUs
+id nav_address
 id nav_complain
 id nav_editProfile
 id nav_helpAndSupport
@@ -5118,8 +5120,8 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
+id submitComplainButton
 id submit_area
-id suggestion_text
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -5150,6 +5152,8 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
+id textView16
 id textView2
 id textView3
 id textView4
@@ -5385,7 +5389,6 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout include_location_screen
 layout item
-layout item_location_suggestion
 layout item_onboarding
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -5467,7 +5470,6 @@ mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw english
 raw places_keep
-string Complain
 string Submit
 string _09_00
 string abc_action_bar_home_description
@@ -5721,13 +5723,13 @@ string status_bar_notification_info_overflow
 string title
 string to
 string today
-string update
 string vehicle_not_clean
 string verify
 string welcome
-string write_your_complain_here_minimum_10_characters
+string write_your_complain_here_minimum_10_n_characters
 string write_your_text
 string your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds
+string your_complain_has_been_send_successful
 string your_mobile_number
 string zapride
 style AlertDialog_AppCompat

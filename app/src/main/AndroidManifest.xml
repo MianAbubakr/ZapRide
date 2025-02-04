@@ -17,26 +17,20 @@
         android:theme="@style/Theme.ZapRide"
         tools:targetApi="31">
         <activity
-            android:name=".ui.editProfile.EditProfile"
-            android:exported="false" />
-        <activity
-            android:name=".ui.aboutUs.AboutUs"
-            android:exported="false" />
-        <activity
-            android:name=".ui.contactUs.ContactUs"
-            android:exported="false" />
-        <activity
-            android:name=".ui.privacyPolicy.PrivacyPolicy"
-            android:exported="false" />
-        <activity
-            android:name=".ui.settings.Settings"
+            android:name=".ui.complain.Complain"
             android:exported="false" />
         <activity
             android:name=".ui.deleteAccount.DeleteAccount"
             android:exported="false" />
         <activity
             android:name=".ui.helpandsupport.HelpandSupport"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.notification.Notification"
             android:exported="false" />

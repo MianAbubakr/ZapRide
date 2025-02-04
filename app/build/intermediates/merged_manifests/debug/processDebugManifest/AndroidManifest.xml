@@ -44,26 +44,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.ZapRide" >
         <activity
-            android:name="com.smlab.zapride.ui.editProfile.EditProfile"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.aboutUs.AboutUs"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.contactUs.ContactUs"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.privacyPolicy.PrivacyPolicy"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.settings.Settings"
+            android:name="com.smlab.zapride.ui.complain.Complain"
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.deleteAccount.DeleteAccount"
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.helpandsupport.HelpandSupport"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.smlab.zapride.ui.notification.Notification"
             android:exported="false" />

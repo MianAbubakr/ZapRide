@@ -11,7 +11,6 @@
     <color name="signUpColor">#5a5a5a</color>
     <color name="welcomeTextColor">#2a2a2a</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="Complain">Complain</string>
     <string name="Submit">Submit</string>
     <string name="_09_00">9:00</string>
     <string name="about_us">About Us</string>
@@ -60,13 +59,13 @@
     <string name="title">Title</string>
     <string name="to">To</string>
     <string name="today">Today</string>
-    <string name="update">Update</string>
     <string name="vehicle_not_clean">Vehicle not clean</string>
     <string name="verify">Verify</string>
     <string name="welcome">Welcome</string>
-    <string name="write_your_complain_here_minimum_10_characters">Write your complain here (minimum 10 characters)</string>
+    <string name="write_your_complain_here_minimum_10_n_characters">Write your complain here (minimum 10\n characters)</string>
     <string name="write_your_text">Write your text</string>
     <string name="your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds">Your account is ready to use. You will be\nredirected to the Home Page in a few\nseconds.</string>
+    <string name="your_complain_has_been_send_successful">Your complain has been send successful</string>
     <string name="your_mobile_number">Your mobile number</string>
     <string name="zapride">ZapRide</string>
     <style name="Base.Theme.ZapRide" parent="Theme.Material3.DayNight.NoActionBar">

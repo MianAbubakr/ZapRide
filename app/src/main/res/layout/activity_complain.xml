@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/Complain"
+        android:text="@string/complain"
         android:textColor="@color/welcomeTextColor"
         android:textSize="@dimen/largeTextSize"
         app:layout_constraintBottom_toBottomOf="@+id/backBtn"
@@ -70,6 +70,7 @@
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/vehicle_not_clean"
+            android:textAllCaps="true"
             android:textColor="@color/welcomeTextColor"
             android:textSize="@dimen/normalTextSize"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -94,14 +95,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_no_underline_stroke_color_edittext"
-        android:hint="@string/write_your_complain_here_minimum_10_characters"
+        android:hint="@string/write_your_complain_here_minimum_10_n_characters"
         android:padding="@dimen/_15sdp"
         app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/confirmLocationButton"
+        android:id="@+id/submitComplainButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
