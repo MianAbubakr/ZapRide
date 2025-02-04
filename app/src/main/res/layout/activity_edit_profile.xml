@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.editProfile.EditProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:padding="@dimen/xSmallTextSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/back"
+            android:textColor="@color/backColor"
+            android:textSize="@dimen/normalTextSize"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/edit_profile"
+        android:textColor="@color/welcomeTextColor"
+        android:textSize="@dimen/largeTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_image_background"
+        android:padding="2dp"
+        android:src="@drawable/man_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Nate Samson"
+        android:textColor="@color/backColor"
+        android:textSize="@dimen/xXLargeTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/circleImageView2"
+        app:layout_constraintStart_toStartOf="@+id/circleImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/email"
+        android:inputType="textCapSentences"
+        android:padding="15dp"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="MissingConstraints" />
+
+    <com.github.vardemin.materialcountrypicker.PhoneNumberEditText
+        android:id="@+id/ETPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/your_mobile_number"
+        android:inputType="phone"
+        android:padding="14dp"
+        android:textColor="@color/welcomeTextColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:cp_autoDetectCountry="true"
+        app:cp_fastScrollerHandleColor="@color/black"
+        app:cp_listItemTextColor="@color/black"
+        app:cp_setCountryCodeBorder="false"
+        app:cp_showCountryCodeInView="false"
+        app:cp_showCountryDialCodeInView="true"
+        app:cp_showFastScroll="true"
+        app:cp_showFullScreeDialog="false"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:focusable="false"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/gender"
+        android:inputType="none"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/deleteDescColor"
+        android:textSize="@dimen/mediumTextSize"
+        app:drawableEndCompat="@drawable/down_arrow"
+        app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/stateListView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/list_view_background"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/state"
+        app:layout_constraintStart_toStartOf="@+id/state"
+        app:layout_constraintTop_toBottomOf="@+id/state"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/address"
+        android:inputType="textCapSentences"
+        android:padding="15dp"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/state"
+        app:layout_constraintStart_toStartOf="@+id/state"
+        app:layout_constraintTop_toBottomOf="@+id/stateListView"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

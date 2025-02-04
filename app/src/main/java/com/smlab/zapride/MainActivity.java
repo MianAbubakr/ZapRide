@@ -42,8 +42,12 @@ import com.google.android.gms.tasks.Task;
 import com.smlab.zapride.databinding.ActivityMainBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.smlab.zapride.ui.aboutUs.AboutUs;
+import com.smlab.zapride.ui.editProfile.EditProfile;
+import com.smlab.zapride.ui.helpandsupport.HelpandSupport;
 import com.smlab.zapride.ui.locationBottomSheet.LocationBottomSheetFragment;
 import com.smlab.zapride.ui.notification.Notification;
+import com.smlab.zapride.ui.settings.Settings;
 
 import java.util.Objects;
 
@@ -178,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
         binding.navigationView.setNavigationItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_editProfile) {
-                Toast.makeText(MainActivity.this, "Edit Profile Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, EditProfile.class));
             } else if (itemId == R.id.nav_address) {
                 Toast.makeText(MainActivity.this, "Address Selected", Toast.LENGTH_SHORT).show();
             } else if (itemId == R.id.nav_history) {
@@ -188,11 +192,11 @@ public class MainActivity extends AppCompatActivity {
             } else if (itemId == R.id.nav_referral) {
                 Toast.makeText(MainActivity.this, "Referral Selected", Toast.LENGTH_SHORT).show();
             } else if (itemId == R.id.nav_aboutUs) {
-                Toast.makeText(MainActivity.this, "About Us Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, AboutUs.class));
             } else if (itemId == R.id.nav_settings) {
-                Toast.makeText(MainActivity.this, "Settings Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, Settings.class));
             } else if (itemId == R.id.nav_helpAndSupport) {
-                Toast.makeText(MainActivity.this, "Help and Support Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, HelpandSupport.class));
             } else if (itemId == R.id.nav_logout) {
                 Toast.makeText(MainActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
             }
