@@ -3,22 +3,28 @@
     <color name="backColor">#414141</color>
     <color name="black">#FF000000</color>
     <color name="btnColor">#EDAE10</color>
+    <color name="deleteColor">#F44336</color>
     <color name="mainColor">#FEC400</color>
     <color name="onBoardingDesc">#A0A0A0</color>
     <color name="onBoardingTitle">#414141</color>
     <color name="signUpColor">#5a5a5a</color>
     <color name="welcomeTextColor">#2a2a2a</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="Complain">Complain</string>
+    <string name="Submit">Submit</string>
     <string name="_09_00">9:00</string>
     <string name="about_us">About Us</string>
     <string name="address">Address</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="app_name">ZapRide</string>
+    <string name="are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account">Are you sure you want to delete your account? Please read how account deletion will affect. Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.</string>
     <string name="back">Back</string>
     <string name="code_has_been_send_to_70">Code has been send to ***** ***70</string>
     <string name="complain">Complain</string>
     <string name="congratulations">Congratulations</string>
     <string name="create_an_account">Create an account</string>
+    <string name="delete">Delete</string>
+    <string name="delete_account">Delete Account</string>
     <string name="didn_t_receive_code">Didn’t receive code?</string>
     <string name="don_t_have_an_account">Don’t have an account?</string>
     <string name="edit_profile">Edit Profile</string>
@@ -39,8 +45,10 @@
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
     <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
     <string name="title">Title</string>
     <string name="today">Today</string>
+    <string name="vehicle_not_clean">Vehicle not clean</string>
     <string name="verify">Verify</string>
     <string name="welcome">Welcome</string>
     <string name="your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds">Your account is ready to use. You will be\nredirected to the Home Page in a few\nseconds.</string>
@@ -49,6 +57,11 @@
     <style name="Base.Theme.ZapRide" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+    </style>
+    <style name="MenuTextStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/btnColor</item>
+        <item name="android:textSize">16sp</item>
     </style>
     <style name="Theme.ZapRide" parent="Base.Theme.ZapRide"/>
 </resources>
