@@ -37,12 +37,14 @@ drawable circular_button_background
 drawable clock_icon
 drawable complain_icon
 drawable congrats_icon
+drawable cross
 drawable down_arrow
 drawable drawer_icon
 drawable facebook_icon
 drawable from_icon
 drawable gmail_icon
 drawable go
+drawable group_6477
 drawable help_and_support_icon
 drawable history_icon
 drawable ic_launcher_background
@@ -76,12 +78,14 @@ id ETFromLocation
 id ETPhoneNumber
 id ETToLocation
 id backBtn
+id backHomeButton
 id btnDrawerToggle
 id btnNext
 id changeLanguageButton
 id circleImageView2
 id confirmLocationButton
 id constraintLayout
+id constraintLayout2
 id contactUsButton
 id createAccount
 id customCheckBox
@@ -104,6 +108,8 @@ id imageView4
 id imageView5
 id imageView6
 id imageView7
+id imageView8
+id imageView9
 id includeLocationScreen
 id logIn
 id main
@@ -130,6 +136,7 @@ id signUpButton
 id skipTextView
 id state
 id stateListView
+id submitComplainButton
 id termsTextView
 id textView
 id textView10
@@ -137,6 +144,8 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
+id textView16
 id textView2
 id textView3
 id textView4
@@ -156,6 +165,7 @@ id view2
 id viewPager
 layout activity_about_us
 layout activity_account_created_splash
+layout activity_complain
 layout activity_contact_us
 layout activity_delete_account
 layout activity_edit_profile
@@ -171,6 +181,7 @@ layout activity_sign_up
 layout activity_sign_up_otpverification
 layout activity_splash
 layout activity_welcome_screen
+layout complaindailog
 layout fragment_location_bottom_sheet
 layout include_location_screen
 layout item_onboarding
@@ -178,6 +189,7 @@ layout nav_header
 menu drawer_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+string Submit
 string _09_00
 string about_us
 string address
@@ -225,10 +237,13 @@ string skip
 string title
 string to
 string today
+string vehicle_not_clean
 string verify
 string welcome
+string write_your_complain_here_minimum_10_n_characters
 string write_your_text
 string your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds
+string your_complain_has_been_send_successful
 string your_mobile_number
 string zapride
 style Base.Theme.ZapRide
