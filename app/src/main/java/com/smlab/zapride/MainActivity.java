@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
@@ -43,12 +45,16 @@ import com.smlab.zapride.databinding.ActivityMainBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.smlab.zapride.ui.aboutUs.AboutUs;
+import com.smlab.zapride.ui.complain.Complain;
 import com.smlab.zapride.ui.editProfile.EditProfile;
 import com.smlab.zapride.ui.helpandsupport.HelpandSupport;
 import com.smlab.zapride.ui.locationBottomSheet.LocationBottomSheetFragment;
 import com.smlab.zapride.ui.notification.Notification;
 import com.smlab.zapride.ui.settings.Settings;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
@@ -73,12 +79,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         initialized();
-        checkLocationPermissionAndInitializeMap();
         setListener();
     }
 
     private void initialized() {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        checkLocationPermissionAndInitializeMap();
     }
 
     private void checkLocationPermissionAndInitializeMap() {
@@ -172,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
         // Set listener for back button in navigation header
         View navHeaderView = binding.navigationView.getHeaderView(0);
         ConstraintLayout btnBack = navHeaderView.findViewById(R.id.backBtn);
-
         btnBack.setOnClickListener(view -> {
             if (binding.drawerLayout.isDrawerOpen(binding.navigationView)) {
                 binding.drawerLayout.closeDrawer(binding.navigationView);
@@ -183,12 +188,10 @@ public class MainActivity extends AppCompatActivity {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_editProfile) {
                 startActivity(new Intent(this, EditProfile.class));
-            } else if (itemId == R.id.nav_address) {
-                Toast.makeText(MainActivity.this, "Address Selected", Toast.LENGTH_SHORT).show();
             } else if (itemId == R.id.nav_history) {
                 Toast.makeText(MainActivity.this, "History Selected", Toast.LENGTH_SHORT).show();
             } else if (itemId == R.id.nav_complain) {
-                Toast.makeText(MainActivity.this, "Complain Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, Complain.class));
             } else if (itemId == R.id.nav_referral) {
                 Toast.makeText(MainActivity.this, "Referral Selected", Toast.LENGTH_SHORT).show();
             } else if (itemId == R.id.nav_aboutUs) {
@@ -206,7 +209,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showLocationBottomSheet() {
-        LocationBottomSheetFragment bottomSheetFragment = new LocationBottomSheetFragment();
+        String currentLocation = binding.includeLocationScreen.ETFromLocation.getText().toString();
+        LocationBottomSheetFragment bottomSheetFragment = LocationBottomSheetFragment.newInstance(currentLocation);
         bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
     }
 
@@ -223,13 +227,7 @@ public class MainActivity extends AppCompatActivity {
                 for (Location location : locationResult.getLocations()) {
                     if (location != null) {
                         LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
-                        Toast.makeText(MainActivity.this, "location:" + userLocation, Toast.LENGTH_SHORT).show();
-                        googleMap.clear();
-                        MarkerOptions markerOptions = new MarkerOptions()
-                                .position(userLocation)
-                                .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
-                        googleMap.addMarker(markerOptions);
-                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17f));
+                        updateLocationUI(userLocation, location);
                         fusedLocationClient.removeLocationUpdates(locationCallback);
                         break;
                     }
@@ -242,6 +240,44 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
+    }
+
+    private void updateLocationUI(LatLng userLocation, Location location) {
+        googleMap.clear();
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(userLocation)
+                .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
+        googleMap.addMarker(markerOptions);
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17f));
+
+        // Fetch place name using Geocoder
+        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+        try {
+            List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+            if (addresses != null && !addresses.isEmpty()) {
+                Address address = addresses.get(0);
+
+                // Extract block name, road name, or area name components
+                String subLocality = address.getSubLocality();     // Block or neighborhood
+                String thoroughfare = address.getThoroughfare();   // Road name
+                String locality = address.getLocality();           // Area or city
+
+                String placeInfo = "";
+                if (subLocality != null) placeInfo += subLocality;
+                if (thoroughfare != null) placeInfo += (placeInfo.isEmpty() ? "" : ", ") + thoroughfare;
+                if (locality != null) placeInfo += (placeInfo.isEmpty() ? "" : ", ") + locality;
+
+                if (!placeInfo.isEmpty()) {
+                    binding.includeLocationScreen.ETFromLocation.setText(placeInfo);
+                } else {
+                    Toast.makeText(this, "Unable to fetch specific location details", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                Toast.makeText(this, "Unable to fetch place name", Toast.LENGTH_SHORT).show();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
