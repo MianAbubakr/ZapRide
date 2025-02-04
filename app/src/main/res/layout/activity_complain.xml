@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_no_underline_stroke_color_edittext"
-        android:hint="Write your complain here (minimum 10\n  characters)"
+        android:hint="@string/write_your_complain_here_minimum_10_characters"
         android:padding="@dimen/_15sdp"
         app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
