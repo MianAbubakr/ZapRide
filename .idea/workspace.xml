@@ -20,7 +20,17 @@
           <theme>@style/Theme.ZapRide</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml">
+        <config>
+          <theme>@style/Theme.ZapRide</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_helpand_support.xml">
+        <config>
+          <theme>@style/Theme.ZapRide</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_location_permission_dialog.xml">
         <config>
           <theme>@style/Theme.ZapRide</theme>
         </config>
