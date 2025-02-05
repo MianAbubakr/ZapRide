@@ -4,41 +4,7 @@
             "outputFile": "com.smlab.zapride.app-mergeDebugResources-37:/values-lt/values-lt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\3ad1cca2ba786098641b43464fda4430\\transformed\\core-1.13.0\\res\\values-lt\\values-lt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,263,362,465,576,686,806",
-                        "endColumns": "97,109,98,102,110,109,119,100",
-                        "endOffsets": "148,258,357,460,571,681,801,902"
-                    },
-                    "to": {
-                        "startLines": "40,41,42,43,44,45,46,144",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3618,3716,3826,3925,4028,4139,4249,13023",
-                        "endColumns": "97,109,98,102,110,109,119,100",
-                        "endOffsets": "3711,3821,3920,4023,4134,4244,4364,13119"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\f1edbe3ebf24e29178323e796e7f1188\\transformed\\play-services-basement-18.4.0\\res\\values-lt\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "154",
-                        "endOffsets": "349"
-                    },
-                    "to": {
-                        "startLines": "58",
-                        "startColumns": "4",
-                        "startOffsets": "5673",
-                        "endColumns": "158",
-                        "endOffsets": "5827"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-lt\\values-lt.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-lt\\values-lt.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\d84b8b07fad46557fcd73a1590a75c07\\transformed\\appcompat-1.7.0\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -74,24 +40,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\fa996f472a37bee8e59e16cf17e7d48a\\transformed\\places-2.7.0\\res\\values-lt\\values.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\3ad1cca2ba786098641b43464fda4430\\transformed\\core-1.13.0\\res\\values-lt\\values-lt.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11",
-                        "startColumns": "0,0,0,0,0,0,0,0",
-                        "startOffsets": "184,258,328,428,492,539,604,684",
-                        "endColumns": "73,69,99,63,46,64,79,52",
-                        "endOffsets": "257,327,427,491,538,603,683,736"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,263,362,465,576,686,806",
+                        "endColumns": "97,109,98,102,110,109,119,100",
+                        "endOffsets": "148,258,357,460,571,681,801,902"
                     },
                     "to": {
-                        "startLines": "132,133,134,135,136,137,138,139",
+                        "startLines": "40,41,42,43,44,45,46,144",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "12114,12192,12266,12370,12438,12489,12558,12642",
-                        "endColumns": "77,73,103,67,50,68,83,56",
-                        "endOffsets": "12187,12261,12365,12433,12484,12553,12637,12694"
+                        "startOffsets": "3618,3716,3826,3925,4028,4139,4249,13023",
+                        "endColumns": "97,109,98,102,110,109,119,100",
+                        "endOffsets": "3711,3821,3920,4023,4134,4244,4364,13119"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\cdaab92c3603a3fda60842bc47a39b46\\transformed\\play-services-base-18.5.0\\res\\values-lt\\values.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\cdaab92c3603a3fda60842bc47a39b46\\transformed\\play-services-base-18.5.0\\res\\values-lt\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -105,6 +71,40 @@
                         "startOffsets": "4667,4774,4926,5058,5165,5318,5448,5567,5832,5998,6107,6272,6406,6559,6709,6777,6843",
                         "endColumns": "106,151,131,106,152,129,118,105,165,108,164,133,152,149,67,65,89",
                         "endOffsets": "4769,4921,5053,5160,5313,5443,5562,5668,5993,6102,6267,6401,6554,6704,6772,6838,6928"
+                    }
+                },
+                {
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\f1edbe3ebf24e29178323e796e7f1188\\transformed\\play-services-basement-18.4.0\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "154",
+                        "endOffsets": "349"
+                    },
+                    "to": {
+                        "startLines": "58",
+                        "startColumns": "4",
+                        "startOffsets": "5673",
+                        "endColumns": "158",
+                        "endOffsets": "5827"
+                    }
+                },
+                {
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\fa996f472a37bee8e59e16cf17e7d48a\\transformed\\places-2.7.0\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11",
+                        "startColumns": "0,0,0,0,0,0,0,0",
+                        "startOffsets": "184,258,328,428,492,539,604,684",
+                        "endColumns": "73,69,99,63,46,64,79,52",
+                        "endOffsets": "257,327,427,491,538,603,683,736"
+                    },
+                    "to": {
+                        "startLines": "132,133,134,135,136,137,138,139",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "12114,12192,12266,12370,12438,12489,12558,12642",
+                        "endColumns": "77,73,103,67,50,68,83,56",
+                        "endOffsets": "12187,12261,12365,12433,12484,12553,12637,12694"
                     }
                 }
             ]

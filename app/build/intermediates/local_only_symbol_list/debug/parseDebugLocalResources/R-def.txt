@@ -50,6 +50,7 @@ drawable history_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable list_view_background
+drawable location_dialog_icon
 drawable location_marker_icon
 drawable location_pointer
 drawable location_screen_background
@@ -93,6 +94,7 @@ id deleteAccountButton
 id desc
 id drawerLayout
 id editText
+id editText2
 id editText3
 id editTextUniqueCode1
 id editTextUniqueCode2
@@ -115,7 +117,6 @@ id logIn
 id main
 id mapFragment
 id nav_aboutUs
-id nav_address
 id nav_complain
 id nav_editProfile
 id nav_helpAndSupport
@@ -133,10 +134,12 @@ id searchIcon
 id searchPlacesRecyclerView
 id signInButton
 id signUpButton
+id skipForNowButton
 id skipTextView
 id state
 id stateListView
 id submitComplainButton
+id suggestion_text
 id termsTextView
 id textView
 id textView10
@@ -159,6 +162,7 @@ id textViewSignUp
 id timerTextView
 id title
 id today
+id useMyLocationButton
 id verifyButton
 id view
 id view2
@@ -182,8 +186,10 @@ layout activity_sign_up_otpverification
 layout activity_splash
 layout activity_welcome_screen
 layout complaindailog
+layout dialog_location_permission
 layout fragment_location_bottom_sheet
 layout include_location_screen
+layout item_location_suggestion
 layout item_onboarding
 layout nav_header
 menu drawer_menu
@@ -199,6 +205,7 @@ string are_you_sure_you_want_to_delete_your_account_please_read_how_account_dele
 string at_rideshare_accessible_from_rideshare_com_one_of_our_main_priorities_is_the_privacy_of_our_visitors_this_privacy_policy_document_contains_types_of_information_that_is_collected_and_recorded_by_rideshare_and_how_we_use_it_if_you_have_additional_questions_or_require_more_information_about_our_privacy_policy_do_not_hesitate_to_contact_us_this_privacy_policy_applies_only_to_our_online_activities_and_is_valid_for_visitors_to_our_website_with_regards_to_the_information_that_they_shared_and_or_collect_in_rideshare_this_policy_is_not_applicable_to_any_information_collected_offline_or_via_channels_other_than_this_website_our_privacy_policy_was_created_with_the_help_of_the_free_privacy_policy_generator
 string back
 string change_language
+string choose_your_location_to_start_find_the_request_around_you
 string code_has_been_send_to_70
 string complain
 string confirm_location
@@ -211,6 +218,7 @@ string didn_t_receive_code
 string don_t_have_an_account
 string edit_profile
 string email
+string enable_your_location
 string from
 string gender
 string have_a_better_sharing_experience
@@ -234,9 +242,12 @@ string settings
 string sign_in
 string sign_up
 string skip
+string skip_for_now
 string title
 string to
 string today
+string update
+string use_my_location
 string vehicle_not_clean
 string verify
 string welcome

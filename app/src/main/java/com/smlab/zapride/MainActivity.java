@@ -1,6 +1,7 @@
 package com.smlab.zapride;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
@@ -13,6 +14,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -118,12 +120,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (ApiException exception) {
                 switch (exception.getStatusCode()) {
                     case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
-                        try {
-                            ResolvableApiException resolvable = (ResolvableApiException) exception;
-                            resolvable.startResolutionForResult(this, LOCATION_SETTINGS_REQUEST_CODE);
-                        } catch (IntentSender.SendIntentException e) {
-                            e.printStackTrace();
-                        }
+                        showCustomLocationDialog();
                         break;
                     case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
                         Toast.makeText(this, "Location settings cannot be fixed. Please enable location manually.", Toast.LENGTH_LONG).show();
@@ -131,6 +128,54 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void showCustomLocationDialog() {
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.dialog_location_permission);
+        dialog.setCancelable(true);
+
+        Button allowBtn = dialog.findViewById(R.id.useMyLocationButton);
+        Button skipBtn = dialog.findViewById(R.id.skipForNowButton);
+        skipBtn.setOnClickListener(view -> {
+            dialog.dismiss();
+        });
+        allowBtn.setOnClickListener(view -> {
+            LocationRequest locationRequest = LocationRequest.create()
+                    .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+                    .setInterval(10000)
+                    .setFastestInterval(5000);
+
+            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
+                    .addLocationRequest(locationRequest)
+                    .setAlwaysShow(true); // Ensure the dialog always shows when necessary
+
+            Task<LocationSettingsResponse> task = LocationServices.getSettingsClient(this)
+                    .checkLocationSettings(builder.build());
+
+            task.addOnCompleteListener(task1 -> {
+                try {
+                    task1.getResult(ApiException.class);
+                    initializeMap(); // Location settings are satisfied
+                } catch (ApiException exception) {
+                    switch (exception.getStatusCode()) {
+                        case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+                            try {
+                                ResolvableApiException resolvable = (ResolvableApiException) exception;
+                                resolvable.startResolutionForResult(this, LOCATION_SETTINGS_REQUEST_CODE);
+                            } catch (IntentSender.SendIntentException e) {
+                                e.printStackTrace();
+                            }
+                            break;
+                        case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                            Toast.makeText(this, "Location settings cannot be fixed. Please enable location manually.", Toast.LENGTH_LONG).show();
+                            break;
+                    }
+                }
+            });
+            dialog.dismiss();
+        });
+        dialog.show();
     }
 
     private void initializeMap() {
@@ -157,6 +202,8 @@ public class MainActivity extends AppCompatActivity {
         binding.includeLocationScreen.fabMyLocation.setOnClickListener(view -> {
             if (googleMap != null) {
                 getUserLocation();
+            } else {
+                checkLocationSettings();
             }
         });
 
@@ -307,17 +354,10 @@ public class MainActivity extends AppCompatActivity {
     private Bitmap getBitmapFromVectorDrawable(int drawableId) {
         Drawable drawable = ContextCompat.getDrawable(this, drawableId);
         if (drawable == null) return null;
-
-        Bitmap bitmap = Bitmap.createBitmap(
-                drawable.getIntrinsicWidth(),
-                drawable.getIntrinsicHeight(),
-                Bitmap.Config.ARGB_8888
-        );
-
+        Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
         drawable.draw(canvas);
-
         return bitmap;
     }
 

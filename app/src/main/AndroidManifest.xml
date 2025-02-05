@@ -24,13 +24,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.helpandsupport.HelpandSupport"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ui.notification.Notification"
             android:exported="false" />
@@ -79,7 +73,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M" />
+            android:value="AIzaSyASrwmr7b1OTDGQErYvIXyLeD3iNl_qziA" />
     </application>
 
 </manifest>

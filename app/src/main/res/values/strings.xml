@@ -56,4 +56,9 @@
     <string name="write_your_complain_here_minimum_10_n_characters">Write your complain here (minimum 10\n characters)</string>
     <string name="Submit">Submit</string>
     <string name="your_complain_has_been_send_successful">Your complain has been send successful</string>
+    <string name="update">Update</string>
+    <string name="enable_your_location">Enable your location</string>
+    <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the request around you</string>
+    <string name="use_my_location">Use my location</string>
+    <string name="skip_for_now">Skip for now</string>
 </resources>
