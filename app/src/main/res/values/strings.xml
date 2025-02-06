@@ -63,5 +63,7 @@
     <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the request around you</string>
     <string name="use_my_location">Use my location</string>
     <string name="skip_for_now">Skip for now</string>
->>>>>>> b687fba7187a74976fbf5091c869c2ababbb33f6
+    <string name="send_successful">Send successful</string>
+    <string name="back_home">Back Home</string>
+    >>>>>>> b687fba7187a74976fbf5091c869c2ababbb33f6
 </resources>
