@@ -61,4 +61,5 @@
     <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the request around you</string>
     <string name="use_my_location">Use my location</string>
     <string name="skip_for_now">Skip for now</string>
+    <string name="ride_a_c">Ride A/C</string>
 </resources>
