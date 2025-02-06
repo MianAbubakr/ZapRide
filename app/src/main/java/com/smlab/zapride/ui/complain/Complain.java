@@ -42,16 +42,9 @@ public class Complain extends AppCompatActivity {
     }
 
     private void showCustomDialog() {
-        // Create a Dialog object
-        Dialog dialog = new Dialog(this);  // 'this' refers to the current context (Activity)
-
-        // Set the custom layout for the dialog
+        Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.complaindailog);
-
-        // Make the dialog cancellable (optional)
         dialog.setCancelable(true);
-
-        // Get references to dialog views
 
         Button dialogButton = dialog.findViewById(R.id.backHomeButton);
         dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -61,10 +54,6 @@ public class Complain extends AppCompatActivity {
             }
         });
 
-        // Set custom behavior for the button
-
-
-        // Show the dialog
         dialog.show();
     }
 }

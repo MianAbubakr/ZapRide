@@ -4352,6 +4352,7 @@ int drawable lc 0x7f070163
 int drawable li 0x7f070164
 int drawable list_view_background 0x7f070165
 int drawable lk 0x7f070166
+int drawable location_dialog_icon 0x7f07023b
 int drawable location_marker_icon 0x7f070167
 int drawable location_pointer 0x7f070168
 int drawable location_screen_background 0x7f070169
@@ -5088,6 +5089,7 @@ int id signInButton 0x7f090203
 int id signUpButton 0x7f090204
 int id sin 0x7f090205
 int id skipCollapsed 0x7f090206
+int id skipForNowButton 0x7f090294
 int id skipTextView 0x7f090207
 int id skipped 0x7f090208
 int id slide 0x7f090209
@@ -5205,6 +5207,10 @@ int id uniform 0x7f090278
 int id unlabeled 0x7f090279
 int id up 0x7f09027a
 int id useLogo 0x7f09027b
+<<<<<<< HEAD
+=======
+int id useMyLocationButton 0x7f090295
+>>>>>>> b687fba7187a74976fbf5091c869c2ababbb33f6
 int id verifyButton 0x7f09027c
 int id vertical 0x7f09027d
 int id vertical_only 0x7f09027e
@@ -5381,6 +5387,7 @@ int layout design_navigation_menu_item 0x7f0c003d
 int layout design_text_input_end_icon 0x7f0c003e
 int layout design_text_input_start_icon 0x7f0c003f
 int layout dialog_country_picker 0x7f0c0040
+int layout dialog_location_permission 0x7f0c0094
 int layout dp_example 0x7f0c0041
 int layout fastscroll__default_bubble 0x7f0c0042
 int layout fragment_location_bottom_sheet 0x7f0c0043
@@ -5526,6 +5533,7 @@ int string change_language 0x7f120033
 int string character_counter_content_description 0x7f120034
 int string character_counter_overflowed_content_description 0x7f120035
 int string character_counter_pattern 0x7f120036
+int string choose_your_location_to_start_find_the_request_around_you 0x7f120107
 int string clear_text_end_icon_content_description 0x7f120037
 int string code_has_been_send_to_70 0x7f120038
 int string common_google_play_services_enable_button 0x7f120039
@@ -5557,6 +5565,7 @@ int string didn_t_receive_code 0x7f120052
 int string don_t_have_an_account 0x7f120053
 int string edit_profile 0x7f120054
 int string email 0x7f120055
+int string enable_your_location 0x7f120108
 int string error_a11y_label 0x7f120056
 int string error_icon_content_description 0x7f120057
 int string exposed_dropdown_menu_content_description 0x7f120058
@@ -5720,11 +5729,16 @@ int string side_sheet_behavior 0x7f1200f5
 int string sign_in 0x7f1200f6
 int string sign_up 0x7f1200f7
 int string skip 0x7f1200f8
+int string skip_for_now 0x7f120109
 int string status_bar_notification_info_overflow 0x7f1200f9
 int string title 0x7f1200fa
 int string to 0x7f1200fb
 int string today 0x7f1200fc
 int string update 0x7f1200fd
+<<<<<<< HEAD
+=======
+int string use_my_location 0x7f12010a
+>>>>>>> b687fba7187a74976fbf5091c869c2ababbb33f6
 int string vehicle_not_clean 0x7f1200fe
 int string verify 0x7f1200ff
 int string welcome 0x7f120100

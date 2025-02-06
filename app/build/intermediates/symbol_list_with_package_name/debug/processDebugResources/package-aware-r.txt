@@ -4353,6 +4353,7 @@ drawable lc
 drawable li
 drawable list_view_background
 drawable lk
+drawable location_dialog_icon
 drawable location_marker_icon
 drawable location_pointer
 drawable location_screen_background
@@ -5089,6 +5090,7 @@ id signInButton
 id signUpButton
 id sin
 id skipCollapsed
+id skipForNowButton
 id skipTextView
 id skipped
 id slide
@@ -5206,6 +5208,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id useMyLocationButton
 id verifyButton
 id vertical
 id vertical_only
@@ -5382,6 +5385,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_country_picker
+layout dialog_location_permission
 layout dp_example
 layout fastscroll__default_bubble
 layout fragment_location_bottom_sheet
@@ -5527,6 +5531,7 @@ string change_language
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string choose_your_location_to_start_find_the_request_around_you
 string clear_text_end_icon_content_description
 string code_has_been_send_to_70
 string common_google_play_services_enable_button
@@ -5558,6 +5563,7 @@ string didn_t_receive_code
 string don_t_have_an_account
 string edit_profile
 string email
+string enable_your_location
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -5721,11 +5727,16 @@ string side_sheet_behavior
 string sign_in
 string sign_up
 string skip
+string skip_for_now
 string status_bar_notification_info_overflow
 string title
 string to
 string today
 string update
+<<<<<<< HEAD
+=======
+string use_my_location
+>>>>>>> b687fba7187a74976fbf5091c869c2ababbb33f6
 string vehicle_not_clean
 string verify
 string welcome
