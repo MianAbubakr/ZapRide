@@ -4171,6 +4171,7 @@ drawable bf
 drawable bg
 drawable bh
 drawable bi
+drawable bike_icon
 drawable bj
 drawable bl
 drawable black_tick
@@ -4193,6 +4194,7 @@ drawable bw
 drawable by
 drawable bz
 drawable ca
+drawable car_icon
 drawable cc
 drawable ccp_selectable_bg
 drawable cd
@@ -4392,6 +4394,7 @@ drawable md
 drawable me
 drawable mg
 drawable mh
+drawable mini_car_icon
 drawable mk
 drawable ml
 drawable mm
@@ -4501,6 +4504,9 @@ drawable quantum_ic_cloud_off_vd_theme_24
 drawable quantum_ic_search_grey600_24
 drawable re
 drawable referral_icon
+drawable rickshaw_icon
+drawable ride_category_background
+drawable ride_selected_background
 drawable ro
 drawable rs
 drawable ru
@@ -4547,6 +4553,7 @@ drawable tw
 drawable tz
 drawable ua
 drawable ug
+drawable unselected_background
 drawable us
 drawable user_icon
 drawable uy
@@ -4688,6 +4695,7 @@ id beginOnFirstDraw
 id beginning
 id below
 id bestChoice
+id bike
 id blocking
 id bottom
 id bounce
@@ -4785,6 +4793,7 @@ id edge
 id editText
 id editText2
 id editText3
+id editText4
 id editTextUniqueCode1
 id editTextUniqueCode2
 id editTextUniqueCode3
@@ -5043,6 +5052,8 @@ id rectangles
 id recyclerCountryPicker
 id report_drawn
 id reverseSawtooth
+id rideAC
+id rideMini
 id right
 id rightToLeft
 id right_icon
@@ -5062,6 +5073,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search
 id searchIcon
@@ -5513,7 +5525,9 @@ string app_name
 string appbar_scrolling_view_behavior
 string are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account
 string at_rideshare_accessible_from_rideshare_com_one_of_our_main_priorities_is_the_privacy_of_our_visitors_this_privacy_policy_document_contains_types_of_information_that_is_collected_and_recorded_by_rideshare_and_how_we_use_it_if_you_have_additional_questions_or_require_more_information_about_our_privacy_policy_do_not_hesitate_to_contact_us_this_privacy_policy_applies_only_to_our_online_activities_and_is_valid_for_visitors_to_our_website_with_regards_to_the_information_that_they_shared_and_or_collect_in_rideshare_this_policy_is_not_applicable_to_any_information_collected_offline_or_via_channels_other_than_this_website_our_privacy_policy_was_created_with_the_help_of_the_free_privacy_policy_generator
+string auto
 string back
+string bike
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -5713,6 +5727,8 @@ string privacy_policy_for_ride_share
 string professional_rideshare_platform_here_we_will_provide_you_only_interesting_content_which_you_will_like_very_much_we_re_dedicated_to_providing_you_the_best_of_rideshare_with_a_focus_on_dependability_and_earning_we_re_working_to_turn_our_passion_for_rideshare_into_a_booming_online_website_we_hope_you_enjoy_our_rideshare_as_much_as_we_enjoy_offering_them_to_you_i_will_keep_posting_more_important_posts_on_my_website_for_all_of_you_please_give_your_support_and_love_professional_rideshare_platform_here_we_will_provide_you_only_interesting_content_which_you_will_like_very_much_we_re_dedicated_to_providing_you_the_best_of_rideshare_with_a_focus_on_dependability_and_earning_we_re_working_to_turn_our_passion_for_rideshare_into_a_booming_online_website_we_hope_you_enjoy_our_rideshare_as_much_as_we_enjoy_offering_them_to_you_i_will_keep_posting_more_important_posts_on_my_website_for_all_of_you_please_give_your_support_and_love
 string referral
 string resend
+string ride_a_c
+string ride_mini
 string sample_code
 string search_hint
 string search_menu_title
@@ -5721,6 +5737,7 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string select_country
+string send_message
 string settings
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior

@@ -62,4 +62,8 @@
     <string name="use_my_location">Use my location</string>
     <string name="skip_for_now">Skip for now</string>
     <string name="ride_a_c">Ride A/C</string>
+    <string name="ride_mini">Ride Mini</string>
+    <string name="auto">Auto</string>
+    <string name="bike">Bike</string>
+    <string name="send_message">Send Message</string>
 </resources>

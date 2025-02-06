@@ -44,17 +44,32 @@
         android:testOnly="true"
         android:theme="@style/Theme.ZapRide" >
         <activity
+            android:name="com.smlab.zapride.ui.contactUs.ContactUs"
+            android:exported="true" />
+        <activity
+            android:name="com.smlab.zapride.ui.aboutUs.AboutUs"
+            android:exported="true" />
+        <activity
+            android:name="com.smlab.zapride.ui.settings.Settings"
+            android:exported="true" />
+        <activity
             android:name="com.smlab.zapride.ui.complain.Complain"
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.deleteAccount.DeleteAccount"
             android:exported="false" />
         <activity
+            android:name="com.smlab.zapride.ui.editProfile.EditProfile"
+            android:exported="true" />
+        <activity
             android:name="com.smlab.zapride.ui.helpandsupport.HelpandSupport"
             android:exported="true" />
         <activity
             android:name="com.smlab.zapride.ui.notification.Notification"
             android:exported="false" />
+        <activity
+            android:name="com.smlab.zapride.ui.privacyPolicy.PrivacyPolicy"
+            android:exported="true" />
         <activity
             android:name="com.smlab.zapride.ui.signUp.SignUpOTPVerification"
             android:exported="false" />
@@ -78,15 +93,7 @@
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.splash.Splash"
-            android:exported="true" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.smlab.zapride.MainActivity"
             android:exported="true"

@@ -15,7 +15,7 @@ import android.os.Bundle;
 import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initialized() {
+        setSelectedTextView(binding.includeLocationScreen.rideAC);
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         checkLocationPermissionAndInitializeMap();
     }
@@ -137,9 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button allowBtn = dialog.findViewById(R.id.useMyLocationButton);
         Button skipBtn = dialog.findViewById(R.id.skipForNowButton);
-        skipBtn.setOnClickListener(view -> {
-            dialog.dismiss();
-        });
+        skipBtn.setOnClickListener(view -> dialog.dismiss());
         allowBtn.setOnClickListener(view -> {
             LocationRequest locationRequest = LocationRequest.create()
                     .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
@@ -210,9 +209,7 @@ public class MainActivity extends AppCompatActivity {
         binding.includeLocationScreen.ETFromLocation.setOnClickListener(view -> showLocationBottomSheet());
         binding.includeLocationScreen.ETToLocation.setOnClickListener(view -> showLocationBottomSheet());
 
-        binding.notificationIcon.setOnClickListener(view -> {
-            startActivity(new Intent(this, Notification.class));
-        });
+        binding.notificationIcon.setOnClickListener(view -> startActivity(new Intent(this, Notification.class)));
 
         binding.btnDrawerToggle.setOnClickListener(view -> {
             if (binding.drawerLayout.isDrawerOpen(binding.navigationView)) {
@@ -253,12 +250,27 @@ public class MainActivity extends AppCompatActivity {
             binding.drawerLayout.closeDrawer(binding.navigationView);
             return true;
         });
+
+        binding.includeLocationScreen.rideAC.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideAC));
+        binding.includeLocationScreen.rideMini.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideMini));
+        binding.includeLocationScreen.auto.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.auto));
+        binding.includeLocationScreen.bike.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.bike));
     }
 
     private void showLocationBottomSheet() {
         String currentLocation = binding.includeLocationScreen.ETFromLocation.getText().toString();
         LocationBottomSheetFragment bottomSheetFragment = LocationBottomSheetFragment.newInstance(currentLocation);
         bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
+    }
+
+    private void setSelectedTextView(TextView selectedTextView) {
+        // Reset all backgrounds
+        binding.includeLocationScreen.rideAC.setSelected(false);
+        binding.includeLocationScreen.rideMini.setSelected(false);
+        binding.includeLocationScreen.auto.setSelected(false);
+        binding.includeLocationScreen.bike.setSelected(false);
+        // Set the selected TextView's background
+        selectedTextView.setSelected(true);
     }
 
     private void getUserLocation() {
