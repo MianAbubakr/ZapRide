@@ -4782,6 +4782,7 @@ id easeOut
 id east
 id edge
 id editText
+id editText2
 id editText3
 id editTextUniqueCode1
 id editTextUniqueCode2
@@ -4948,7 +4949,6 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id my_toolbar
 id nav_aboutUs
-id nav_address
 id nav_complain
 id nav_editProfile
 id nav_helpAndSupport
@@ -5122,6 +5122,7 @@ id stretch
 id submenuarrow
 id submitComplainButton
 id submit_area
+id suggestion_text
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -5389,6 +5390,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout include_location_screen
 layout item
+layout item_location_suggestion
 layout item_onboarding
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -5723,6 +5725,7 @@ string status_bar_notification_info_overflow
 string title
 string to
 string today
+string update
 string vehicle_not_clean
 string verify
 string welcome

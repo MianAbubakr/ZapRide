@@ -56,4 +56,5 @@
     <string name="write_your_complain_here_minimum_10_n_characters">Write your complain here (minimum 10\n characters)</string>
     <string name="Submit">Submit</string>
     <string name="your_complain_has_been_send_successful">Your complain has been send successful</string>
+    <string name="update">Update</string>
 </resources>
