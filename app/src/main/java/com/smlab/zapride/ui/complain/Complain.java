@@ -1,6 +1,7 @@
 package com.smlab.zapride.ui.complain;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
@@ -55,5 +56,21 @@ public class Complain extends AppCompatActivity {
         });
 
         dialog.show();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View dialogView = getLayoutInflater().inflate(R.layout.
+                complaindailog, null);
+        builder.setView(dialogView);
+
+        AlertDialog alertDialog = builder.create();
+
+// Set the background of the dialog to be rounded
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+// Show the dialog
+        dialog.show();
+
+
+
+
     }
 }

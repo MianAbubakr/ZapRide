@@ -17,14 +17,8 @@
         android:theme="@style/Theme.ZapRide"
         tools:targetApi="31">
         <activity
-            android:name=".ui.contactUs.ContactUs"
-            android:exported="true" />
-        <activity
-            android:name=".ui.aboutUs.AboutUs"
-            android:exported="true" />
-        <activity
-            android:name=".ui.settings.Settings"
-            android:exported="true" />
+            android:name=".ui.history.History"
+            android:exported="false" />
         <activity
             android:name=".ui.complain.Complain"
             android:exported="false" />
@@ -32,17 +26,11 @@
             android:name=".ui.deleteAccount.DeleteAccount"
             android:exported="false" />
         <activity
-            android:name=".ui.editProfile.EditProfile"
-            android:exported="true" />
-        <activity
             android:name=".ui.helpandsupport.HelpandSupport"
             android:exported="true" />
         <activity
             android:name=".ui.notification.Notification"
             android:exported="false" />
-        <activity
-            android:name=".ui.privacyPolicy.PrivacyPolicy"
-            android:exported="true" />
         <activity
             android:name=".ui.signUp.SignUpOTPVerification"
             android:exported="false" />
@@ -66,7 +54,15 @@
             android:exported="false" />
         <activity
             android:name=".ui.splash.Splash"
-            android:exported="true" />
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -80,7 +76,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyASrwmr7b1OTDGQErYvIXyLeD3iNl_qziA" />
+            android:value="AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M" />
     </application>
 
 </manifest>

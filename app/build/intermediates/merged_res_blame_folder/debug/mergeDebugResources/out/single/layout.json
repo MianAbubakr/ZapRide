@@ -1,106 +1,106 @@
 [
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\item_onboarding.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\item_onboarding.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\item_location_suggestion.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\item_location_suggestion.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\dialog_location_permission.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\dialog_location_permission.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_on_boarding.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_on_boarding.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_splash.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_splash.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_up_otpverification.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_up_otpverification.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_main.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_in_otp.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_in_otp.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_helpand_support.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_helpand_support.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_in_otp.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_in_otp.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_in.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_in.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_edit_profile.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_edit_profile.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\nav_header.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\nav_header.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_complain.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_complain.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_account_created_splash.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_account_created_splash.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\item_onboarding.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\item_onboarding.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_welcome_screen.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_welcome_screen.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_notification.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_notification.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_on_boarding.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_on_boarding.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_delete_account.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_delete_account.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_settings.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_settings.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_welcome_screen.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_welcome_screen.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\nav_header.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\nav_header.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_complain.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_complain.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\complaindailog.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\complaindailog.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_helpand_support.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_helpand_support.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_delete_account.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_delete_account.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_contact_us.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_contact_us.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\item_location_suggestion.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\item_location_suggestion.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_edit_profile.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_edit_profile.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_privacy_policy.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_privacy_policy.xml"
+        "merged": "com.smlab.zapride.app-mergeDebugResources-38:/layout/complaindailog.xml",
+        "source": "com.smlab.zapride.app-main-41:/layout/complaindailog.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_contact_us.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_contact_us.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_settings.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\fragment_location_bottom_sheet.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\fragment_location_bottom_sheet.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\fragment_location_bottom_sheet.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\fragment_location_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_about_us.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_about_us.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_privacy_policy.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_privacy_policy.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_up_otpverification.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_up_otpverification.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_account_created_splash.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_account_created_splash.xml"
     },
     {
-        "merged": "com.smlab.zapride.app-mergeDebugResources-38:/layout/activity_contact_us.xml",
-        "source": "com.smlab.zapride.app-main-41:/layout/activity_contact_us.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_about_us.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_about_us.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_notification.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_notification.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\dialog_location_permission.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\dialog_location_permission.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_up.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\include_location_screen.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\include_location_screen.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_sign_in.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_sign_in.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\complaindailog.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\complaindailog.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\include_location_screen.xml",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\include_location_screen.xml"
+        "merged": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-mergeDebugResources-38:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Dell\\.gradle\\daemon\\8.6\\com.smlab.zapride.app-main-41:\\layout\\activity_splash.xml"
     }
 ]

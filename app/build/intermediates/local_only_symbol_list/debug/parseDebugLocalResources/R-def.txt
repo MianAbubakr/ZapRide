@@ -39,7 +39,8 @@ drawable circular_button_background
 drawable clock_icon
 drawable complain_icon
 drawable congrats_icon
-drawable cross
+drawable cross1
+drawable dialog_background
 drawable down_arrow
 drawable drawer_icon
 drawable facebook_icon
@@ -67,13 +68,10 @@ drawable onboarding_1
 drawable onboarding_3
 drawable referral_icon
 drawable rickshaw_icon
-drawable ride_category_background
-drawable ride_selected_background
 drawable search_icon
 drawable setting_icon
 drawable side_drawer_background
 drawable splash_logo
-drawable unselected_background
 drawable user_icon
 drawable welcome_screen
 drawable white_tick
@@ -85,10 +83,8 @@ font poppins_semibold
 id ETFromLocation
 id ETPhoneNumber
 id ETToLocation
-id auto
 id backBtn
 id backHomeButton
-id bike
 id btnDrawerToggle
 id btnNext
 id changeLanguageButton
@@ -105,7 +101,6 @@ id drawerLayout
 id editText
 id editText2
 id editText3
-id editText4
 id editTextUniqueCode1
 id editTextUniqueCode2
 id editTextUniqueCode3
@@ -114,6 +109,10 @@ id editTextUniqueCode5
 id editTextUniqueCode6
 id fabMyLocation
 id imageView
+id imageView10
+id imageView11
+id imageView12
+id imageView13
 id imageView2
 id imageView3
 id imageView4
@@ -140,8 +139,6 @@ id privacyPolicyButton
 id profile_email
 id profile_image
 id profile_name
-id rideAC
-id rideMini
 id scrollView2
 id searchIcon
 id searchPlacesRecyclerView
@@ -216,9 +213,8 @@ string already_have_an_account
 string app_name
 string are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account
 string at_rideshare_accessible_from_rideshare_com_one_of_our_main_priorities_is_the_privacy_of_our_visitors_this_privacy_policy_document_contains_types_of_information_that_is_collected_and_recorded_by_rideshare_and_how_we_use_it_if_you_have_additional_questions_or_require_more_information_about_our_privacy_policy_do_not_hesitate_to_contact_us_this_privacy_policy_applies_only_to_our_online_activities_and_is_valid_for_visitors_to_our_website_with_regards_to_the_information_that_they_shared_and_or_collect_in_rideshare_this_policy_is_not_applicable_to_any_information_collected_offline_or_via_channels_other_than_this_website_our_privacy_policy_was_created_with_the_help_of_the_free_privacy_policy_generator
-string auto
 string back
-string bike
+string back_home
 string change_language
 string choose_your_location_to_start_find_the_request_around_you
 string code_has_been_send_to_70
@@ -254,8 +250,7 @@ string professional_rideshare_platform_here_we_will_provide_you_only_interesting
 string referral
 string resend
 string ride_a_c
-string ride_mini
-string send_message
+string send_successful
 string settings
 string sign_in
 string sign_up

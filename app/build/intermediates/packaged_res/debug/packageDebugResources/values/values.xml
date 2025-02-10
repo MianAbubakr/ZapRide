@@ -19,9 +19,8 @@
     <string name="app_name">ZapRide</string>
     <string name="are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account">Are you sure you want to delete your account? Please read how account deletion will affect. Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.</string>
     <string name="at_rideshare_accessible_from_rideshare_com_one_of_our_main_priorities_is_the_privacy_of_our_visitors_this_privacy_policy_document_contains_types_of_information_that_is_collected_and_recorded_by_rideshare_and_how_we_use_it_if_you_have_additional_questions_or_require_more_information_about_our_privacy_policy_do_not_hesitate_to_contact_us_this_privacy_policy_applies_only_to_our_online_activities_and_is_valid_for_visitors_to_our_website_with_regards_to_the_information_that_they_shared_and_or_collect_in_rideshare_this_policy_is_not_applicable_to_any_information_collected_offline_or_via_channels_other_than_this_website_our_privacy_policy_was_created_with_the_help_of_the_free_privacy_policy_generator">At Rideshare, accessible from rideshare.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by rideshare and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in rideshare. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the Free Privacy Policy Generator.</string>
-    <string name="auto">Auto</string>
     <string name="back">Back</string>
-    <string name="bike">Bike</string>
+    <string name="back_home">Back Home</string>
     <string name="change_language">Change Language</string>
     <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the request around you</string>
     <string name="code_has_been_send_to_70">Code has been send to ***** ***70</string>
@@ -57,8 +56,7 @@
     <string name="referral">Referral</string>
     <string name="resend">Resend</string>
     <string name="ride_a_c">Ride A/C</string>
-    <string name="ride_mini">Ride Mini</string>
-    <string name="send_message">Send Message</string>
+    <string name="send_successful">Send successful</string>
     <string name="settings">Settings</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
