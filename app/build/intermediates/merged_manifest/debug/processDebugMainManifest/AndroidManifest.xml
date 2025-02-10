@@ -100,7 +100,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyASrwmr7b1OTDGQErYvIXyLeD3iNl_qziA" />
+            android:value="AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M" />
 
         <activity
             android:name="com.github.vardemin.materialcountrypicker.CountryPickerActivity"
