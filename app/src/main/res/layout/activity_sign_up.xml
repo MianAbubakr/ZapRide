@@ -62,7 +62,7 @@
         android:fontFamily="@font/poppins_medium"
         android:hint="@string/your_mobile_number"
         android:inputType="phone"
-        android:padding="15dp"
+        android:padding="14dp"
         android:textColor="@color/welcomeTextColor"
         android:textColorHint="@color/onBoardingDesc"
         android:textSize="@dimen/mediumTextSize"
@@ -78,6 +78,42 @@
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/password"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ETConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/confirm_passowrd"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/ETPassword"
+        app:layout_constraintStart_toStartOf="@+id/ETPassword"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword"
+        tools:ignore="MissingConstraints" />
+
     <CheckBox
         android:id="@+id/customCheckBox"
         android:layout_width="24dp"
@@ -87,16 +123,16 @@
         android:button="@null"
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
-        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/ETConfirmPassword" />
 
     <TextView
         android:id="@+id/termsTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/black"
-        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/onBoardingDesc"
+        android:textSize="@dimen/smallTextSize"
         app:layout_constraintBottom_toBottomOf="@+id/customCheckBox"
         app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
         app:layout_constraintStart_toEndOf="@+id/customCheckBox"

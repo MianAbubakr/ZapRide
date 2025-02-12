@@ -79,6 +79,24 @@
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/password"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber"
+        tools:ignore="MissingConstraints" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signInButton"
@@ -89,12 +107,12 @@
         android:backgroundTint="@color/btnColor"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/sign_in"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/mediumTextSize"
-        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
         app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
-        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword" />
 
     <View
         android:id="@+id/view"

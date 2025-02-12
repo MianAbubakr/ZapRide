@@ -2,8 +2,6 @@ package com.smlab.zapride.ui.onBoarding;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +10,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.smlab.zapride.MainActivity;
 import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivityOnBoardingBinding;
 import com.smlab.zapride.ui.onBoarding.adapter.OnboardingAdapter;

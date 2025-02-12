@@ -17,17 +17,32 @@
         android:theme="@style/Theme.ZapRide"
         tools:targetApi="31">
         <activity
-            android:name=".ui.history.History"
+            android:name=".utils.CustomProgressDialog"
+            android:exported="false" />
+        <activity
+            android:name=".ui.aboutUs.AboutUs"
             android:exported="false" />
         <activity
             android:name=".ui.complain.Complain"
             android:exported="false" />
         <activity
+            android:name=".ui.contactUs.ContactUs"
+            android:exported="false" />
+        <activity
             android:name=".ui.deleteAccount.DeleteAccount"
             android:exported="false" />
         <activity
+            android:name=".ui.editProfile.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.referral.Referral"
+            android:exported="false" />
+        <activity
             android:name=".ui.helpandsupport.HelpandSupport"
-            android:exported="true" />
+            android:exported="false" />
+        <activity
+            android:name=".ui.history.History"
+            android:exported="false" />
         <activity
             android:name=".ui.notification.Notification"
             android:exported="false" />
@@ -55,6 +70,16 @@
         <activity
             android:name=".ui.splash.Splash"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.controller.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -62,16 +87,6 @@
 
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data

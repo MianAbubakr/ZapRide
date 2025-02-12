@@ -53,16 +53,16 @@ public final class ActivitySignUpOtpverificationBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView phoneNumberTextView;
+
+  @NonNull
+  public final TextView resendTextView;
+
+  @NonNull
   public final TextView textView10;
 
   @NonNull
   public final TextView textView7;
-
-  @NonNull
-  public final TextView textView8;
-
-  @NonNull
-  public final TextView textView9;
 
   @NonNull
   public final TextView timerTextView;
@@ -75,9 +75,10 @@ public final class ActivitySignUpOtpverificationBinding implements ViewBinding {
       @NonNull EditText editTextUniqueCode2, @NonNull EditText editTextUniqueCode3,
       @NonNull EditText editTextUniqueCode4, @NonNull EditText editTextUniqueCode5,
       @NonNull EditText editTextUniqueCode6, @NonNull ImageView imageView2,
-      @NonNull ImageView imageView3, @NonNull ConstraintLayout main, @NonNull TextView textView10,
-      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9,
-      @NonNull TextView timerTextView, @NonNull AppCompatButton verifyButton) {
+      @NonNull ImageView imageView3, @NonNull ConstraintLayout main,
+      @NonNull TextView phoneNumberTextView, @NonNull TextView resendTextView,
+      @NonNull TextView textView10, @NonNull TextView textView7, @NonNull TextView timerTextView,
+      @NonNull AppCompatButton verifyButton) {
     this.rootView = rootView;
     this.backBtn = backBtn;
     this.editTextUniqueCode1 = editTextUniqueCode1;
@@ -89,10 +90,10 @@ public final class ActivitySignUpOtpverificationBinding implements ViewBinding {
     this.imageView2 = imageView2;
     this.imageView3 = imageView3;
     this.main = main;
+    this.phoneNumberTextView = phoneNumberTextView;
+    this.resendTextView = resendTextView;
     this.textView10 = textView10;
     this.textView7 = textView7;
-    this.textView8 = textView8;
-    this.textView9 = textView9;
     this.timerTextView = timerTextView;
     this.verifyButton = verifyButton;
   }
@@ -180,6 +181,18 @@ public final class ActivitySignUpOtpverificationBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.phoneNumberTextView;
+      TextView phoneNumberTextView = ViewBindings.findChildViewById(rootView, id);
+      if (phoneNumberTextView == null) {
+        break missingId;
+      }
+
+      id = R.id.resendTextView;
+      TextView resendTextView = ViewBindings.findChildViewById(rootView, id);
+      if (resendTextView == null) {
+        break missingId;
+      }
+
       id = R.id.textView10;
       TextView textView10 = ViewBindings.findChildViewById(rootView, id);
       if (textView10 == null) {
@@ -189,18 +202,6 @@ public final class ActivitySignUpOtpverificationBinding implements ViewBinding {
       id = R.id.textView7;
       TextView textView7 = ViewBindings.findChildViewById(rootView, id);
       if (textView7 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView9;
-      TextView textView9 = ViewBindings.findChildViewById(rootView, id);
-      if (textView9 == null) {
         break missingId;
       }
 
@@ -218,8 +219,8 @@ public final class ActivitySignUpOtpverificationBinding implements ViewBinding {
 
       return new ActivitySignUpOtpverificationBinding((ConstraintLayout) rootView, backBtn,
           editTextUniqueCode1, editTextUniqueCode2, editTextUniqueCode3, editTextUniqueCode4,
-          editTextUniqueCode5, editTextUniqueCode6, imageView2, imageView3, main, textView10,
-          textView7, textView8, textView9, timerTextView, verifyButton);
+          editTextUniqueCode5, editTextUniqueCode6, imageView2, imageView3, main,
+          phoneNumberTextView, resendTextView, textView10, textView7, timerTextView, verifyButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

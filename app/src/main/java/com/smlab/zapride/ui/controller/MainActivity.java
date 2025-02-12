@@ -1,4 +1,4 @@
-package com.smlab.zapride;
+package com.smlab.zapride.ui.controller;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -41,8 +41,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.Task;
+import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivityMainBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -50,9 +52,13 @@ import com.smlab.zapride.ui.aboutUs.AboutUs;
 import com.smlab.zapride.ui.complain.Complain;
 import com.smlab.zapride.ui.editProfile.EditProfile;
 import com.smlab.zapride.ui.helpandsupport.HelpandSupport;
+import com.smlab.zapride.ui.history.History;
 import com.smlab.zapride.ui.locationBottomSheet.LocationBottomSheetFragment;
 import com.smlab.zapride.ui.notification.Notification;
+import com.smlab.zapride.ui.referral.Referral;
 import com.smlab.zapride.ui.settings.Settings;
+import com.smlab.zapride.ui.signIn.SignIn;
+import com.smlab.zapride.ui.welcome.WelcomeScreen;
 
 import java.io.IOException;
 import java.util.List;
@@ -68,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
     private GoogleMap googleMap;
     private FusedLocationProviderClient fusedLocationClient;
     private LocationCallback locationCallback;
+    private MarkerOptions markerOptions;
+    private Marker marker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,9 +140,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showCustomLocationDialog() {
-        Dialog dialog = new Dialog(this);
+        Dialog dialog = new Dialog(this, R.style.CustomDialog);
         dialog.setContentView(R.layout.dialog_location_permission);
         dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
 
         Button allowBtn = dialog.findViewById(R.id.useMyLocationButton);
         Button skipBtn = dialog.findViewById(R.id.skipForNowButton);
@@ -194,6 +203,45 @@ public class MainActivity extends AppCompatActivity {
             googleMap.setMyLocationEnabled(true);
             getUserLocation();
         }
+
+        // Initialize marker at a default position (this will be updated later)
+        markerOptions = new MarkerOptions()
+                .position(new LatLng(0, 0))
+                .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
+        marker = googleMap.addMarker(markerOptions);
+
+        // Listen for camera movements
+        googleMap.setOnCameraMoveListener(() -> {
+            if (marker != null) {
+                LatLng center = googleMap.getCameraPosition().target;
+                marker.setPosition(center);
+                getAddressFromLocation(center.latitude, center.longitude);
+            }
+        });
+    }
+
+    private void getAddressFromLocation(double latitude, double longitude) {
+        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+        try {
+            List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+            if (addresses != null && !addresses.isEmpty()) {
+                String fullAddress = addresses.get(0).getAddressLine(0);
+
+                // Extracting only the required part
+                String[] parts = fullAddress.split(",");
+                if (parts.length >= 2) {
+                    String shortAddress = parts[0] + ", " + parts[1];
+                    binding.includeLocationScreen.ETFromLocation.setText(shortAddress);
+                } else {
+                    binding.includeLocationScreen.ETFromLocation.setText(fullAddress);
+                }
+            } else {
+                binding.includeLocationScreen.ETFromLocation.setText("Unknown Location");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            binding.includeLocationScreen.ETFromLocation.setText("Location not found");
+        }
     }
 
     private void setListener() {
@@ -233,11 +281,11 @@ public class MainActivity extends AppCompatActivity {
             if (itemId == R.id.nav_editProfile) {
                 startActivity(new Intent(this, EditProfile.class));
             } else if (itemId == R.id.nav_history) {
-                Toast.makeText(MainActivity.this, "History Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, History.class));
             } else if (itemId == R.id.nav_complain) {
                 startActivity(new Intent(this, Complain.class));
             } else if (itemId == R.id.nav_referral) {
-                Toast.makeText(MainActivity.this, "Referral Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, Referral.class));
             } else if (itemId == R.id.nav_aboutUs) {
                 startActivity(new Intent(this, AboutUs.class));
             } else if (itemId == R.id.nav_settings) {
@@ -245,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (itemId == R.id.nav_helpAndSupport) {
                 startActivity(new Intent(this, HelpandSupport.class));
             } else if (itemId == R.id.nav_logout) {
-                Toast.makeText(MainActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
+                logoutUser();
             }
             binding.drawerLayout.closeDrawer(binding.navigationView);
             return true;
@@ -255,6 +303,16 @@ public class MainActivity extends AppCompatActivity {
         binding.includeLocationScreen.rideMini.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideMini));
         binding.includeLocationScreen.auto.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.auto));
         binding.includeLocationScreen.bike.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.bike));
+    }
+
+    private void logoutUser() {
+        getSharedPreferences("UserPrefs", MODE_PRIVATE)
+                .edit()
+                .remove("isLoggedIn")
+                .apply();
+
+        startActivity(new Intent(this, WelcomeScreen.class));
+        finishAffinity();
     }
 
     private void showLocationBottomSheet() {
@@ -286,7 +344,15 @@ public class MainActivity extends AppCompatActivity {
                 for (Location location : locationResult.getLocations()) {
                     if (location != null) {
                         LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
-                        updateLocationUI(userLocation, location);
+                        if (marker == null) {
+                            markerOptions = new MarkerOptions()
+                                    .position(userLocation)
+                                    .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
+                            marker = googleMap.addMarker(markerOptions);
+                        } else {
+                            marker.setPosition(userLocation);
+                        }
+                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17f));
                         fusedLocationClient.removeLocationUpdates(locationCallback);
                         break;
                     }
@@ -299,44 +365,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
-    }
-
-    private void updateLocationUI(LatLng userLocation, Location location) {
-        googleMap.clear();
-        MarkerOptions markerOptions = new MarkerOptions()
-                .position(userLocation)
-                .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
-        googleMap.addMarker(markerOptions);
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17f));
-
-        // Fetch place name using Geocoder
-        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-        try {
-            List<Address> addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            if (addresses != null && !addresses.isEmpty()) {
-                Address address = addresses.get(0);
-
-                // Extract block name, road name, or area name components
-                String subLocality = address.getSubLocality();     // Block or neighborhood
-                String thoroughfare = address.getThoroughfare();   // Road name
-                String locality = address.getLocality();           // Area or city
-
-                String placeInfo = "";
-                if (subLocality != null) placeInfo += subLocality;
-                if (thoroughfare != null) placeInfo += (placeInfo.isEmpty() ? "" : ", ") + thoroughfare;
-                if (locality != null) placeInfo += (placeInfo.isEmpty() ? "" : ", ") + locality;
-
-                if (!placeInfo.isEmpty()) {
-                    binding.includeLocationScreen.ETFromLocation.setText(placeInfo);
-                } else {
-                    Toast.makeText(this, "Unable to fetch specific location details", Toast.LENGTH_SHORT).show();
-                }
-            } else {
-                Toast.makeText(this, "Unable to fetch place name", Toast.LENGTH_SHORT).show();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override

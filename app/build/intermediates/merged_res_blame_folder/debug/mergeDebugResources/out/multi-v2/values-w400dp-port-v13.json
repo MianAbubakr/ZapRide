@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.smlab.zapride.app-mergeDebugResources-37:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.smlab.zapride.app-mergeDebugResources-44:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-4\\6a1c521285cc509ef2ce3622a925824d\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\8909288269dd20ef978c678fbcb5e541\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

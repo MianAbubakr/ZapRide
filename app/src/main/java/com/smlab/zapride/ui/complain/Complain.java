@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -43,34 +44,16 @@ public class Complain extends AppCompatActivity {
     }
 
     private void showCustomDialog() {
-        Dialog dialog = new Dialog(this);
+        Dialog dialog = new Dialog(this, R.style.CustomDialog);
         dialog.setContentView(R.layout.complaindailog);
         dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
 
         Button dialogButton = dialog.findViewById(R.id.backHomeButton);
-        dialogButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
-            }
-        });
+        ImageView closeIcon = dialog.findViewById(R.id.closeIcon);
+        dialogButton.setOnClickListener(view -> dialog.dismiss());
+        closeIcon.setOnClickListener(view -> dialog.dismiss());
 
         dialog.show();
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        View dialogView = getLayoutInflater().inflate(R.layout.
-                complaindailog, null);
-        builder.setView(dialogView);
-
-        AlertDialog alertDialog = builder.create();
-
-// Set the background of the dialog to be rounded
-        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-
-// Show the dialog
-        dialog.show();
-
-
-
-
     }
 }

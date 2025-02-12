@@ -58,7 +58,7 @@
     <string name="your_complain_has_been_send_successful">Your complain has been send successful</string>
     <string name="update">Update</string>
     <string name="enable_your_location">Enable your location</string>
-    <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the request around you</string>
+    <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the/nrequest around you</string>
     <string name="use_my_location">Use my location</string>
     <string name="skip_for_now">Skip for now</string>
     <string name="ride_a_c">Ride A/C</string>
@@ -66,4 +66,13 @@
     <string name="back_home">Back Home</string>
     <string name="History">History</string>
     <string name="upcoming">Upcoming</string>
+    <string name="ride_mini">Ride Mini</string>
+    <string name="auto">Auto</string>
+    <string name="bike">Bike</string>
+    <string name="send_message">Send Message</string>
+    <string name="refer_a_friend_and_earn_20">Refer a friend and Earn $20</string>
+    <string name="rkmfucd">RkMFucd</string>
+    <string name="invite">Invite</string>
+    <string name="password">Password</string>
+    <string name="confirm_passowrd">Confirm passowrd</string>
 </resources>

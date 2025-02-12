@@ -4,6 +4,7 @@ package com.smlab.zapride.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,6 +22,9 @@ import java.lang.String;
 public final class ActivitySignInBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final EditText ETPassword;
 
   @NonNull
   public final PhoneNumberEditText ETPhoneNumber;
@@ -64,7 +68,7 @@ public final class ActivitySignInBinding implements ViewBinding {
   @NonNull
   public final View view2;
 
-  private ActivitySignInBinding(@NonNull ConstraintLayout rootView,
+  private ActivitySignInBinding(@NonNull ConstraintLayout rootView, @NonNull EditText ETPassword,
       @NonNull PhoneNumberEditText ETPhoneNumber, @NonNull ConstraintLayout backBtn,
       @NonNull ImageView imageView3, @NonNull ImageView imageView4, @NonNull ImageView imageView5,
       @NonNull ImageView imageView6, @NonNull ConstraintLayout main,
@@ -72,6 +76,7 @@ public final class ActivitySignInBinding implements ViewBinding {
       @NonNull TextView textView4, @NonNull TextView textView6, @NonNull TextView textViewSignUp,
       @NonNull View view, @NonNull View view2) {
     this.rootView = rootView;
+    this.ETPassword = ETPassword;
     this.ETPhoneNumber = ETPhoneNumber;
     this.backBtn = backBtn;
     this.imageView3 = imageView3;
@@ -115,6 +120,12 @@ public final class ActivitySignInBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.ETPassword;
+      EditText ETPassword = ViewBindings.findChildViewById(rootView, id);
+      if (ETPassword == null) {
+        break missingId;
+      }
+
       id = R.id.ETPhoneNumber;
       PhoneNumberEditText ETPhoneNumber = ViewBindings.findChildViewById(rootView, id);
       if (ETPhoneNumber == null) {
@@ -195,9 +206,9 @@ public final class ActivitySignInBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignInBinding((ConstraintLayout) rootView, ETPhoneNumber, backBtn,
-          imageView3, imageView4, imageView5, imageView6, main, signInButton, textView3, textView4,
-          textView6, textViewSignUp, view, view2);
+      return new ActivitySignInBinding((ConstraintLayout) rootView, ETPassword, ETPhoneNumber,
+          backBtn, imageView3, imageView4, imageView5, imageView6, main, signInButton, textView3,
+          textView4, textView6, textViewSignUp, view, view2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

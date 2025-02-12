@@ -9,315 +9,532 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-12-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:6:5-79
-12-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:7:5-81
-13-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:7:22-78
-14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
-14-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:11:5-76
-14-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:11:22-73
+13-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:11:5-76
+14-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:11:22-73
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:23:5-79
-15-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:23:22-76
+15-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:26:5-79
+15-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:26:22-76
 16
 17    <uses-feature
-17-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:26:5-28:35
+17-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:26:5-28:35
 18        android:glEsVersion="0x00020000"
-18-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:27:9-41
+18-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:27:9-41
 19        android:required="true" />
-19-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:28:9-32
+19-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:28:9-32
 20
 21    <queries>
-21-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:30:5-34:15
+21-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:30:5-34:15
 22
 23        <!-- Needs to be explicitly declared on Android R+ -->
 24        <package android:name="com.google.android.apps.maps" />
-24-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:9-64
-24-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:18-61
+24-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:9-64
+24-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:33:18-61
 25    </queries>
 26
-27    <permission
-27-->[androidx.core:core:1.13.0] C:\Users\Dell\.gradle\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
-28        android:name="com.smlab.zapride.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-28-->[androidx.core:core:1.13.0] C:\Users\Dell\.gradle\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-29        android:protectionLevel="signature" />
-29-->[androidx.core:core:1.13.0] C:\Users\Dell\.gradle\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
-30
-31    <uses-permission android:name="com.smlab.zapride.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-31-->[androidx.core:core:1.13.0] C:\Users\Dell\.gradle\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-31-->[androidx.core:core:1.13.0] C:\Users\Dell\.gradle\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+27    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+27-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Android Projects\Notes Vortex\caches\transforms-4\c2ca6381e08a5b28119450c75f5f0273\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+27-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Android Projects\Notes Vortex\caches\transforms-4\c2ca6381e08a5b28119450c75f5f0273\transformed\recaptcha-18.6.1\AndroidManifest.xml:9:22-95
+28
+29    <permission
+29-->[androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4ea30938cf3973b348e9c55cc54ab35c\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+30        android:name="com.smlab.zapride.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4ea30938cf3973b348e9c55cc54ab35c\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4ea30938cf3973b348e9c55cc54ab35c\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 32
-33    <application
-33-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:9:5-77:19
-34        android:allowBackup="true"
-34-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:10:9-35
-35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-35-->[androidx.core:core:1.13.0] C:\Users\Dell\.gradle\caches\transforms-4\3ad1cca2ba786098641b43464fda4430\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
-36        android:dataExtractionRules="@xml/data_extraction_rules"
-36-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:11:9-65
-37        android:debuggable="true"
-38        android:extractNativeLibs="false"
-39        android:fullBackupContent="@xml/backup_rules"
-39-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:12:9-54
-40        android:icon="@mipmap/ic_launcher"
-40-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:13:9-43
-41        android:label="@string/app_name"
-41-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:14:9-41
-42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:15:9-54
-43        android:supportsRtl="true"
-43-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:16:9-35
-44        android:testOnly="true"
-45        android:theme="@style/Theme.ZapRide" >
-45-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:17:9-45
-46        <activity
-46-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:19:9-21:40
-47            android:name="com.smlab.zapride.ui.complain.Complain"
-47-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:20:13-49
-48            android:exported="false" />
-48-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:21:13-37
-49        <activity
-49-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:22:9-24:40
-50            android:name="com.smlab.zapride.ui.deleteAccount.DeleteAccount"
-50-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:23:13-59
-51            android:exported="false" />
-51-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:24:13-37
-52        <activity
-52-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:25:9-27:39
-53            android:name="com.smlab.zapride.ui.helpandsupport.HelpandSupport"
-53-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:26:13-61
-54            android:exported="true" />
-54-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:27:13-36
-55        <activity
-55-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:28:9-30:40
-56            android:name="com.smlab.zapride.ui.notification.Notification"
-56-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:29:13-57
-57            android:exported="false" />
-57-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:30:13-37
-58        <activity
-58-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:31:9-33:40
-59            android:name="com.smlab.zapride.ui.signUp.SignUpOTPVerification"
-59-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:32:13-60
-60            android:exported="false" />
-60-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:33:13-37
-61        <activity
-61-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:34:9-36:40
-62            android:name="com.smlab.zapride.ui.signIn.SignInOTP"
-62-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:35:13-48
-63            android:exported="false" />
-63-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:36:13-37
-64        <activity
-64-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:37:9-39:40
-65            android:name="com.smlab.zapride.ui.signIn.SignIn"
-65-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:38:13-45
-66            android:exported="false" />
-66-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:39:13-37
-67        <activity
-67-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:40:9-42:40
-68            android:name="com.smlab.zapride.ui.signUp.AccountCreatedSplash"
-68-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:41:13-59
-69            android:exported="false" />
-69-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:42:13-37
-70        <activity
-70-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:43:9-45:40
-71            android:name="com.smlab.zapride.ui.signUp.SignUp"
-71-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:44:13-45
-72            android:exported="false" />
-72-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:45:13-37
-73        <activity
-73-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:46:9-48:40
-74            android:name="com.smlab.zapride.ui.welcome.WelcomeScreen"
-74-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:47:13-53
-75            android:exported="false" />
-75-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:48:13-37
-76        <activity
-76-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:49:9-51:40
-77            android:name="com.smlab.zapride.ui.onBoarding.OnBoarding"
-77-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:50:13-53
-78            android:exported="false" />
-78-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:51:13-37
-79        <activity
-79-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:52:9-62:20
-80            android:name="com.smlab.zapride.ui.splash.Splash"
-80-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:53:13-45
-81            android:exported="true" >
-81-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:54:13-36
-82
-83            <!-- <intent-filter> -->
-84            <!-- <action android:name="android.intent.action.MAIN" /> -->
-85
-86
-87            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-88            <!-- </intent-filter> -->
-89        </activity>
+33    <uses-permission android:name="com.smlab.zapride.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4ea30938cf3973b348e9c55cc54ab35c\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4ea30938cf3973b348e9c55cc54ab35c\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:9:5-95:19
+36        android:allowBackup="true"
+36-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:10:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.13.0] C:\Android Projects\Notes Vortex\caches\transforms-4\4ea30938cf3973b348e9c55cc54ab35c\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:11:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:12:9-54
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:13:9-43
+43        android:label="@string/app_name"
+43-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:14:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:15:9-54
+45        android:supportsRtl="true"
+45-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:16:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.ZapRide" >
+47-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:17:9-45
+48        <activity
+48-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:19:9-21:40
+49            android:name="com.smlab.zapride.utils.CustomProgressDialog"
+49-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:20:13-55
+50            android:exported="false" />
+50-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:21:13-37
+51        <activity
+51-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:22:9-24:40
+52            android:name="com.smlab.zapride.ui.aboutUs.AboutUs"
+52-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:23:13-47
+53            android:exported="false" />
+53-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:24:13-37
+54        <activity
+54-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:25:9-27:40
+55            android:name="com.smlab.zapride.ui.complain.Complain"
+55-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:26:13-49
+56            android:exported="false" />
+56-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:27:13-37
+57        <activity
+57-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:28:9-30:40
+58            android:name="com.smlab.zapride.ui.contactUs.ContactUs"
+58-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:29:13-51
+59            android:exported="false" />
+59-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:30:13-37
+60        <activity
+60-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:31:9-33:40
+61            android:name="com.smlab.zapride.ui.deleteAccount.DeleteAccount"
+61-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:32:13-59
+62            android:exported="false" />
+62-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:33:13-37
+63        <activity
+63-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:34:9-36:40
+64            android:name="com.smlab.zapride.ui.editProfile.EditProfile"
+64-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:35:13-55
+65            android:exported="false" />
+65-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:36:13-37
+66        <activity
+66-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:37:9-39:40
+67            android:name="com.smlab.zapride.ui.referral.Referral"
+67-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:38:13-49
+68            android:exported="false" />
+68-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:39:13-37
+69        <activity
+69-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:40:9-42:40
+70            android:name="com.smlab.zapride.ui.helpandsupport.HelpandSupport"
+70-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:41:13-61
+71            android:exported="false" />
+71-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:42:13-37
+72        <activity
+72-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:43:9-45:40
+73            android:name="com.smlab.zapride.ui.history.History"
+73-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:44:13-47
+74            android:exported="false" />
+74-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:45:13-37
+75        <activity
+75-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:46:9-48:40
+76            android:name="com.smlab.zapride.ui.notification.Notification"
+76-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:47:13-57
+77            android:exported="false" />
+77-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:48:13-37
+78        <activity
+78-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:49:9-51:40
+79            android:name="com.smlab.zapride.ui.signUp.SignUpOTPVerification"
+79-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:50:13-60
+80            android:exported="false" />
+80-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:51:13-37
+81        <activity
+81-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:52:9-54:40
+82            android:name="com.smlab.zapride.ui.signIn.SignInOTP"
+82-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:53:13-48
+83            android:exported="false" />
+83-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:54:13-37
+84        <activity
+84-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:55:9-57:40
+85            android:name="com.smlab.zapride.ui.signIn.SignIn"
+85-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:56:13-45
+86            android:exported="false" />
+86-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:57:13-37
+87        <activity
+87-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:58:9-60:40
+88            android:name="com.smlab.zapride.ui.signUp.AccountCreatedSplash"
+88-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:59:13-59
+89            android:exported="false" />
+89-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:60:13-37
 90        <activity
-90-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:63:9-72:20
-91            android:name="com.smlab.zapride.MainActivity"
-91-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:64:13-41
-92            android:exported="true"
-92-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:65:13-36
-93            android:windowSoftInputMode="adjustResize" >
-93-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:66:13-55
-94            <intent-filter>
-94-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:67:13-71:29
-95                <action android:name="android.intent.action.MAIN" />
-95-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:68:17-69
-95-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:68:25-66
-96
-97                <category android:name="android.intent.category.LAUNCHER" />
-97-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:70:17-77
-97-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:70:27-74
-98            </intent-filter>
-99        </activity>
-100
-101        <meta-data
-101-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:74:9-76:71
-102            android:name="com.google.android.geo.API_KEY"
-102-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:75:13-58
-103            android:value="AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M" />
-103-->D:\Android Projects\ZapRide\app\src\main\AndroidManifest.xml:76:13-68
+90-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:61:9-63:40
+91            android:name="com.smlab.zapride.ui.signUp.SignUp"
+91-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:62:13-45
+92            android:exported="false" />
+92-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:63:13-37
+93        <activity
+93-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:64:9-66:40
+94            android:name="com.smlab.zapride.ui.welcome.WelcomeScreen"
+94-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:65:13-53
+95            android:exported="false" />
+95-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:66:13-37
+96        <activity
+96-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:67:9-69:40
+97            android:name="com.smlab.zapride.ui.onBoarding.OnBoarding"
+97-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:68:13-53
+98            android:exported="false" />
+98-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:69:13-37
+99        <activity
+99-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:70:9-78:20
+100            android:name="com.smlab.zapride.ui.splash.Splash"
+100-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:71:13-45
+101            android:exported="true" >
+101-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:72:13-36
+102            <intent-filter>
+102-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:73:13-77:29
+103                <action android:name="android.intent.action.MAIN" />
+103-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:74:17-69
+103-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:74:25-66
 104
-105        <activity
-105-->[com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3] C:\Users\Dell\.gradle\caches\transforms-4\09dc4c0f2ea333ec12e251b03b20f182\transformed\materialcountrypicker-0.2.3\AndroidManifest.xml:12:9-14:59
-106            android:name="com.github.vardemin.materialcountrypicker.CountryPickerActivity"
-106-->[com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3] C:\Users\Dell\.gradle\caches\transforms-4\09dc4c0f2ea333ec12e251b03b20f182\transformed\materialcountrypicker-0.2.3\AndroidManifest.xml:13:13-91
-107            android:theme="@style/AppTheme.NoActionBar" />
-107-->[com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3] C:\Users\Dell\.gradle\caches\transforms-4\09dc4c0f2ea333ec12e251b03b20f182\transformed\materialcountrypicker-0.2.3\AndroidManifest.xml:14:13-56
+105                <category android:name="android.intent.category.LAUNCHER" />
+105-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:76:17-77
+105-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:76:27-74
+106            </intent-filter>
+107        </activity>
 108        <activity
-108-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:15:9-21:20
-109            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-109-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:16:13-91
-110            android:exported="false"
-110-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:17:13-37
-111            android:label="@string/places_autocomplete_label"
-111-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:18:13-62
-112            android:theme="@style/PlacesAutocompleteOverlay"
-112-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:19:13-61
-113            android:windowSoftInputMode="adjustResize" >
-113-->[com.google.android.libraries.places:places:2.7.0] C:\Users\Dell\.gradle\caches\transforms-4\fa996f472a37bee8e59e16cf17e7d48a\transformed\places-2.7.0\AndroidManifest.xml:20:13-55
-114        </activity> <!-- Needs to be explicitly declared on P+ -->
-115        <uses-library
-115-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:39:9-41:40
-116            android:name="org.apache.http.legacy"
-116-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:40:13-50
-117            android:required="false" />
-117-->[com.google.android.gms:play-services-maps:19.0.0] C:\Users\Dell\.gradle\caches\transforms-4\12c528824e219365c7da7c3345dd63b1\transformed\play-services-maps-19.0.0\AndroidManifest.xml:41:13-37
-118
-119        <activity
-119-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Dell\.gradle\caches\transforms-4\cdaab92c3603a3fda60842bc47a39b46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-120            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-120-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Dell\.gradle\caches\transforms-4\cdaab92c3603a3fda60842bc47a39b46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-121            android:exported="false"
-121-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Dell\.gradle\caches\transforms-4\cdaab92c3603a3fda60842bc47a39b46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-122-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\Dell\.gradle\caches\transforms-4\cdaab92c3603a3fda60842bc47a39b46\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-123
-124        <meta-data
-124-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Dell\.gradle\caches\transforms-4\f1edbe3ebf24e29178323e796e7f1188\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-125            android:name="com.google.android.gms.version"
-125-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Dell\.gradle\caches\transforms-4\f1edbe3ebf24e29178323e796e7f1188\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-126            android:value="@integer/google_play_services_version" />
-126-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Dell\.gradle\caches\transforms-4\f1edbe3ebf24e29178323e796e7f1188\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-127
-128        <provider
-128-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-129            android:name="androidx.startup.InitializationProvider"
-129-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-130            android:authorities="com.smlab.zapride.androidx-startup"
-130-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-131            android:exported="false" >
-131-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-132            <meta-data
-132-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-133                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-133-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-134                android:value="androidx.startup" />
-134-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dell\.gradle\caches\transforms-4\4f429df1afb61dc8da7a1b34d3be2d3f\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-135            <meta-data
-135-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-4\03be61ce79fc2ba14680a35245abe6f8\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-136                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-136-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-4\03be61ce79fc2ba14680a35245abe6f8\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-137                android:value="androidx.startup" />
-137-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-4\03be61ce79fc2ba14680a35245abe6f8\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-138            <meta-data
-138-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-139                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-139-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-140                android:value="androidx.startup" />
-140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-141        </provider>
-142
-143        <receiver
-143-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-144            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-144-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-145            android:directBootAware="false"
-145-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-146            android:enabled="true"
-146-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-147            android:exported="true"
-147-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-148            android:permission="android.permission.DUMP" >
-148-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-149            <intent-filter>
-149-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-150                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-150-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+108-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:79:9-90:20
+109            android:name="com.smlab.zapride.ui.controller.MainActivity"
+109-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:80:13-55
+110            android:exported="true"
+110-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:81:13-36
+111            android:windowSoftInputMode="adjustResize" >
+111-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:82:13-55
+112
+113            <!-- <intent-filter> -->
+114            <!-- <action android:name="android.intent.action.MAIN" /> -->
+115
+116
+117            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+118            <!-- </intent-filter> -->
+119        </activity>
+120
+121        <meta-data
+121-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:92:9-94:71
+122            android:name="com.google.android.geo.API_KEY"
+122-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:93:13-58
+123            android:value="AIzaSyCNReplTjOrJpfTL5-cS2I5oPVD0-ohH9M" />
+123-->C:\Android Projects\ZapRideApp\app\src\main\AndroidManifest.xml:94:13-68
+124
+125        <activity
+125-->[com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\f356e5fa120b17c75539911b3e0df554\transformed\materialcountrypicker-0.2.3\AndroidManifest.xml:12:9-14:59
+126            android:name="com.github.vardemin.materialcountrypicker.CountryPickerActivity"
+126-->[com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\f356e5fa120b17c75539911b3e0df554\transformed\materialcountrypicker-0.2.3\AndroidManifest.xml:13:13-91
+127            android:theme="@style/AppTheme.NoActionBar" />
+127-->[com.github.vardemin.MaterialCountryPicker:materialcountrypicker:0.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\f356e5fa120b17c75539911b3e0df554\transformed\materialcountrypicker-0.2.3\AndroidManifest.xml:14:13-56
+128        <activity
+128-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:15:9-21:20
+129            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+129-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:16:13-91
+130            android:exported="false"
+130-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:17:13-37
+131            android:label="@string/places_autocomplete_label"
+131-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:18:13-62
+132            android:theme="@style/PlacesAutocompleteOverlay"
+132-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:19:13-61
+133            android:windowSoftInputMode="adjustResize" >
+133-->[com.google.android.libraries.places:places:2.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\696f863e25ee01ec12f6b89d328bf240\transformed\places-2.7.0\AndroidManifest.xml:20:13-55
+134        </activity>
+135        <activity
+135-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+136            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+136-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+137            android:excludeFromRecents="true"
+137-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+138            android:exported="true"
+138-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+139            android:launchMode="singleTask"
+139-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+140-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+141            <intent-filter>
+141-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+142-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+144-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+145-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+146
+147                <data
+147-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+148                    android:host="firebase.auth"
+148-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+149                    android:path="/"
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+150                    android:scheme="genericidp" />
+150-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
 151            </intent-filter>
-152            <intent-filter>
-152-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-153                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-153-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-154            </intent-filter>
-155            <intent-filter>
-155-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-156                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-156-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-157            </intent-filter>
-158            <intent-filter>
-158-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-159                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-159-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Dell\.gradle\caches\transforms-4\54e3024f7111a29fc89552d1bc36087c\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-160            </intent-filter>
-161        </receiver>
-162
-163        <service
-163-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Dell\.gradle\caches\transforms-4\bfe8de28724ee8a6e36ea88885d6a3ea\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
-164            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-164-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Dell\.gradle\caches\transforms-4\bfe8de28724ee8a6e36ea88885d6a3ea\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
-165            android:exported="false" >
-165-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Dell\.gradle\caches\transforms-4\bfe8de28724ee8a6e36ea88885d6a3ea\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
-166            <meta-data
-166-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Dell\.gradle\caches\transforms-4\bfe8de28724ee8a6e36ea88885d6a3ea\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
-167                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-167-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Dell\.gradle\caches\transforms-4\bfe8de28724ee8a6e36ea88885d6a3ea\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
-168                android:value="cct" />
-168-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\Dell\.gradle\caches\transforms-4\bfe8de28724ee8a6e36ea88885d6a3ea\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
-169        </service>
-170        <service
-170-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
-171            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-171-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
-172            android:exported="false"
-172-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
-173            android:permission="android.permission.BIND_JOB_SERVICE" >
-173-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
-174        </service>
-175
-176        <receiver
-176-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
-177            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-177-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
-178            android:exported="false" />
-178-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\Dell\.gradle\caches\transforms-4\7429f86210ebcb19b9d5efeb8fa1fbb8\transformed\transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
-179    </application>
-180
-181</manifest>
+152        </activity>
+153        <activity
+153-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+154            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+154-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+155            android:excludeFromRecents="true"
+155-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+156            android:exported="true"
+156-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+157            android:launchMode="singleTask"
+157-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+158-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+159            <intent-filter>
+159-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+160                <action android:name="android.intent.action.VIEW" />
+160-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+160-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+161
+162                <category android:name="android.intent.category.DEFAULT" />
+162-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+162-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+163                <category android:name="android.intent.category.BROWSABLE" />
+163-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+163-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+164
+165                <data
+165-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+166                    android:host="firebase.auth"
+166-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+167                    android:path="/"
+167-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+168                    android:scheme="recaptcha" />
+168-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+169            </intent-filter>
+170        </activity>
+171
+172        <service
+172-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:66:9-72:19
+173            android:name="com.google.firebase.components.ComponentDiscoveryService"
+173-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:67:13-84
+174            android:directBootAware="true"
+174-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+175            android:exported="false" >
+175-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:68:13-37
+176            <meta-data
+176-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+177                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+177-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-auth:23.2.0] C:\Android Projects\Notes Vortex\caches\transforms-4\c4d76b32195e17db7f7c0fc07c78a143\transformed\firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\e73642382680f0d10c8be7d17e5d5ff5\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+180                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+180-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\e73642382680f0d10c8be7d17e5d5ff5\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\e73642382680f0d10c8be7d17e5d5ff5\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+183                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+183-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+185        </service> <!-- Needs to be explicitly declared on P+ -->
+186        <uses-library
+186-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:39:9-41:40
+187            android:name="org.apache.http.legacy"
+187-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:40:13-50
+188            android:required="false" />
+188-->[com.google.android.gms:play-services-maps:19.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6c8c9761fb4461e302a082394cdad33c\transformed\play-services-maps-19.0.0\AndroidManifest.xml:41:13-37
+189
+190        <service
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+191            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+192            android:enabled="true"
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+193            android:exported="false" >
+193-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+194            <meta-data
+194-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+195                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+195-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+196                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+196-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+197        </service>
+198
+199        <activity
+199-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+200            android:name="androidx.credentials.playservices.HiddenActivity"
+200-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+201            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+201-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+202            android:enabled="true"
+202-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+203            android:exported="false"
+203-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+204            android:fitsSystemWindows="true"
+204-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+205            android:theme="@style/Theme.Hidden" >
+205-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Android Projects\Notes Vortex\caches\transforms-4\e9472efca09718112979abdc947e82f4\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+206        </activity>
+207        <activity
+207-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+208            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+208-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+209            android:excludeFromRecents="true"
+209-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+210            android:exported="false"
+210-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+211            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+211-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+212        <!--
+213            Service handling Google Sign-In user revocation. For apps that do not integrate with
+214            Google Sign-In, this service will never be started.
+215        -->
+216        <service
+216-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+217            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+217-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+218            android:exported="true"
+218-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+219            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+219-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+220            android:visibleToInstantApps="true" />
+220-->[com.google.android.gms:play-services-auth:20.7.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6e3a2bc2896a0a0d774fdf51e55e99a6\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+221
+222        <provider
+222-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+223            android:name="com.google.firebase.provider.FirebaseInitProvider"
+223-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+224            android:authorities="com.smlab.zapride.firebaseinitprovider"
+224-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+225            android:directBootAware="true"
+225-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+226            android:exported="false"
+226-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+227            android:initOrder="100" />
+227-->[com.google.firebase:firebase-common:21.0.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8062499b2db0368ba566b164ffec61f1\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+228
+229        <activity
+229-->[com.google.android.gms:play-services-base:18.5.0] C:\Android Projects\Notes Vortex\caches\transforms-4\92b8078bac623976ee6f7bd5cc25f2b9\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+230            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+230-->[com.google.android.gms:play-services-base:18.5.0] C:\Android Projects\Notes Vortex\caches\transforms-4\92b8078bac623976ee6f7bd5cc25f2b9\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+231            android:exported="false"
+231-->[com.google.android.gms:play-services-base:18.5.0] C:\Android Projects\Notes Vortex\caches\transforms-4\92b8078bac623976ee6f7bd5cc25f2b9\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+232            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+232-->[com.google.android.gms:play-services-base:18.5.0] C:\Android Projects\Notes Vortex\caches\transforms-4\92b8078bac623976ee6f7bd5cc25f2b9\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+233
+234        <provider
+234-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+235            android:name="androidx.startup.InitializationProvider"
+235-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+236            android:authorities="com.smlab.zapride.androidx-startup"
+236-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+237            android:exported="false" >
+237-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+238            <meta-data
+238-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+239                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+239-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+240                android:value="androidx.startup" />
+240-->[androidx.emoji2:emoji2:1.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\8d3ccf7d11d4df6f77d7ed1b406db5d1\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+241            <meta-data
+241-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Android Projects\Notes Vortex\caches\transforms-4\27fc7bcf5005d913120802dfdb98eea5\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+242                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+242-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Android Projects\Notes Vortex\caches\transforms-4\27fc7bcf5005d913120802dfdb98eea5\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+243                android:value="androidx.startup" />
+243-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Android Projects\Notes Vortex\caches\transforms-4\27fc7bcf5005d913120802dfdb98eea5\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+244            <meta-data
+244-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+245                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+245-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+246                android:value="androidx.startup" />
+246-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+247        </provider>
+248
+249        <meta-data
+249-->[com.google.android.gms:play-services-basement:18.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\bdee39941350492ed1714a5d48511df3\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+250            android:name="com.google.android.gms.version"
+250-->[com.google.android.gms:play-services-basement:18.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\bdee39941350492ed1714a5d48511df3\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+251            android:value="@integer/google_play_services_version" />
+251-->[com.google.android.gms:play-services-basement:18.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\bdee39941350492ed1714a5d48511df3\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+252
+253        <receiver
+253-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+254            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+254-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+255            android:directBootAware="false"
+255-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+256            android:enabled="true"
+256-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+257            android:exported="true"
+257-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+258            android:permission="android.permission.DUMP" >
+258-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+259            <intent-filter>
+259-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+260                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+260-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+260-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+261            </intent-filter>
+262            <intent-filter>
+262-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+263                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+263-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+263-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+264            </intent-filter>
+265            <intent-filter>
+265-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+266                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+266-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+266-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+267            </intent-filter>
+268            <intent-filter>
+268-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+269                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+269-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+269-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Android Projects\Notes Vortex\caches\transforms-4\934ee647fb66f8eb63ba7005e2a77733\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+270            </intent-filter>
+271        </receiver>
+272
+273        <service
+273-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6bcdcce994c04829e6eda0b6889ee729\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+274            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+274-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6bcdcce994c04829e6eda0b6889ee729\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+275            android:exported="false" >
+275-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6bcdcce994c04829e6eda0b6889ee729\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+276            <meta-data
+276-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6bcdcce994c04829e6eda0b6889ee729\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+277                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+277-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6bcdcce994c04829e6eda0b6889ee729\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+278                android:value="cct" />
+278-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Android Projects\Notes Vortex\caches\transforms-4\6bcdcce994c04829e6eda0b6889ee729\transformed\transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+279        </service>
+280        <service
+280-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+281            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+281-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+282            android:exported="false"
+282-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+283            android:permission="android.permission.BIND_JOB_SERVICE" >
+283-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+284        </service>
+285
+286        <receiver
+286-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+287            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+287-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+288            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+288-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Android Projects\Notes Vortex\caches\transforms-4\b75fb4e98e9da7174dfb26bad0f70b1d\transformed\transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+289        <activity
+289-->[com.google.android.play:core-common:2.0.3] C:\Android Projects\Notes Vortex\caches\transforms-4\189ab809944780af3a7b236a8829d44b\transformed\core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+290            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+290-->[com.google.android.play:core-common:2.0.3] C:\Android Projects\Notes Vortex\caches\transforms-4\189ab809944780af3a7b236a8829d44b\transformed\core-common-2.0.3\AndroidManifest.xml:15:13-93
+291            android:exported="false"
+291-->[com.google.android.play:core-common:2.0.3] C:\Android Projects\Notes Vortex\caches\transforms-4\189ab809944780af3a7b236a8829d44b\transformed\core-common-2.0.3\AndroidManifest.xml:16:13-37
+292            android:stateNotNeeded="true"
+292-->[com.google.android.play:core-common:2.0.3] C:\Android Projects\Notes Vortex\caches\transforms-4\189ab809944780af3a7b236a8829d44b\transformed\core-common-2.0.3\AndroidManifest.xml:17:13-42
+293            android:theme="@style/Theme.PlayCore.Transparent" />
+293-->[com.google.android.play:core-common:2.0.3] C:\Android Projects\Notes Vortex\caches\transforms-4\189ab809944780af3a7b236a8829d44b\transformed\core-common-2.0.3\AndroidManifest.xml:18:13-62
+294    </application>
+295
+296</manifest>

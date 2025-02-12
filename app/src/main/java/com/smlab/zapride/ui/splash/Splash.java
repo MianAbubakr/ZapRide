@@ -10,9 +10,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.smlab.zapride.MainActivity;
 import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivitySplashBinding;
+import com.smlab.zapride.ui.controller.MainActivity;
 import com.smlab.zapride.ui.onBoarding.OnBoarding;
 
 public class Splash extends AppCompatActivity {
@@ -33,8 +33,17 @@ public class Splash extends AppCompatActivity {
     }
 
     private void userAuthentication() {
+        if (isUserLoggedIn()) {
+            startActivity(new Intent(Splash.this, MainActivity.class));
+        } else {
             startActivity(new Intent(Splash.this, OnBoarding.class));
-            finish();
+        }
+        finish();
+    }
+
+    private boolean isUserLoggedIn() {
+        return getSharedPreferences("UserPrefs", MODE_PRIVATE)
+                .getBoolean("isLoggedIn", false);
     }
 
     private void splashDelayUpdate() {
