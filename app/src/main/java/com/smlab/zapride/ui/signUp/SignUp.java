@@ -1,8 +1,10 @@
 package com.smlab.zapride.ui.signUp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.InputType;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextPaint;
@@ -10,6 +12,7 @@ import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,6 +59,7 @@ public class SignUp extends AppCompatActivity {
         databaseHelper = new DatabaseHelper(this);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void setListener() {
         binding.backBtn.setOnClickListener(view -> onBackPressed());
 
@@ -82,8 +86,20 @@ public class SignUp extends AppCompatActivity {
                 return;
             }
 
+            if (password.length() < 8) {
+                Toast.makeText(this, "Password must be at least 8 characters long", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
+                return;
+            }
+
             if (TextUtils.isEmpty(confirmPassword)) {
                 Toast.makeText(this, "Please enter a confirm password", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
+                return;
+            }
+
+            if (!password.equals(confirmPassword)) {
+                Toast.makeText(this, "Password and confirm password do not match", Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
                 return;
             }
@@ -94,27 +110,22 @@ public class SignUp extends AppCompatActivity {
                 return;
             }
 
-            if (password.equals(confirmPassword)) {
-                Boolean checkUserPhoneNumber = databaseHelper.checkPhoneNumber(phoneNumber);
+            Boolean checkUserPhoneNumber = databaseHelper.checkPhoneNumber(phoneNumber);
 
-                if (checkUserPhoneNumber == false) {
-                    Boolean insert = databaseHelper.insertData(phoneNumber, password);
-                    if (insert == true) {
-                        saveUserLoginStatus();
-                        Toast.makeText(this, "Sign up successfully", Toast.LENGTH_SHORT).show();
-                        progressDialog.dismiss();
-                        startActivity(new Intent(this, AccountCreatedSplash.class));
-                        finishAffinity();
-                    } else {
-                        Toast.makeText(this, "Sign up failed", Toast.LENGTH_SHORT).show();
-                        progressDialog.dismiss();
-                    }
+            if (!checkUserPhoneNumber) {
+                Boolean insert = databaseHelper.insertData(phoneNumber, password);
+                if (insert) {
+                    saveUserLoginStatus();
+                    Toast.makeText(this, "Sign up successfully", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                    startActivity(new Intent(this, AccountCreatedSplash.class));
+                    finishAffinity();
                 } else {
-                    Toast.makeText(this, "Phone number already exists", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Sign up failed", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                 }
             } else {
-                Toast.makeText(this, "Password and confirm password do not match", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Phone number already exists", Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
             }
 
@@ -122,6 +133,48 @@ public class SignUp extends AppCompatActivity {
 //                progressDialog.dismiss();
 //                sendOtp(phoneNumber);
 //            }
+        });
+
+        binding.ETPassword.setOnTouchListener((v, event) -> {
+            final int DRAWABLE_RIGHT = 2;
+
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (event.getRawX() >= (binding.ETPassword.getRight() - binding.ETPassword.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                    // Toggle password visibility
+                    int inputType = binding.ETPassword.getInputType();
+                    if (inputType == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+                        binding.ETPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                        binding.ETPassword.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eye_hide_icon, 0);
+                    } else {
+                        binding.ETPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        binding.ETPassword.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eye_hide_icon, 0);
+                    }
+                    binding.ETPassword.setSelection(binding.ETPassword.getText().length()); // Maintain cursor position
+                    return true;
+                }
+            }
+            return false;
+        });
+
+        binding.ETConfirmPassword.setOnTouchListener((v, event) -> {
+            final int DRAWABLE_RIGHT = 2;
+
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (event.getRawX() >= (binding.ETConfirmPassword.getRight() - binding.ETConfirmPassword.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                    // Toggle password visibility
+                    int inputType = binding.ETConfirmPassword.getInputType();
+                    if (inputType == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+                        binding.ETConfirmPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                        binding.ETConfirmPassword.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eye_hide_icon, 0);
+                    } else {
+                        binding.ETConfirmPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        binding.ETConfirmPassword.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eye_hide_icon, 0);
+                    }
+                    binding.ETConfirmPassword.setSelection(binding.ETConfirmPassword.getText().length()); // Maintain cursor position
+                    return true;
+                }
+            }
+            return false;
         });
     }
 

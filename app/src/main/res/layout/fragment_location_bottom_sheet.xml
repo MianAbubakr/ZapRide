@@ -52,16 +52,22 @@
             app:layout_constraintTop_toBottomOf="@+id/ETFromLocation"
             tools:ignore="MissingConstraints" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/searchPlacesRecyclerView"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continueButton"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/btnColor"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="15dp"
+            android:text="@string/continue_"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumTextSize"
             app:layout_constraintEnd_toEndOf="@+id/ETToLocation"
             app:layout_constraintStart_toStartOf="@+id/ETToLocation"
-            app:layout_constraintTop_toBottomOf="@+id/ETToLocation"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toBottomOf="@+id/ETToLocation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

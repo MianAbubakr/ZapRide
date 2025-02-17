@@ -30,19 +30,7 @@ public final class ActivitySignInBinding implements ViewBinding {
   public final PhoneNumberEditText ETPhoneNumber;
 
   @NonNull
-  public final ConstraintLayout backBtn;
-
-  @NonNull
-  public final ImageView imageView3;
-
-  @NonNull
-  public final ImageView imageView4;
-
-  @NonNull
-  public final ImageView imageView5;
-
-  @NonNull
-  public final ImageView imageView6;
+  public final ImageView backBtn;
 
   @NonNull
   public final ConstraintLayout main;
@@ -51,10 +39,10 @@ public final class ActivitySignInBinding implements ViewBinding {
   public final AppCompatButton signInButton;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView textView2;
 
   @NonNull
-  public final TextView textView4;
+  public final TextView textView3;
 
   @NonNull
   public final TextView textView6;
@@ -62,35 +50,21 @@ public final class ActivitySignInBinding implements ViewBinding {
   @NonNull
   public final TextView textViewSignUp;
 
-  @NonNull
-  public final View view;
-
-  @NonNull
-  public final View view2;
-
   private ActivitySignInBinding(@NonNull ConstraintLayout rootView, @NonNull EditText ETPassword,
-      @NonNull PhoneNumberEditText ETPhoneNumber, @NonNull ConstraintLayout backBtn,
-      @NonNull ImageView imageView3, @NonNull ImageView imageView4, @NonNull ImageView imageView5,
-      @NonNull ImageView imageView6, @NonNull ConstraintLayout main,
-      @NonNull AppCompatButton signInButton, @NonNull TextView textView3,
-      @NonNull TextView textView4, @NonNull TextView textView6, @NonNull TextView textViewSignUp,
-      @NonNull View view, @NonNull View view2) {
+      @NonNull PhoneNumberEditText ETPhoneNumber, @NonNull ImageView backBtn,
+      @NonNull ConstraintLayout main, @NonNull AppCompatButton signInButton,
+      @NonNull TextView textView2, @NonNull TextView textView3, @NonNull TextView textView6,
+      @NonNull TextView textViewSignUp) {
     this.rootView = rootView;
     this.ETPassword = ETPassword;
     this.ETPhoneNumber = ETPhoneNumber;
     this.backBtn = backBtn;
-    this.imageView3 = imageView3;
-    this.imageView4 = imageView4;
-    this.imageView5 = imageView5;
-    this.imageView6 = imageView6;
     this.main = main;
     this.signInButton = signInButton;
+    this.textView2 = textView2;
     this.textView3 = textView3;
-    this.textView4 = textView4;
     this.textView6 = textView6;
     this.textViewSignUp = textViewSignUp;
-    this.view = view;
-    this.view2 = view2;
   }
 
   @Override
@@ -133,32 +107,8 @@ public final class ActivitySignInBinding implements ViewBinding {
       }
 
       id = R.id.backBtn;
-      ConstraintLayout backBtn = ViewBindings.findChildViewById(rootView, id);
+      ImageView backBtn = ViewBindings.findChildViewById(rootView, id);
       if (backBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView4;
-      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView4 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView5;
-      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView5 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView6;
-      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView6 == null) {
         break missingId;
       }
 
@@ -170,15 +120,15 @@ public final class ActivitySignInBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
         break missingId;
       }
 
@@ -194,21 +144,8 @@ public final class ActivitySignInBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.view;
-      View view = ViewBindings.findChildViewById(rootView, id);
-      if (view == null) {
-        break missingId;
-      }
-
-      id = R.id.view2;
-      View view2 = ViewBindings.findChildViewById(rootView, id);
-      if (view2 == null) {
-        break missingId;
-      }
-
       return new ActivitySignInBinding((ConstraintLayout) rootView, ETPassword, ETPhoneNumber,
-          backBtn, imageView3, imageView4, imageView5, imageView6, main, signInButton, textView3,
-          textView4, textView6, textViewSignUp, view, view2);
+          backBtn, main, signInButton, textView2, textView3, textView6, textViewSignUp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

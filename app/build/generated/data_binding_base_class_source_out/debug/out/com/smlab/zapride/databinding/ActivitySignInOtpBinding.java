@@ -23,7 +23,7 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout backBtn;
+  public final ImageView backBtn;
 
   @NonNull
   public final EditText editTextUniqueCode1;
@@ -47,9 +47,6 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
-  public final ImageView imageView3;
-
-  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -70,12 +67,11 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
   @NonNull
   public final AppCompatButton verifyButton;
 
-  private ActivitySignInOtpBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout backBtn, @NonNull EditText editTextUniqueCode1,
-      @NonNull EditText editTextUniqueCode2, @NonNull EditText editTextUniqueCode3,
-      @NonNull EditText editTextUniqueCode4, @NonNull EditText editTextUniqueCode5,
-      @NonNull EditText editTextUniqueCode6, @NonNull ImageView imageView2,
-      @NonNull ImageView imageView3, @NonNull ConstraintLayout main, @NonNull TextView textView10,
+  private ActivitySignInOtpBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backBtn,
+      @NonNull EditText editTextUniqueCode1, @NonNull EditText editTextUniqueCode2,
+      @NonNull EditText editTextUniqueCode3, @NonNull EditText editTextUniqueCode4,
+      @NonNull EditText editTextUniqueCode5, @NonNull EditText editTextUniqueCode6,
+      @NonNull ImageView imageView2, @NonNull ConstraintLayout main, @NonNull TextView textView10,
       @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9,
       @NonNull TextView timerTextView, @NonNull AppCompatButton verifyButton) {
     this.rootView = rootView;
@@ -87,7 +83,6 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
     this.editTextUniqueCode5 = editTextUniqueCode5;
     this.editTextUniqueCode6 = editTextUniqueCode6;
     this.imageView2 = imageView2;
-    this.imageView3 = imageView3;
     this.main = main;
     this.textView10 = textView10;
     this.textView7 = textView7;
@@ -125,7 +120,7 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.backBtn;
-      ConstraintLayout backBtn = ViewBindings.findChildViewById(rootView, id);
+      ImageView backBtn = ViewBindings.findChildViewById(rootView, id);
       if (backBtn == null) {
         break missingId;
       }
@@ -172,12 +167,6 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
-        break missingId;
-      }
-
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.textView10;
@@ -218,8 +207,8 @@ public final class ActivitySignInOtpBinding implements ViewBinding {
 
       return new ActivitySignInOtpBinding((ConstraintLayout) rootView, backBtn, editTextUniqueCode1,
           editTextUniqueCode2, editTextUniqueCode3, editTextUniqueCode4, editTextUniqueCode5,
-          editTextUniqueCode6, imageView2, imageView3, main, textView10, textView7, textView8,
-          textView9, timerTextView, verifyButton);
+          editTextUniqueCode6, imageView2, main, textView10, textView7, textView8, textView9,
+          timerTextView, verifyButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

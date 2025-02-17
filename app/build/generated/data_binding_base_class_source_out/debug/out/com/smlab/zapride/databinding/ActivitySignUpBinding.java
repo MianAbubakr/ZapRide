@@ -34,22 +34,10 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final PhoneNumberEditText ETPhoneNumber;
 
   @NonNull
-  public final ConstraintLayout backBtn;
+  public final ImageView backBtn;
 
   @NonNull
   public final CheckBox customCheckBox;
-
-  @NonNull
-  public final ImageView imageView3;
-
-  @NonNull
-  public final ImageView imageView4;
-
-  @NonNull
-  public final ImageView imageView5;
-
-  @NonNull
-  public final ImageView imageView6;
 
   @NonNull
   public final ConstraintLayout main;
@@ -61,10 +49,10 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView termsTextView;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView textView20;
 
   @NonNull
-  public final TextView textView4;
+  public final TextView textView3;
 
   @NonNull
   public final TextView textView6;
@@ -72,40 +60,26 @@ public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   public final TextView textViewSignIn;
 
-  @NonNull
-  public final View view;
-
-  @NonNull
-  public final View view2;
-
   private ActivitySignUpBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText ETConfirmPassword, @NonNull EditText ETPassword,
-      @NonNull PhoneNumberEditText ETPhoneNumber, @NonNull ConstraintLayout backBtn,
-      @NonNull CheckBox customCheckBox, @NonNull ImageView imageView3,
-      @NonNull ImageView imageView4, @NonNull ImageView imageView5, @NonNull ImageView imageView6,
-      @NonNull ConstraintLayout main, @NonNull AppCompatButton signUpButton,
-      @NonNull TextView termsTextView, @NonNull TextView textView3, @NonNull TextView textView4,
-      @NonNull TextView textView6, @NonNull TextView textViewSignIn, @NonNull View view,
-      @NonNull View view2) {
+      @NonNull PhoneNumberEditText ETPhoneNumber, @NonNull ImageView backBtn,
+      @NonNull CheckBox customCheckBox, @NonNull ConstraintLayout main,
+      @NonNull AppCompatButton signUpButton, @NonNull TextView termsTextView,
+      @NonNull TextView textView20, @NonNull TextView textView3, @NonNull TextView textView6,
+      @NonNull TextView textViewSignIn) {
     this.rootView = rootView;
     this.ETConfirmPassword = ETConfirmPassword;
     this.ETPassword = ETPassword;
     this.ETPhoneNumber = ETPhoneNumber;
     this.backBtn = backBtn;
     this.customCheckBox = customCheckBox;
-    this.imageView3 = imageView3;
-    this.imageView4 = imageView4;
-    this.imageView5 = imageView5;
-    this.imageView6 = imageView6;
     this.main = main;
     this.signUpButton = signUpButton;
     this.termsTextView = termsTextView;
+    this.textView20 = textView20;
     this.textView3 = textView3;
-    this.textView4 = textView4;
     this.textView6 = textView6;
     this.textViewSignIn = textViewSignIn;
-    this.view = view;
-    this.view2 = view2;
   }
 
   @Override
@@ -154,7 +128,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
       }
 
       id = R.id.backBtn;
-      ConstraintLayout backBtn = ViewBindings.findChildViewById(rootView, id);
+      ImageView backBtn = ViewBindings.findChildViewById(rootView, id);
       if (backBtn == null) {
         break missingId;
       }
@@ -162,30 +136,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
       id = R.id.customCheckBox;
       CheckBox customCheckBox = ViewBindings.findChildViewById(rootView, id);
       if (customCheckBox == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView4;
-      ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView4 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView5;
-      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView5 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView6;
-      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView6 == null) {
         break missingId;
       }
 
@@ -203,15 +153,15 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.textView20;
+      TextView textView20 = ViewBindings.findChildViewById(rootView, id);
+      if (textView20 == null) {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
         break missingId;
       }
 
@@ -227,22 +177,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.view;
-      View view = ViewBindings.findChildViewById(rootView, id);
-      if (view == null) {
-        break missingId;
-      }
-
-      id = R.id.view2;
-      View view2 = ViewBindings.findChildViewById(rootView, id);
-      if (view2 == null) {
-        break missingId;
-      }
-
       return new ActivitySignUpBinding((ConstraintLayout) rootView, ETConfirmPassword, ETPassword,
-          ETPhoneNumber, backBtn, customCheckBox, imageView3, imageView4, imageView5, imageView6,
-          main, signUpButton, termsTextView, textView3, textView4, textView6, textViewSignIn, view,
-          view2);
+          ETPhoneNumber, backBtn, customCheckBox, main, signUpButton, termsTextView, textView20,
+          textView3, textView6, textViewSignIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

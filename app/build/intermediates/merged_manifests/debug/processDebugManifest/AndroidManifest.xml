@@ -46,34 +46,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.ZapRide" >
         <activity
-            android:name="com.smlab.zapride.utils.CustomProgressDialog"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.aboutUs.AboutUs"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.complain.Complain"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.contactUs.ContactUs"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.deleteAccount.DeleteAccount"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.editProfile.EditProfile"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.referral.Referral"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.helpandsupport.HelpandSupport"
+            android:name="com.smlab.zapride.ui.setting.Setting"
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.history.History"
             android:exported="false" />
         <activity
-            android:name="com.smlab.zapride.ui.notification.Notification"
+            android:name="com.smlab.zapride.utils.CustomProgressDialog"
+            android:exported="false" />
+        <activity
+            android:name="com.smlab.zapride.ui.editProfile.EditProfile"
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.signUp.SignUpOTPVerification"
@@ -89,9 +71,6 @@
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.signUp.SignUp"
-            android:exported="false" />
-        <activity
-            android:name="com.smlab.zapride.ui.welcome.WelcomeScreen"
             android:exported="false" />
         <activity
             android:name="com.smlab.zapride.ui.onBoarding.OnBoarding"
@@ -132,6 +111,25 @@
             android:theme="@style/PlacesAutocompleteOverlay"
             android:windowSoftInputMode="adjustResize" >
         </activity>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
@@ -167,22 +165,7 @@
                     android:path="/"
                     android:scheme="recaptcha" />
             </intent-filter>
-        </activity>
-
-        <service
-            android:name="com.google.firebase.components.ComponentDiscoveryService"
-            android:directBootAware="true"
-            android:exported="false" >
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service> <!-- Needs to be explicitly declared on P+ -->
+        </activity> <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />

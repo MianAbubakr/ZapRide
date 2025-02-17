@@ -4,7 +4,7 @@
             "outputFile": "com.smlab.zapride.app-mergeDebugResources-44:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\6e3a2bc2896a0a0d774fdf51e55e99a6\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\8.9\\transforms\\c1f24025435c9bc3becaa950579c12b3\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\transforms-4\\bdc51db406f58f13ba4daf2d1639a5af\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Android Projects\\Notes Vortex\\caches\\8.9\\transforms\\71c4c2094cfee8f9471fbff035cd501a\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

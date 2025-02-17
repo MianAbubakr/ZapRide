@@ -14,6 +14,8 @@ import android.location.Location;
 import android.os.Bundle;
 import android.os.Looper;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,7 +23,6 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
@@ -48,24 +49,16 @@ import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivityMainBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.smlab.zapride.ui.aboutUs.AboutUs;
-import com.smlab.zapride.ui.complain.Complain;
 import com.smlab.zapride.ui.editProfile.EditProfile;
-import com.smlab.zapride.ui.helpandsupport.HelpandSupport;
-import com.smlab.zapride.ui.history.History;
 import com.smlab.zapride.ui.locationBottomSheet.LocationBottomSheetFragment;
-import com.smlab.zapride.ui.notification.Notification;
-import com.smlab.zapride.ui.referral.Referral;
-import com.smlab.zapride.ui.settings.Settings;
+import com.smlab.zapride.ui.setting.Setting;
 import com.smlab.zapride.ui.signIn.SignIn;
-import com.smlab.zapride.ui.welcome.WelcomeScreen;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements LocationBottomSheetFragment.OnLocationSelectedListener{
     private static final String TAG = "MainActivity";
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1001;
     private static final int LOCATION_SETTINGS_REQUEST_CODE = 1002;
@@ -76,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private LocationCallback locationCallback;
     private MarkerOptions markerOptions;
     private Marker marker;
+    private RouteDrawer routeDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         Dialog dialog = new Dialog(this, R.style.CustomDialog);
         dialog.setContentView(R.layout.dialog_location_permission);
         dialog.setCancelable(true);
-        dialog.setCanceledOnTouchOutside(true);
+        dialog.setCanceledOnTouchOutside(false);
 
         Button allowBtn = dialog.findViewById(R.id.useMyLocationButton);
         Button skipBtn = dialog.findViewById(R.id.skipForNowButton);
@@ -210,38 +204,49 @@ public class MainActivity extends AppCompatActivity {
                 .icon(BitmapDescriptorFactory.fromBitmap(Objects.requireNonNull(getBitmapFromVectorDrawable(R.drawable.location_marker_icon))));
         marker = googleMap.addMarker(markerOptions);
 
-        // Listen for camera movements
+        // Update marker position while moving (but do not fetch address)
         googleMap.setOnCameraMoveListener(() -> {
+            if (binding.includeLocationScreen.main.getVisibility() == View.VISIBLE) {
+                Animation slideDown = AnimationUtils.loadAnimation(this, R.anim.slide_down);
+                binding.includeLocationScreen.main.startAnimation(slideDown);
+                binding.includeLocationScreen.main.setVisibility(View.GONE);
+            }
             if (marker != null) {
+                marker.setPosition(googleMap.getCameraPosition().target);
+            }
+        });
+
+        // Fetch address when the camera stops moving
+        googleMap.setOnCameraIdleListener(() -> {
+            if (binding.includeLocationScreen.main.getVisibility() == View.GONE) {
                 LatLng center = googleMap.getCameraPosition().target;
-                marker.setPosition(center);
                 getAddressFromLocation(center.latitude, center.longitude);
+                Animation slideUp = AnimationUtils.loadAnimation(this, R.anim.slide_up);
+                binding.includeLocationScreen.main.startAnimation(slideUp);
+                binding.includeLocationScreen.main.setVisibility(View.VISIBLE);
             }
         });
     }
 
     private void getAddressFromLocation(double latitude, double longitude) {
-        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-        try {
-            List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
-            if (addresses != null && !addresses.isEmpty()) {
-                String fullAddress = addresses.get(0).getAddressLine(0);
+        new Thread(() -> {
+            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+            try {
+                List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+                if (addresses != null && !addresses.isEmpty()) {
+                    String fullAddress = addresses.get(0).getAddressLine(0);
+                    String[] parts = fullAddress.split(",");
+                    String shortAddress = (parts.length >= 2) ? parts[0] + ", " + parts[1] : fullAddress;
 
-                // Extracting only the required part
-                String[] parts = fullAddress.split(",");
-                if (parts.length >= 2) {
-                    String shortAddress = parts[0] + ", " + parts[1];
-                    binding.includeLocationScreen.ETFromLocation.setText(shortAddress);
+                    runOnUiThread(() -> binding.includeLocationScreen.ETFromLocation.setText(shortAddress));
                 } else {
-                    binding.includeLocationScreen.ETFromLocation.setText(fullAddress);
+                    runOnUiThread(() -> binding.includeLocationScreen.ETFromLocation.setText("Unknown Location"));
                 }
-            } else {
-                binding.includeLocationScreen.ETFromLocation.setText("Unknown Location");
+            } catch (IOException e) {
+                e.printStackTrace();
+                runOnUiThread(() -> binding.includeLocationScreen.ETFromLocation.setText("Location not found"));
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-            binding.includeLocationScreen.ETFromLocation.setText("Location not found");
-        }
+        }).start();
     }
 
     private void setListener() {
@@ -257,62 +262,13 @@ public class MainActivity extends AppCompatActivity {
         binding.includeLocationScreen.ETFromLocation.setOnClickListener(view -> showLocationBottomSheet());
         binding.includeLocationScreen.ETToLocation.setOnClickListener(view -> showLocationBottomSheet());
 
-        binding.notificationIcon.setOnClickListener(view -> startActivity(new Intent(this, Notification.class)));
-
-        binding.btnDrawerToggle.setOnClickListener(view -> {
-            if (binding.drawerLayout.isDrawerOpen(binding.navigationView)) {
-                binding.drawerLayout.closeDrawer(binding.navigationView);
-            } else {
-                binding.drawerLayout.openDrawer(binding.navigationView);
-            }
-        });
-
-        // Set listener for back button in navigation header
-        View navHeaderView = binding.navigationView.getHeaderView(0);
-        ConstraintLayout btnBack = navHeaderView.findViewById(R.id.backBtn);
-        btnBack.setOnClickListener(view -> {
-            if (binding.drawerLayout.isDrawerOpen(binding.navigationView)) {
-                binding.drawerLayout.closeDrawer(binding.navigationView);
-            }
-        });
-
-        binding.navigationView.setNavigationItemSelectedListener(item -> {
-            int itemId = item.getItemId();
-            if (itemId == R.id.nav_editProfile) {
-                startActivity(new Intent(this, EditProfile.class));
-            } else if (itemId == R.id.nav_history) {
-                startActivity(new Intent(this, History.class));
-            } else if (itemId == R.id.nav_complain) {
-                startActivity(new Intent(this, Complain.class));
-            } else if (itemId == R.id.nav_referral) {
-                startActivity(new Intent(this, Referral.class));
-            } else if (itemId == R.id.nav_aboutUs) {
-                startActivity(new Intent(this, AboutUs.class));
-            } else if (itemId == R.id.nav_settings) {
-                startActivity(new Intent(this, Settings.class));
-            } else if (itemId == R.id.nav_helpAndSupport) {
-                startActivity(new Intent(this, HelpandSupport.class));
-            } else if (itemId == R.id.nav_logout) {
-                logoutUser();
-            }
-            binding.drawerLayout.closeDrawer(binding.navigationView);
-            return true;
-        });
+        binding.includeLocationScreen.confirmLocationButton.setOnClickListener(view -> drawRoute());
+        binding.profileIcon.setOnClickListener(view -> startActivity(new Intent(this, Setting.class)));
 
         binding.includeLocationScreen.rideAC.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideAC));
         binding.includeLocationScreen.rideMini.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideMini));
         binding.includeLocationScreen.auto.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.auto));
         binding.includeLocationScreen.bike.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.bike));
-    }
-
-    private void logoutUser() {
-        getSharedPreferences("UserPrefs", MODE_PRIVATE)
-                .edit()
-                .remove("isLoggedIn")
-                .apply();
-
-        startActivity(new Intent(this, WelcomeScreen.class));
-        finishAffinity();
     }
 
     private void showLocationBottomSheet() {
@@ -329,6 +285,35 @@ public class MainActivity extends AppCompatActivity {
         binding.includeLocationScreen.bike.setSelected(false);
         // Set the selected TextView's background
         selectedTextView.setSelected(true);
+    }
+
+    private LatLng getLatLngFromAddress(String address) {
+        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+        try {
+            List<Address> addresses = geocoder.getFromLocationName(address, 1);
+            if (addresses != null && !addresses.isEmpty()) {
+                Address location = addresses.get(0);
+                return new LatLng(location.getLatitude(), location.getLongitude());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private void drawRoute() {
+        routeDrawer = new RouteDrawer(this, googleMap);
+        String fromLocation = binding.includeLocationScreen.ETFromLocation.getText().toString();
+        String toLocation = binding.includeLocationScreen.ETToLocation.getText().toString();
+
+        LatLng fromLatLng = getLatLngFromAddress(fromLocation);
+        LatLng toLatLng = getLatLngFromAddress(toLocation);
+
+        if (fromLatLng != null && toLatLng != null) {
+            routeDrawer.drawRoute(fromLatLng, toLatLng, R.drawable.location_marker_icon, R.drawable.destination_marker);
+        } else {
+            Toast.makeText(this, "Could not fetch location coordinates", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void getUserLocation() {
@@ -407,5 +392,10 @@ public class MainActivity extends AppCompatActivity {
         if (locationCallback != null) {
             fusedLocationClient.removeLocationUpdates(locationCallback);
         }
+    }
+
+    @Override
+    public void onLocationSelected(String location) {
+        binding.includeLocationScreen.ETToLocation.setText(location);
     }
 }

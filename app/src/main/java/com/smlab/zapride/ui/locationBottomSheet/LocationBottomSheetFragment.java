@@ -27,11 +27,8 @@ import java.util.List;
 public class LocationBottomSheetFragment extends BottomSheetDialogFragment {
     private static final String TAG = "LocationBottomSheetFrag";
     private FragmentLocationBottomSheetBinding binding;
-    private LocationSuggestionAdapter adapter;
     private static final String ARG_FROM_ADDRESS = "from_address";
     private String fromAddress;
-    private List<String> suggestionList = new ArrayList<>();
-    private PlacesClient placesClient;
 
     public static LocationBottomSheetFragment newInstance(String fromAddress) {
         LocationBottomSheetFragment fragment = new LocationBottomSheetFragment();
@@ -44,20 +41,13 @@ public class LocationBottomSheetFragment extends BottomSheetDialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentLocationBottomSheetBinding.inflate(inflater, container, false);
-        if (!Places.isInitialized()) {
-            Places.initialize(requireContext(), "AIzaSyASrwmr7b1OTDGQErYvIXyLeD3iNl_qziA"); // Replace with your API key
-        }
-        placesClient = Places.createClient(requireContext());
 
-        initializeRecyclerView();
         setListeners();
         return binding.getRoot();
     }
 
-    private void initializeRecyclerView() {
-        adapter = new LocationSuggestionAdapter(suggestionList);
-        binding.searchPlacesRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        binding.searchPlacesRecyclerView.setAdapter(adapter);
+    public interface OnLocationSelectedListener {
+        void onLocationSelected(String location);
     }
 
     private void setListeners() {
@@ -66,60 +56,17 @@ public class LocationBottomSheetFragment extends BottomSheetDialogFragment {
             binding.ETFromLocation.setText(fromAddress);
         }
 
-        // Add text watchers to both EditText fields
-        addTextWatcher(binding.ETFromLocation);
-//        addTextWatcher(binding.ETToLocation);
-    }
-
-    private void addTextWatcher(View editText) {
-        ((android.widget.EditText) editText).addTextChangedListener(new TextWatcher() {
-            private final Handler handler = new Handler();
-            private Runnable suggestionRunnable;
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (suggestionRunnable != null) {
-                    handler.removeCallbacks(suggestionRunnable);
+        binding.continueButton.setOnClickListener(v -> {
+            String selectedLocation = binding.ETToLocation.getText().toString().trim();
+            if (!selectedLocation.isEmpty()) {
+                OnLocationSelectedListener listener = (OnLocationSelectedListener) getActivity();
+                if (listener != null) {
+                    listener.onLocationSelected(selectedLocation);
                 }
-
-                suggestionRunnable = () -> {
-                    if (s.length() > 2) {
-                        fetchSuggestions(s.toString());
-                    } else {
-                        suggestionList.clear();
-                        adapter.notifyDataSetChanged();
-                    }
-                };
-                handler.postDelayed(suggestionRunnable, 300); // Delay to reduce API calls
+                dismiss();
+            } else {
+                binding.ETToLocation.setError("Please enter a location");
             }
-
-            @Override
-            public void afterTextChanged(Editable s) {}
-        });
-    }
-
-    private void fetchSuggestions(String query) {
-        android.util.Log.d(TAG, "Starting fetchSuggestions for query: " + query);
-
-        FindAutocompletePredictionsRequest request = FindAutocompletePredictionsRequest.builder()
-                .setQuery(query)
-                .setCountry("PK")
-                .build();
-
-        placesClient.findAutocompletePredictions(request).addOnSuccessListener(response -> {
-            android.util.Log.d(TAG, "API call successful");
-            suggestionList.clear();
-            for (AutocompletePrediction prediction : response.getAutocompletePredictions()) {
-                String place = prediction.getFullText(null).toString();
-                suggestionList.add(place);
-                android.util.Log.d(TAG, "Suggestion: " + place);
-            }
-            adapter.notifyDataSetChanged();
-        }).addOnFailureListener(exception -> {
-            android.util.Log.e(TAG, "API call failed: " + exception.getMessage(), exception);
         });
     }
 }

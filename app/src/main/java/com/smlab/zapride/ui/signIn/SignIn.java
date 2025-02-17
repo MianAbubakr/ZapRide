@@ -1,7 +1,10 @@
 package com.smlab.zapride.ui.signIn;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.MotionEvent;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -40,6 +43,7 @@ public class SignIn extends AppCompatActivity {
         databaseHelper = new DatabaseHelper(this);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void setListener() {
         binding.backBtn.setOnClickListener(v -> onBackPressed());
 
@@ -51,13 +55,13 @@ public class SignIn extends AppCompatActivity {
             String phoneNumber = getPhoneNumberWithCountryCode();
             String password = binding.ETPassword.getText().toString();
 
-            if (phoneNumber.equals("") || password.equals("")) {
+            if (phoneNumber.isEmpty() || password.isEmpty()) {
                 binding.ETPhoneNumber.setError("Please enter phone number");
                 binding.ETPassword.setError("Please enter password");
             } else {
                 Boolean checkCredentials = databaseHelper.checkPhoneNumberPassword(phoneNumber, password);
 
-                if (checkCredentials == true) {
+                if (checkCredentials) {
                     saveUserLoginStatus();
                     Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(SignIn.this, MainActivity.class);
@@ -67,6 +71,27 @@ public class SignIn extends AppCompatActivity {
                     Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                 }
             }
+        });
+
+        binding.ETPassword.setOnTouchListener((v, event) -> {
+            final int DRAWABLE_RIGHT = 2;
+
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (event.getRawX() >= (binding.ETPassword.getRight() - binding.ETPassword.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                    // Toggle password visibility
+                    int inputType = binding.ETPassword.getInputType();
+                    if (inputType == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+                        binding.ETPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                        binding.ETPassword.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eye_hide_icon, 0);
+                    } else {
+                        binding.ETPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        binding.ETPassword.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eye_hide_icon, 0);
+                    }
+                    binding.ETPassword.setSelection(binding.ETPassword.getText().length()); // Maintain cursor position
+                    return true;
+                }
+            }
+            return false;
         });
     }
 

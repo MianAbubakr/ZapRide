@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -141,9 +142,9 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/background_no_underline_stroke_color_edittext"
             android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
             android:hint="@string/to"
             android:padding="10dp"
-            android:gravity="center_vertical"
             android:textColor="@color/backColor"
             android:textSize="@dimen/mediumTextSize"
             app:drawableStartCompat="@drawable/search_icon"

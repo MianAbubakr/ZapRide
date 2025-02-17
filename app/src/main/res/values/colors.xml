@@ -11,4 +11,5 @@
     <color name="signUpColor">#5a5a5a</color>
     <color name="deleteColor">#F44336</color>
     <color name="deleteDescColor">#717171</color>
+    <color name="setting_color">#F0F0F0</color>
 </resources>

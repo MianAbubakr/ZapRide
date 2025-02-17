@@ -8,6 +8,7 @@
     <color name="mainColor">#FEC400</color>
     <color name="onBoardingDesc">#A0A0A0</color>
     <color name="onBoardingTitle">#414141</color>
+    <color name="setting_color">#F0F0F0</color>
     <color name="signUpColor">#5a5a5a</color>
     <color name="welcomeTextColor">#2a2a2a</color>
     <color name="white">#FFFFFFFF</color>
@@ -25,13 +26,14 @@
     <string name="back_home">Back Home</string>
     <string name="bike">Bike</string>
     <string name="change_language">Change Language</string>
-    <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the/nrequest around you</string>
+    <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the\nrequest around you</string>
     <string name="code_has_been_send_to_70">Code has been send to ***** ***70</string>
     <string name="complain">Complain</string>
     <string name="confirm_location">Confirm Location</string>
     <string name="confirm_passowrd">Confirm passowrd</string>
     <string name="congratulations">Congratulations</string>
     <string name="contact_us">Contact Us</string>
+    <string name="continue_">Continue</string>
     <string name="create_an_account">Create an account</string>
     <string name="delete">Delete</string>
     <string name="delete_account">Delete Account</string>
@@ -40,6 +42,8 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="email">Email</string>
     <string name="enable_your_location">Enable your location</string>
+    <string name="enter_your_details_to_register">Enter your details to register</string>
+    <string name="enter_your_phone_number_or_password_for_login">Enter your phone number or password for login.</string>
     <string name="from">From</string>
     <string name="gcm_defaultSenderId" translatable="false">867464075252</string>
     <string name="gender">Gender</string>
@@ -48,12 +52,12 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDqLw4FjarXxNncJ3Ld1pDBu9Kc7ZPL0LM</string>
     <string name="google_storage_bucket" translatable="false">zapride-9ea19.firebasestorage.app</string>
     <string name="have_a_better_sharing_experience">Have a better sharing experience</string>
+    <string name="help">Help</string>
     <string name="help_And_support">Help and Support</string>
     <string name="help_and_support">Help And Support</string>
-    <string name="history">History</string>
     <string name="invite">Invite</string>
     <string name="log_in">Log In</string>
-    <string name="logout">Logout</string>
+    <string name="logout">Log Out</string>
     <string name="lorem_ipsum_dolor_sit_amet_consectetur_sit_pulvinar_mauris_mauris_eu_nibh_semper_nisl_pretium_laoreet_sed_non_faucibus_ac_lectus_eu_arcu_nulla_sit_congue_facilisis_vestibulum_egestas_nisl_feugiat_pharetra_odio_sit_tortor_morbi_at_orci_ipsum_dapibus_interdum_lorem_felis_est_aliquet_arcu_nullam_pellentesque_et_habitasse_ac_arcu_et_nunc_euismod_rhoncus_facilisis_sollicitudin">Lorem ipsum dolor sit amet consectetur. Sit\npulvinar mauris mauris eu nibh semper nisl pretium laoreet. Sed non faucibus ac lectus eu arcu. Nulla sit congue facilisis vestibulum egestas nisl feugiat pharetra. Odio sit tortor morbi at orci ipsum dapibus interdum. Lorem felis est aliquet arcu nullam pellentesque. Et habitasse ac arcu et nunc euismod rhoncus facilisis sollicitudin.</string>
     <string name="name">Name</string>
     <string name="notification">Notification</string>
@@ -64,9 +68,11 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="privacy_policy_for_ride_share">Privacy Policy for Ride share</string>
     <string name="professional_rideshare_platform_here_we_will_provide_you_only_interesting_content_which_you_will_like_very_much_we_re_dedicated_to_providing_you_the_best_of_rideshare_with_a_focus_on_dependability_and_earning_we_re_working_to_turn_our_passion_for_rideshare_into_a_booming_online_website_we_hope_you_enjoy_our_rideshare_as_much_as_we_enjoy_offering_them_to_you_i_will_keep_posting_more_important_posts_on_my_website_for_all_of_you_please_give_your_support_and_love_professional_rideshare_platform_here_we_will_provide_you_only_interesting_content_which_you_will_like_very_much_we_re_dedicated_to_providing_you_the_best_of_rideshare_with_a_focus_on_dependability_and_earning_we_re_working_to_turn_our_passion_for_rideshare_into_a_booming_online_website_we_hope_you_enjoy_our_rideshare_as_much_as_we_enjoy_offering_them_to_you_i_will_keep_posting_more_important_posts_on_my_website_for_all_of_you_please_give_your_support_and_love">Professional Rideshare Platform. Here we will provide you only interesting content, which you will like very much. We\'re dedicated to providing you the best of Rideshare, with a focus on dependability and Earning. We\'re working to turn our passion for Rideshare into a booming online website. We hope you enjoy our Rideshare as much as we enjoy offering them to you. I will keep posting more important posts on my Website for all of you. Please give your support and love.Professional Rideshare Platform. Here we will provide you only interesting content, which you will like very much. We\'re dedicated to providing you the best of Rideshare, with a focus on dependability and Earning. We\'re working to turn our passion for Rideshare into a booming online website. We hope you enjoy our Rideshare as much as we enjoy offering them to you. I will keep posting more important posts on my Website for all of you. Please give your support and love.</string>
+    <string name="profile">Profile</string>
     <string name="project_id" translatable="false">zapride-9ea19</string>
     <string name="refer_a_friend_and_earn_20">Refer a friend and Earn $20</string>
     <string name="referral">Referral</string>
+    <string name="registration">Registration</string>
     <string name="resend">Resend</string>
     <string name="ride_a_c">Ride A/C</string>
     <string name="ride_mini">Ride Mini</string>
@@ -86,7 +92,9 @@
     <string name="use_my_location">Use my location</string>
     <string name="vehicle_not_clean">Vehicle not clean</string>
     <string name="verify">Verify</string>
+    <string name="wallet">Wallet</string>
     <string name="welcome">Welcome</string>
+    <string name="welcome_to_zapride">Welcome to ZapRide</string>
     <string name="write_your_complain_here_minimum_10_n_characters">Write your complain here (minimum 10\n characters)</string>
     <string name="write_your_text">Write your text</string>
     <string name="your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds">Your account is ready to use. You will be\nredirected to the Home Page in a few\nseconds.</string>
