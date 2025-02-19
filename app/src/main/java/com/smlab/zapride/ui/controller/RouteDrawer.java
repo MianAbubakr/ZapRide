@@ -1,10 +1,13 @@
 package com.smlab.zapride.ui.controller;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.os.AsyncTask;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
@@ -35,6 +38,9 @@ public class RouteDrawer {
     private GoogleMap googleMap;
     CustomProgressDialog customProgressDialog;
 
+    private static final LatLng CIRCLE_CENTER = new LatLng(31.56876, 74.30569); // Example: Lahore
+    private static final double CIRCLE_RADIUS = 23750; // Radius in meters
+
     public RouteDrawer(Context context, GoogleMap googleMap) {
         this.context = context;
         this.googleMap = googleMap;
@@ -47,6 +53,12 @@ public class RouteDrawer {
         }
 
         if (fromLatLng != null && toLatLng != null) {
+            // Check if both points are within the circular area
+            if (!isWithinCircle(fromLatLng) || !isWithinCircle(toLatLng)) {
+                Toast.makeText(context, "Route is outside the allowed area.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             googleMap.clear(); // Clear existing markers and polylines
 
             // Show progress dialog before making the API call
@@ -58,8 +70,8 @@ public class RouteDrawer {
             BitmapDescriptor destinationIcon = BitmapDescriptorFactory.fromBitmap(getBitmapFromVectorDrawable(destinationMarkerIconResId));
 
             // Add markers with custom icons
-            googleMap.addMarker(new MarkerOptions().position(fromLatLng).title("Start Location").icon(startIcon));
-            googleMap.addMarker(new MarkerOptions().position(toLatLng).title("Destination").icon(destinationIcon));
+            googleMap.addMarker(new MarkerOptions().position(fromLatLng).icon(startIcon));
+            googleMap.addMarker(new MarkerOptions().position(toLatLng).icon(destinationIcon));
 
             // Fetch route from OSRM API
             String url = "https://router.project-osrm.org/route/v1/driving/" +
@@ -71,6 +83,12 @@ public class RouteDrawer {
         } else {
             Toast.makeText(context, "Could not fetch location coordinates", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private boolean isWithinCircle(LatLng point) {
+        float[] results = new float[1];
+        Location.distanceBetween(CIRCLE_CENTER.latitude, CIRCLE_CENTER.longitude, point.latitude, point.longitude, results);
+        return results[0] <= CIRCLE_RADIUS;
     }
 
     private Bitmap getBitmapFromVectorDrawable(int drawableId) {
@@ -134,11 +152,36 @@ public class RouteDrawer {
                         new LatLngBounds.Builder()
                                 .include(polylinePoints.get(0))
                                 .include(polylinePoints.get(polylinePoints.size() - 1))
-                                .build(), 100));
+                                .build(), 200));
+
+                // **Calculate total distance**
+                double totalDistanceMeters = calculateTotalDistance(polylinePoints);
+                double totalDistanceKm = totalDistanceMeters / 1000; // Convert to kilometers
+                double totalFare = totalDistanceKm * 30; // Rs 30 per kilometer
+
+                // **Update TextView with fare**
+                TextView textViewAmount = ((Activity) context).findViewById(R.id.textViewAmount);
+                int roundedFare = (int) Math.round(totalFare);
+                textViewAmount.setText("PKR: " + roundedFare);
             } else {
                 Toast.makeText(context, "Failed to fetch route", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    private double calculateTotalDistance(List<LatLng> polylinePoints) {
+        float totalDistance = 0;
+        for (int i = 0; i < polylinePoints.size() - 1; i++) {
+            LatLng point1 = polylinePoints.get(i);
+            LatLng point2 = polylinePoints.get(i + 1);
+
+            float[] results = new float[1];
+            Location.distanceBetween(point1.latitude, point1.longitude,
+                    point2.latitude, point2.longitude,
+                    results);
+            totalDistance += results[0]; // Distance in meters
+        }
+        return totalDistance;
     }
 
     // Decode polyline from OSRM response

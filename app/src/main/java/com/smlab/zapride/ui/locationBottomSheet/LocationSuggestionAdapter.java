@@ -13,9 +13,11 @@ import java.util.List;
 public class LocationSuggestionAdapter extends RecyclerView.Adapter<LocationSuggestionAdapter.ViewHolder> {
 
     private final List<String> suggestions;
+    private final OnSuggestionClickListener listener;
 
-    public LocationSuggestionAdapter(List<String> suggestions) {
+    public LocationSuggestionAdapter(List<String> suggestions, OnSuggestionClickListener listener) {
         this.suggestions = suggestions;
+        this.listener = listener;
     }
 
     @NonNull
@@ -29,6 +31,8 @@ public class LocationSuggestionAdapter extends RecyclerView.Adapter<LocationSugg
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String suggestion = suggestions.get(position);
         holder.suggestionTextView.setText(suggestion);
+        holder.itemView.setOnClickListener(v -> listener.onSuggestionClick(suggestion));
+
     }
 
     @Override
@@ -43,5 +47,9 @@ public class LocationSuggestionAdapter extends RecyclerView.Adapter<LocationSugg
             super(itemView);
             suggestionTextView = itemView.findViewById(R.id.suggestion_text);
         }
+    }
+
+    public interface OnSuggestionClickListener {
+        void onSuggestionClick(String suggestion);
     }
 }

@@ -34,18 +34,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final CircleImageView profileIcon;
 
   @NonNull
-  public final TextView textView21;
+  public final TextView textName;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull IncludeLocationScreenBinding includeLocationScreen, @NonNull ConstraintLayout main,
       @NonNull FrameLayout mapFragment, @NonNull CircleImageView profileIcon,
-      @NonNull TextView textView21) {
+      @NonNull TextView textName) {
     this.rootView = rootView;
     this.includeLocationScreen = includeLocationScreen;
     this.main = main;
     this.mapFragment = mapFragment;
     this.profileIcon = profileIcon;
-    this.textView21 = textView21;
+    this.textName = textName;
   }
 
   @Override
@@ -96,14 +96,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView21;
-      TextView textView21 = ViewBindings.findChildViewById(rootView, id);
-      if (textView21 == null) {
+      id = R.id.textName;
+      TextView textName = ViewBindings.findChildViewById(rootView, id);
+      if (textName == null) {
         break missingId;
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, binding_includeLocationScreen,
-          main, mapFragment, profileIcon, textView21);
+          main, mapFragment, profileIcon, textName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

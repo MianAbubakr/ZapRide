@@ -53,6 +53,8 @@ import com.smlab.zapride.ui.editProfile.EditProfile;
 import com.smlab.zapride.ui.locationBottomSheet.LocationBottomSheetFragment;
 import com.smlab.zapride.ui.setting.Setting;
 import com.smlab.zapride.ui.signIn.SignIn;
+import com.smlab.zapride.utils.CustomProgressDialog;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
@@ -70,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
     private MarkerOptions markerOptions;
     private Marker marker;
     private RouteDrawer routeDrawer;
+    private boolean isRouteDrawn = false;
+    private CustomProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
     }
 
     private void initialized() {
+        progressDialog = new CustomProgressDialog(this);
         setSelectedTextView(binding.includeLocationScreen.rideAC);
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         checkLocationPermissionAndInitializeMap();
@@ -181,6 +186,7 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
     }
 
     private void initializeMap() {
+        progressDialog.show();
         mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapFragment);
         if (mapFragment == null) {
             mapFragment = SupportMapFragment.newInstance();
@@ -197,6 +203,8 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
             googleMap.setMyLocationEnabled(true);
             getUserLocation();
         }
+
+        googleMap.setOnMapLoadedCallback(() -> progressDialog.dismiss());
 
         // Initialize marker at a default position (this will be updated later)
         markerOptions = new MarkerOptions()
@@ -229,6 +237,7 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
     }
 
     private void getAddressFromLocation(double latitude, double longitude) {
+        if (isRouteDrawn) return;
         new Thread(() -> {
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             try {
@@ -259,21 +268,35 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
             }
         });
 
-        binding.includeLocationScreen.ETFromLocation.setOnClickListener(view -> showLocationBottomSheet());
-        binding.includeLocationScreen.ETToLocation.setOnClickListener(view -> showLocationBottomSheet());
+        binding.includeLocationScreen.ETFromLocation.setOnClickListener(view -> {
+            isRouteDrawn = false; // Allow updates again
+            showLocationBottomSheet();
+        });
+
+        binding.includeLocationScreen.ETToLocation.setOnClickListener(view -> {
+            isRouteDrawn = false; // Allow updates again
+            showLocationBottomSheet();
+        });
 
         binding.includeLocationScreen.confirmLocationButton.setOnClickListener(view -> drawRoute());
-        binding.profileIcon.setOnClickListener(view -> startActivity(new Intent(this, Setting.class)));
+        binding.profileIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Setting.class);
+            intent.putExtra("currentLocation", binding.includeLocationScreen.ETFromLocation.getText().toString());
+            startActivity(intent);
+        });
 
         binding.includeLocationScreen.rideAC.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideAC));
         binding.includeLocationScreen.rideMini.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.rideMini));
         binding.includeLocationScreen.auto.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.auto));
         binding.includeLocationScreen.bike.setOnClickListener(view -> setSelectedTextView(binding.includeLocationScreen.bike));
+
+        binding.textName.setText(getSharedPreferences("UserPrefs", MODE_PRIVATE).getString("userName", ""));
     }
 
     private void showLocationBottomSheet() {
         String currentLocation = binding.includeLocationScreen.ETFromLocation.getText().toString();
-        LocationBottomSheetFragment bottomSheetFragment = LocationBottomSheetFragment.newInstance(currentLocation);
+        String destinationLocation = binding.includeLocationScreen.ETToLocation.getText().toString();
+        LocationBottomSheetFragment bottomSheetFragment = LocationBottomSheetFragment.newInstance(currentLocation, destinationLocation);
         bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
     }
 
@@ -311,6 +334,7 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
 
         if (fromLatLng != null && toLatLng != null) {
             routeDrawer.drawRoute(fromLatLng, toLatLng, R.drawable.location_marker_icon, R.drawable.destination_marker);
+            isRouteDrawn = true;
         } else {
             Toast.makeText(this, "Could not fetch location coordinates", Toast.LENGTH_SHORT).show();
         }

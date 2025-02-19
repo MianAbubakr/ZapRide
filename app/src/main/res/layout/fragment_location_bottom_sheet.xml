@@ -26,7 +26,7 @@
             android:drawableStart="@drawable/from_icon"
             android:fontFamily="@font/poppins_medium"
             android:hint="@string/from"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:padding="9dp"
             android:textColor="@color/backColor"
             android:textSize="@dimen/mediumTextSize"
@@ -43,7 +43,7 @@
             android:drawableStart="@drawable/search_icon"
             android:fontFamily="@font/poppins_medium"
             android:hint="@string/to"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:padding="10dp"
             android:textColor="@color/backColor"
             android:textSize="@dimen/mediumTextSize"
@@ -52,11 +52,35 @@
             app:layout_constraintTop_toBottomOf="@+id/ETFromLocation"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:id="@+id/textViewNoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/no_results"
+            android:textColor="@color/backColor"
+            android:textSize="@dimen/mediumTextSize"
+            app:layout_constraintStart_toStartOf="@+id/ETToLocation"
+            app:layout_constraintTop_toBottomOf="@+id/ETToLocation" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/autoCompleteRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/continueButton"
+            app:layout_constraintEnd_toEndOf="@+id/ETToLocation"
+            app:layout_constraintStart_toStartOf="@+id/ETToLocation"
+            app:layout_constraintTop_toBottomOf="@+id/ETToLocation" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/continueButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/button_background"
             android:backgroundTint="@color/btnColor"
             android:fontFamily="@font/poppins_medium"
@@ -65,9 +89,9 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/mediumTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ETToLocation"
-            app:layout_constraintStart_toStartOf="@+id/ETToLocation"
-            app:layout_constraintTop_toBottomOf="@+id/ETToLocation" />
+            app:layout_constraintStart_toStartOf="@+id/ETToLocation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
