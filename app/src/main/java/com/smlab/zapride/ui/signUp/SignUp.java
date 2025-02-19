@@ -37,6 +37,7 @@ public class SignUp extends AppCompatActivity {
     DatabaseHelper databaseHelper;
     private TextView termsTextView;
     CustomProgressDialog progressDialog;
+    String name, phoneNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,8 @@ public class SignUp extends AppCompatActivity {
 
         binding.signUpButton.setOnClickListener(view -> {
             progressDialog.show();
-            String phoneNumber = getPhoneNumberWithCountryCode();
+            name = binding.ETName.getText().toString();
+            phoneNumber = getPhoneNumberWithCountryCode();
             String password = binding.ETPassword.getText().toString();
             String confirmPassword = binding.ETConfirmPassword.getText().toString();
 
@@ -182,6 +184,8 @@ public class SignUp extends AppCompatActivity {
         getSharedPreferences("UserPrefs", MODE_PRIVATE)
                 .edit()
                 .putBoolean("isLoggedIn", true)
+                .putString("userName", name)
+                .putString("userPhoneNumber", phoneNumber)
                 .apply();
     }
 

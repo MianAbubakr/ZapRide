@@ -1,27 +1,19 @@
 [
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_delete_account.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_delete_account.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_back_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\back_icon.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_wallet_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\wallet_icon.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_location_pointer.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\location_pointer.xml"
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_about_us.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_about_us.xml"
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_location_pointer.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\location_pointer.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_cross_icon.xml.flat",
@@ -40,20 +32,20 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_privacy_policy.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_privacy_policy.xml"
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_logout_dialog.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\logout_dialog.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\anim_slide_up.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\anim\\slide_up.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_notification_icon.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\notification_icon.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_sign_in.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_notification_icon.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\notification_icon.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\font_poppins_medium.ttf.flat",
@@ -100,12 +92,12 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\nav_header_background.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_splash.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_location_screen_background.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\location_screen_background.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_splash.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_background_no_underline_stroke_color_edittext.xml.flat",
@@ -138,10 +130,6 @@
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_white_tick.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\white_tick.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_welcome_screen.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_welcome_screen.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -180,28 +168,20 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\circle_image_background.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_notification.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_notification.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_mini_car_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\mini_car_icon.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_eye_hide_icon.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\eye_hide_icon.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_on_boarding.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_on_boarding.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_group_6477.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\group_6477.xml"
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_eye_hide_icon.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\eye_hide_icon.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_contact_us.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_contact_us.xml"
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_group_6477.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\group_6477.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_location_marker_icon.xml.flat",
@@ -210,10 +190,6 @@
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_address_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\address_icon.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_back_arrow.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\back_arrow.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -244,16 +220,8 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\checkbox_background.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_nav_header.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\nav_header.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_dialog_location_permission.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\dialog_location_permission.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_helpand_support.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_helpand_support.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_history.xml.flat",
@@ -266,14 +234,6 @@
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_congrats_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\congrats_icon.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_complain.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_complain.xml"
-    },
-    {
-        "merged": "com.smlab.zapride.app-debug-46:/layout_activity_setting.xml.flat",
-        "source": "com.smlab.zapride.app-main-48:/layout/activity_setting.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_ride_selected_background.xml.flat",
@@ -352,6 +312,10 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\checkbox_tick_selector.xml"
     },
     {
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_cash_icon.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\cash_icon.xml"
+    },
+    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_search_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\search_icon.xml"
     },
@@ -360,8 +324,8 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\from_icon.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\menu_drawer_menu.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\menu\\drawer_menu.xml"
+        "merged": "com.smlab.zapride.app-debug-46:/layout_fragment_location_bottom_sheet.xml.flat",
+        "source": "com.smlab.zapride.app-main-48:/layout/fragment_location_bottom_sheet.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\anim_slide_down.xml.flat",
@@ -376,20 +340,16 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\bike_icon.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_cross1.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\cross1.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_button_background.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\button_background.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_sign_up_otpverification.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_sign_up_otpverification.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_ride_category_background.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\ride_category_background.xml"
+    },
+    {
+        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_sign_up_otpverification.xml.flat",
+        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_sign_up_otpverification.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_rickshaw_icon.xml.flat",
@@ -412,20 +372,12 @@
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\location_dialog_icon.xml"
     },
     {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_settings.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_settings.xml"
-    },
-    {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_gmail_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\gmail_icon.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_main.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_complaindailog.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\complaindailog.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_progress_drawable.xml.flat",
@@ -450,10 +402,6 @@
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_drawer_icon.xml.flat",
         "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\drawable\\drawer_icon.xml"
-    },
-    {
-        "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\layout_activity_referral.xml.flat",
-        "source": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-main-48:\\layout\\activity_referral.xml"
     },
     {
         "merged": "C:\\Android Projects\\Notes Vortex\\daemon\\8.9\\com.smlab.zapride.app-debug-46:\\drawable_dialog_background.xml.flat",

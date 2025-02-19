@@ -33,19 +33,18 @@
             android:layout_height="36dp"
             android:layout_marginEnd="8dp"
             android:src="@drawable/man_vector"
-            app:layout_constraintBottom_toBottomOf="@+id/textView21"
-            app:layout_constraintEnd_toStartOf="@+id/textView21"
-            app:layout_constraintTop_toTopOf="@+id/textView21" />
+            app:layout_constraintBottom_toBottomOf="@+id/textName"
+            app:layout_constraintEnd_toStartOf="@+id/textName"
+            app:layout_constraintTop_toTopOf="@+id/textName" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/textName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Usman"
             android:textColor="@color/backColor"
             android:textSize="@dimen/normalTextSize"
             app:layout_constraintBottom_toBottomOf="parent"

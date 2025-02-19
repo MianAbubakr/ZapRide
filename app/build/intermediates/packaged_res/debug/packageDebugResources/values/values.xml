@@ -20,11 +20,13 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="app_name">ZapRide</string>
     <string name="are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account">Are you sure you want to delete your account? Please read how account deletion will affect. Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
     <string name="at_rideshare_accessible_from_rideshare_com_one_of_our_main_priorities_is_the_privacy_of_our_visitors_this_privacy_policy_document_contains_types_of_information_that_is_collected_and_recorded_by_rideshare_and_how_we_use_it_if_you_have_additional_questions_or_require_more_information_about_our_privacy_policy_do_not_hesitate_to_contact_us_this_privacy_policy_applies_only_to_our_online_activities_and_is_valid_for_visitors_to_our_website_with_regards_to_the_information_that_they_shared_and_or_collect_in_rideshare_this_policy_is_not_applicable_to_any_information_collected_offline_or_via_channels_other_than_this_website_our_privacy_policy_was_created_with_the_help_of_the_free_privacy_policy_generator">At Rideshare, accessible from rideshare.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by rideshare and how we use it. If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in rideshare. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the Free Privacy Policy Generator.</string>
     <string name="auto">Auto</string>
     <string name="back">Back</string>
     <string name="back_home">Back Home</string>
     <string name="bike">Bike</string>
+    <string name="cash">Cash</string>
     <string name="change_language">Change Language</string>
     <string name="choose_your_location_to_start_find_the_request_around_you">Choose your location to start find the\nrequest around you</string>
     <string name="code_has_been_send_to_70">Code has been send to ***** ***70</string>
@@ -45,6 +47,7 @@
     <string name="enter_your_details_to_register">Enter your details to register</string>
     <string name="enter_your_phone_number_or_password_for_login">Enter your phone number or password for login.</string>
     <string name="from">From</string>
+    <string name="full_name">Full name</string>
     <string name="gcm_defaultSenderId" translatable="false">867464075252</string>
     <string name="gender">Gender</string>
     <string name="google_api_key" translatable="false">AIzaSyDqLw4FjarXxNncJ3Ld1pDBu9Kc7ZPL0LM</string>
@@ -60,6 +63,8 @@
     <string name="logout">Log Out</string>
     <string name="lorem_ipsum_dolor_sit_amet_consectetur_sit_pulvinar_mauris_mauris_eu_nibh_semper_nisl_pretium_laoreet_sed_non_faucibus_ac_lectus_eu_arcu_nulla_sit_congue_facilisis_vestibulum_egestas_nisl_feugiat_pharetra_odio_sit_tortor_morbi_at_orci_ipsum_dapibus_interdum_lorem_felis_est_aliquet_arcu_nullam_pellentesque_et_habitasse_ac_arcu_et_nunc_euismod_rhoncus_facilisis_sollicitudin">Lorem ipsum dolor sit amet consectetur. Sit\npulvinar mauris mauris eu nibh semper nisl pretium laoreet. Sed non faucibus ac lectus eu arcu. Nulla sit congue facilisis vestibulum egestas nisl feugiat pharetra. Odio sit tortor morbi at orci ipsum dapibus interdum. Lorem felis est aliquet arcu nullam pellentesque. Et habitasse ac arcu et nunc euismod rhoncus facilisis sollicitudin.</string>
     <string name="name">Name</string>
+    <string name="no">No</string>
+    <string name="no_results">No results</string>
     <string name="notification">Notification</string>
     <string name="onBoardingDesc">Sell houses easily with the help of\nListenoryx and to make this line\nbig I am writing more.</string>
     <string name="or">or</string>
@@ -97,6 +102,7 @@
     <string name="welcome_to_zapride">Welcome to ZapRide</string>
     <string name="write_your_complain_here_minimum_10_n_characters">Write your complain here (minimum 10\n characters)</string>
     <string name="write_your_text">Write your text</string>
+    <string name="yes">Yes</string>
     <string name="your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds">Your account is ready to use. You will be\nredirected to the Home Page in a few\nseconds.</string>
     <string name="your_complain_has_been_send_successful">Your complain has been send successful</string>
     <string name="your_mobile_number">Your mobile number</string>

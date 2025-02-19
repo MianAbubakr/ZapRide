@@ -4120,6 +4120,7 @@ drawable by
 drawable bz
 drawable ca
 drawable car_icon
+drawable cash_icon
 drawable cc
 drawable ccp_selectable_bg
 drawable cd
@@ -4519,8 +4520,10 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ETAddress
 id ETConfirmPassword
 id ETFromLocation
+id ETName
 id ETPassword
 id ETPhoneNumber
 id ETToLocation
@@ -4624,6 +4627,7 @@ id asConfigured
 id async
 id auto
 id autoComplete
+id autoCompleteRecyclerView
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
@@ -4647,7 +4651,9 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnNext
+id btnNo
 id btnPick
+id btnYes
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -4733,7 +4739,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editText2
 id editText3
 id editTextUniqueCode1
 id editTextUniqueCode2
@@ -4898,6 +4903,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_toolbar
+id nameTextView
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -5055,8 +5061,6 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
-id state
-id stateListView
 id staticLayout
 id staticPostLayout
 id stop
@@ -5084,6 +5088,7 @@ id terrain
 id text
 id text2
 id textEnd
+id textName
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -5101,13 +5106,17 @@ id textView18
 id textView19
 id textView2
 id textView20
-id textView21
+id textView22
 id textView3
+id textView4
 id textView5
 id textView6
 id textView7
 id textView8
 id textView9
+id textViewAmount
+id textViewName
+id textViewNoResult
 id textViewSignIn
 id textViewSignUp
 id textView_title
@@ -5327,6 +5336,7 @@ layout include_location_screen
 layout item
 layout item_location_suggestion
 layout item_onboarding
+layout logout_dialog
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -5445,6 +5455,7 @@ string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string are_you_sure_you_want_to_delete_your_account_please_read_how_account_deletion_will_affect_deleting_your_account_removes_personal_information_our_database_tour_email_becomes_permanently_reserved_and_same_email_cannot_be_re_use_to_register_a_new_account
+string are_you_sure_you_want_to_logout
 string at_rideshare_accessible_from_rideshare_com_one_of_our_main_priorities_is_the_privacy_of_our_visitors_this_privacy_policy_document_contains_types_of_information_that_is_collected_and_recorded_by_rideshare_and_how_we_use_it_if_you_have_additional_questions_or_require_more_information_about_our_privacy_policy_do_not_hesitate_to_contact_us_this_privacy_policy_applies_only_to_our_online_activities_and_is_valid_for_visitors_to_our_website_with_regards_to_the_information_that_they_shared_and_or_collect_in_rideshare_this_policy_is_not_applicable_to_any_information_collected_offline_or_via_channels_other_than_this_website_our_privacy_policy_was_created_with_the_help_of_the_free_privacy_policy_generator
 string auto
 string back
@@ -5463,6 +5474,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string cash
 string change_language
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -5520,6 +5532,7 @@ string fmt_dial_code
 string format_country
 string format_country_with_code
 string from
+string full_name
 string gcm_defaultSenderId
 string gender
 string google_api_key
@@ -5638,7 +5651,9 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string name
 string ng_234_sample_text
+string no
 string no_result_found
+string no_results
 string notification
 string onBoardingDesc
 string or
@@ -5701,6 +5716,7 @@ string welcome
 string welcome_to_zapride
 string write_your_complain_here_minimum_10_n_characters
 string write_your_text
+string yes
 string your_account_is_ready_to_use_you_will_be_nredirected_to_the_home_page_in_a_few_nseconds
 string your_complain_has_been_send_successful
 string your_mobile_number

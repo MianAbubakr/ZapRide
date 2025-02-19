@@ -28,6 +28,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final EditText ETConfirmPassword;
 
   @NonNull
+  public final EditText ETName;
+
+  @NonNull
   public final EditText ETPassword;
 
   @NonNull
@@ -61,7 +64,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView textViewSignIn;
 
   private ActivitySignUpBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText ETConfirmPassword, @NonNull EditText ETPassword,
+      @NonNull EditText ETConfirmPassword, @NonNull EditText ETName, @NonNull EditText ETPassword,
       @NonNull PhoneNumberEditText ETPhoneNumber, @NonNull ImageView backBtn,
       @NonNull CheckBox customCheckBox, @NonNull ConstraintLayout main,
       @NonNull AppCompatButton signUpButton, @NonNull TextView termsTextView,
@@ -69,6 +72,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
       @NonNull TextView textViewSignIn) {
     this.rootView = rootView;
     this.ETConfirmPassword = ETConfirmPassword;
+    this.ETName = ETName;
     this.ETPassword = ETPassword;
     this.ETPhoneNumber = ETPhoneNumber;
     this.backBtn = backBtn;
@@ -112,6 +116,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
       id = R.id.ETConfirmPassword;
       EditText ETConfirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (ETConfirmPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.ETName;
+      EditText ETName = ViewBindings.findChildViewById(rootView, id);
+      if (ETName == null) {
         break missingId;
       }
 
@@ -177,9 +187,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ConstraintLayout) rootView, ETConfirmPassword, ETPassword,
-          ETPhoneNumber, backBtn, customCheckBox, main, signUpButton, termsTextView, textView20,
-          textView3, textView6, textViewSignIn);
+      return new ActivitySignUpBinding((ConstraintLayout) rootView, ETConfirmPassword, ETName,
+          ETPassword, ETPhoneNumber, backBtn, customCheckBox, main, signUpButton, termsTextView,
+          textView20, textView3, textView6, textViewSignIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

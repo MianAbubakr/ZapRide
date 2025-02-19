@@ -61,4 +61,9 @@ dependencies {
     // Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
     implementation("com.google.firebase:firebase-auth-ktx")
+    // Country Code Parser
+    implementation ("com.googlecode.libphonenumber:libphonenumber:8.13.15")
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 }
