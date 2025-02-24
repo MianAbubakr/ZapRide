@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -31,7 +32,9 @@
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,86 +44,73 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/rideAC"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:src="@drawable/car_icon"
+                    android:background="@drawable/ride_category_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/ride_a_c"
+                    android:textColor="@color/backColor"
+                    android:textSize="@dimen/smallTextSize"
+                    app:drawableTopCompat="@drawable/car_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView10"
+                    app:layout_constraintEnd_toStartOf="@+id/rideMini"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/rideMini"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/ride_category_background"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="@string/ride_a_c"
+                    android:gravity="center"
+                    android:text="@string/ride_mini"
                     android:textColor="@color/backColor"
                     android:textSize="@dimen/smallTextSize"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView11"
-                    app:layout_constraintStart_toStartOf="@+id/imageView11"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView11" />
-
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/mini_car_icon"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView12"
+                    app:drawableTopCompat="@drawable/mini_car_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/rideAC"
+                    app:layout_constraintEnd_toStartOf="@+id/auto"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView11"
-                    app:layout_constraintTop_toTopOf="@+id/imageView11" />
+                    app:layout_constraintStart_toEndOf="@+id/rideAC"
+                    app:layout_constraintTop_toTopOf="@+id/rideAC" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/auto"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/ride_a_c"
+                    android:background="@drawable/ride_category_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/auto"
                     android:textColor="@color/backColor"
                     android:textSize="@dimen/smallTextSize"
-                    android:fontFamily="@font/poppins_medium" />
-
-                <ImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/rickshaw_icon"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                    app:drawableTopCompat="@drawable/rickshaw_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/rideMini"
+                    app:layout_constraintEnd_toStartOf="@+id/bike"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView10"
-                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
+                    app:layout_constraintStart_toEndOf="@+id/rideMini"
+                    app:layout_constraintTop_toTopOf="@+id/rideMini" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/bike"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/ride_a_c"
+                    android:background="@drawable/ride_category_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/bike"
                     android:textColor="@color/backColor"
                     android:textSize="@dimen/smallTextSize"
-                    android:fontFamily="@font/poppins_medium" />
-
-                <ImageView
-                    android:id="@+id/imageView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/bike_icon"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                    app:drawableTopCompat="@drawable/bike_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/auto"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toTopOf="@+id/imageView12" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ride_a_c"
-                    android:textColor="@color/backColor"
-                    android:textSize="@dimen/smallTextSize"
-                    android:fontFamily="@font/poppins_medium" />
+                    app:layout_constraintStart_toEndOf="@+id/auto"
+                    app:layout_constraintTop_toTopOf="@+id/auto" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -152,9 +142,9 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/background_no_underline_stroke_color_edittext"
             android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
             android:hint="@string/to"
             android:padding="10dp"
-            android:gravity="center_vertical"
             android:textColor="@color/backColor"
             android:textSize="@dimen/mediumTextSize"
             app:drawableStartCompat="@drawable/search_icon"
@@ -163,8 +153,35 @@
             app:layout_constraintTop_toBottomOf="@+id/ETFromLocation"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/cash"
+            android:textColor="@color/backColor"
+            android:textSize="@dimen/mediumTextSize"
+            app:drawableStartCompat="@drawable/cash_icon"
+            app:layout_constraintStart_toStartOf="@+id/ETToLocation"
+            app:layout_constraintTop_toBottomOf="@+id/ETToLocation" />
+
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/backColor"
+            android:textSize="@dimen/mediumTextSize"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="@+id/ETToLocation"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/confirmLocationButton"
+            android:id="@+id/findRideButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -173,16 +190,16 @@
             android:layout_marginBottom="24dp"
             android:background="@drawable/button_background"
             android:backgroundTint="@color/btnColor"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_semibold/"
             android:padding="15dp"
-            android:text="@string/confirm_location"
+            android:text="@string/find_ride"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/mediumTextSize"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/ETToLocation"
             app:layout_constraintStart_toStartOf="@+id/ETToLocation"
-            app:layout_constraintTop_toBottomOf="@+id/ETToLocation"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

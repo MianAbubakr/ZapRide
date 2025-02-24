@@ -2,8 +2,6 @@ package com.smlab.zapride.ui.onBoarding;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,12 +10,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.smlab.zapride.MainActivity;
 import com.smlab.zapride.R;
 import com.smlab.zapride.databinding.ActivityOnBoardingBinding;
 import com.smlab.zapride.ui.onBoarding.adapter.OnboardingAdapter;
 import com.smlab.zapride.ui.onBoarding.model.OnboardingItem;
-import com.smlab.zapride.ui.welcome.WelcomeScreen;
+import com.smlab.zapride.ui.signIn.SignIn;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,13 +46,13 @@ public class OnBoarding extends AppCompatActivity {
                 binding.viewPager.setCurrentItem(currentItem + 1);
             } else {
                 // Last screen, go to next activity
-                startActivity(new Intent(OnBoarding.this, WelcomeScreen.class));
+                startActivity(new Intent(OnBoarding.this, SignIn.class));
                 finish();
             }
         });
 
         binding.skipTextView.setOnClickListener(view -> {
-            startActivity(new Intent(OnBoarding.this, WelcomeScreen.class));
+            startActivity(new Intent(OnBoarding.this, SignIn.class));
             finish();
         });
     }

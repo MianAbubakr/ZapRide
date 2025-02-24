@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "867464075252",
+    "project_id": "zapride-9ea19",
+    "storage_bucket": "zapride-9ea19.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867464075252:android:a1a5dbf004e180942dcba1",
+        "android_client_info": {
+          "package_name": "com.smlab.zapride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqLw4FjarXxNncJ3Ld1pDBu9Kc7ZPL0LM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

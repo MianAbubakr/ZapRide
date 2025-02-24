@@ -8,37 +8,16 @@
     android:background="@color/white"
     tools:context=".ui.signUp.SignUp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:padding="@dimen/xSmallTextSize"
+        android:padding="5dp"
+        android:src="@drawable/back_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/back_arrow"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/poppins_regular"
-            android:text="@string/back"
-            android:textColor="@color/backColor"
-            android:textSize="@dimen/normalTextSize"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -46,23 +25,53 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/sign_up"
+        android:text="@string/registration"
         android:textColor="@color/welcomeTextColor"
         android:textSize="@dimen/bigTextSize"
         app:layout_constraintStart_toStartOf="@+id/backBtn"
         app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/enter_your_details_to_register"
+        android:textColor="@color/deleteDescColor"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/full_name"
+        android:inputType="textCapSentences"
+        android:padding="15dp"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <com.github.vardemin.materialcountrypicker.PhoneNumberEditText
         android:id="@+id/ETPhoneNumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
         android:background="@drawable/background_no_underline_stroke_color_edittext"
         android:fontFamily="@font/poppins_medium"
         android:hint="@string/your_mobile_number"
         android:inputType="phone"
-        android:padding="15dp"
+        android:padding="14dp"
         android:textColor="@color/welcomeTextColor"
         android:textColorHint="@color/onBoardingDesc"
         android:textSize="@dimen/mediumTextSize"
@@ -74,9 +83,49 @@
         app:cp_showCountryDialCodeInView="true"
         app:cp_showFastScroll="true"
         app:cp_showFullScreeDialog="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="@+id/ETName"
+        app:layout_constraintStart_toStartOf="@+id/ETName"
+        app:layout_constraintTop_toBottomOf="@+id/ETName" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/password"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/eye_hide_icon"
+        app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ETConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_no_underline_stroke_color_edittext"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/confirm_passowrd"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/backColor"
+        android:textColorHint="@color/onBoardingDesc"
+        android:textSize="@dimen/mediumTextSize"
+        android:drawableEnd="@drawable/eye_hide_icon"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/ETPassword"
+        app:layout_constraintStart_toStartOf="@+id/ETPassword"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/customCheckBox"
@@ -87,16 +136,16 @@
         android:button="@null"
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="@+id/ETPhoneNumber"
-        app:layout_constraintTop_toBottomOf="@+id/ETPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/ETConfirmPassword" />
 
     <TextView
         android:id="@+id/termsTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/black"
-        android:textSize="@dimen/mediumTextSize"
+        android:textColor="@color/onBoardingDesc"
+        android:textSize="@dimen/smallTextSize"
         app:layout_constraintBottom_toBottomOf="@+id/customCheckBox"
         app:layout_constraintEnd_toEndOf="@+id/ETPhoneNumber"
         app:layout_constraintStart_toEndOf="@+id/customCheckBox"
@@ -119,102 +168,20 @@
         app:layout_constraintStart_toStartOf="@+id/customCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/termsTextView" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/onBoardingDesc"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/signUpButton"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/or"
-        android:textColor="@color/onBoardingDesc"
-        android:textSize="@dimen/normalTextSize"
-        app:layout_constraintEnd_toStartOf="@+id/view2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/onBoardingDesc"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/signUpButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/background_no_underline_stroke_color_edittext"
-        android:padding="@dimen/mediumTextSize"
-        android:src="@drawable/gmail_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/background_no_underline_stroke_color_edittext"
-        android:padding="@dimen/mediumTextSize"
-        android:src="@drawable/facebook_icon"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/background_no_underline_stroke_color_edittext"
-        android:padding="@dimen/mediumTextSize"
-        android:src="@drawable/apple_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/already_have_an_account"
         android:textColor="@color/signUpColor"
         android:textSize="@dimen/mediumTextSize"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textViewSignIn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
         tools:ignore="MissingConstraints" />
 
     <TextView

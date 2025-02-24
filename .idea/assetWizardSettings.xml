@@ -19,8 +19,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="rickshaw_icon" />
-                            <entry key="sourceFile" value="C:\Users\Eminent Technologies\OneDrive\Desktop\rickshaw_icon.svg" />
+                            <entry key="outputName" value="favourite_icon" />
+                            <entry key="sourceFile" value="C:\Users\Eminent Technologies\OneDrive\Desktop\heart.svg" />
                           </map>
                         </option>
                       </PersistentState>
