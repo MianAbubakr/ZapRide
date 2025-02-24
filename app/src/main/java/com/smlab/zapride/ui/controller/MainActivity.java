@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity implements LocationBottomShe
             showLocationBottomSheet();
         });
 
-        binding.includeLocationScreen.confirmLocationButton.setOnClickListener(view -> drawRoute());
+        binding.includeLocationScreen.findRideButton.setOnClickListener(view -> drawRoute());
         binding.profileIcon.setOnClickListener(view -> {
             Intent intent = new Intent(this, Setting.class);
             intent.putExtra("currentLocation", binding.includeLocationScreen.ETFromLocation.getText().toString());
