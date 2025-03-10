@@ -89,4 +89,7 @@
     <string name="cash">Cash</string>
     <string name="no_results">No results</string>
     <string name="find_ride">Find Ride</string>
+    <string name="past">Past</string>
+    <string name="Upcoming">Upcoming</string>
+    <string name="cancelled">Cancelled</string>
 </resources>
